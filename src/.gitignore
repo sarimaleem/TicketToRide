@@ -150,3 +150,4 @@ local.properties
 .apt_generated/
 .idea/TicketToRide.iml
 .srciml
+.idea\workspace.xml
