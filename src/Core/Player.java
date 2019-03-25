@@ -28,4 +28,17 @@ public class Player {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    public void addTrainCard(TrainCard trainCard) {
+        trainCards.add(trainCard);
+    }
+
+    public void addTicket(Ticket ticket) {
+        tickets.add(ticket);
+    }
+
+    
+
+
+
 }
