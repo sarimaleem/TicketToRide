@@ -7,6 +7,7 @@ public class Ticket {
         this.a = a;
         this.b = b;
         this.value = value;
+        this.finished = false;
     }
 
     public boolean getFinished() {
