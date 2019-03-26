@@ -14,7 +14,7 @@ public class SampleTestClass extends JPanel implements MouseListener {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);
         window.setVisible(true);
-        SampleTestClass board = new SampleTestClass();
+        GraphicTicket board = new GraphicTicket(new City("Houston",null),new City("Boston",null),10);
         window.add(board);
         window.setExtendedState(JFrame.MAXIMIZED_BOTH);
         window.addMouseListener(board);

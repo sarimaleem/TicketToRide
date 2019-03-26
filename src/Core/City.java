@@ -8,7 +8,9 @@ public class City {
         this.name = name;
         this.routes = routes;
     }
-
+    public String getName(){
+        return name;
+    }
     public ArrayList<Route> getRoutes() {
         return routes;
     }

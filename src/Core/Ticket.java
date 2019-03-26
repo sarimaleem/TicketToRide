@@ -9,7 +9,15 @@ public class Ticket {
         this.value = value;
         this.finished = false;
     }
-
+    public City getA(){
+        return a;
+    }
+    public City getB(){
+        return b;
+    }
+    public int getValue(){
+        return value;
+    }
     public boolean getFinished() {
         return finished;
     }
