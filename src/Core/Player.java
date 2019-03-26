@@ -36,9 +36,4 @@ public class Player {
     public void addTicket(Ticket ticket) {
         tickets.add(ticket);
     }
-
-    
-
-
-
 }
