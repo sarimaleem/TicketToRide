@@ -1,22 +1,20 @@
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
 
-public class SampleGraphicsClass {
-    private SampleCoreClass sampleCoreClass;
+public class GraphicTrainCard {
+    private TrainCard trainCard;
     private int x, y;
     private static final int height = 200, width = 100;
 
 
-    public SampleGraphicsClass(SampleCoreClass sampleCoreClass, int x, int y) {
-        this.sampleCoreClass = sampleCoreClass;
+    public GraphicTrainCard(TrainCard trainCard, int x, int y) {
+        this.trainCard = trainCard;
         this.x = x;
         this.y = y;
     }
 
-    public void draw(Graphics2D graphics2D) {throws IOException
-        String color = sampleCoreClass.getColor();
-        BufferedImage myPicture = SampleGraphicsClass.read(new File(Orange_Card.png));
+    public void draw(Graphics2D graphics2D) {
+        String color = traincard.getColor();
+
         switch (color) {
             case "green":
                 graphics2D.setColor(Color.GREEN);
@@ -26,10 +24,10 @@ public class SampleGraphicsClass {
                 break;
         }
 
-        graphics2D.fillRect(x, y , width, height);
+        graphics2D.fillRect(x, y, width, height);
         graphics2D.setColor(Color.BLACK);
         graphics2D.setStroke(new BasicStroke(3));
-        graphics2D.drawRect(x, y , width, height);
+        graphics2D.drawRect(x, y, width, height);
     }
 
     public boolean contains(int x, int y) {
@@ -38,8 +36,4 @@ public class SampleGraphicsClass {
         }
         return false;
     }
-
-
-
-
 }
