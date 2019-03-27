@@ -13,13 +13,14 @@ Sarim
 David Jobs
 
 - [ ] buffered image on board
-- [ ] work on listing all the Routes
-- [ ] work on listing all the cities
+- [ ] work on making all the routes clickable
+
 
 
 Keo Jobs
 - [ ] work on graphic ticket
-- [ ] work on making all the routes clickable
+- [ ] work on listing all the Routes
+- [ ] work on listing all the cities
 
 
 
