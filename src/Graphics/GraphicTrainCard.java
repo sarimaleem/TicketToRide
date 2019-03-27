@@ -1,33 +1,33 @@
-import java.awt.*;
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
-public class GraphicTrainCard {
+import javax.imageio.ImageIO;
+import javax.swing.JPanel;
+
+public class GraphicTrainCard extends JPanel {
     private TrainCard trainCard;
     private int x, y;
     private static final int height = 200, width = 100;
+    private BufferedImage image;
 
-
-    public GraphicTrainCard(TrainCard trainCard, int x, int y) {
-        this.trainCard = trainCard;
-        this.x = x;
-        this.y = y;
+    public GraphicTrainCard(TrainCard trainCard, int xv, int yv) {
+    			x=xv;
+    			y=yv;
+    			String r="C:\\Users\\samia\\OneDrive\\Pictures\\colorcards\\"+trainCard.getColor()+"Card.png";
+    			try {
+    				File f = new File(r);
+    				image = ImageIO.read(f);
+    				 				
+    			}catch(IOException ex) {   				
+   			}   	
     }
 
     public void draw(Graphics2D graphics2D) {
-        String color = traincard.getColor();
-
-        switch (color) {
-            case "green":
-                graphics2D.setColor(Color.GREEN);
-                break;
-            case "blue":
-                graphics2D.setColor(Color.BLUE);
-                break;
-        }
-
-        graphics2D.fillRect(x, y, width, height);
-        graphics2D.setColor(Color.BLACK);
-        graphics2D.setStroke(new BasicStroke(3));
-        graphics2D.drawRect(x, y, width, height);
+    	graphics2D.drawImage(image, x, y, 250,150 , this);
     }
 
     public boolean contains(int x, int y) {
@@ -36,4 +36,6 @@ public class GraphicTrainCard {
         }
         return false;
     }
+
+
 }
