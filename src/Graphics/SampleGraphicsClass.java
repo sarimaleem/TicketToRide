@@ -14,9 +14,8 @@ public class SampleGraphicsClass {
         this.y = y;
     }
 
-    public void draw(Graphics2D graphics2D) {throws IOException
+    public void draw(Graphics2D graphics2D) {
         String color = sampleCoreClass.getColor();
-        BufferedImage myPicture = SampleGraphicsClass.read(new File(Orange_Card.png));
         switch (color) {
             case "green":
                 graphics2D.setColor(Color.GREEN);
