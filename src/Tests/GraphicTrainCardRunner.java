@@ -10,7 +10,7 @@ public class GraphicTrainCardRunner extends JPanel implements MouseListener {
 
 
     public static void main(String[] args) {
-        JFrame window = new JFrame("SampleTestClass"); // Makes sure that you title this correctly
+        JFrame window = new JFrame("GraphicTrainCardRunner"); // Makes sure that you title this correctly
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);
         window.setVisible(true);
@@ -32,7 +32,7 @@ public class GraphicTrainCardRunner extends JPanel implements MouseListener {
     }
 
     public void mouseClicked(MouseEvent e) {
-        GraphicTrainCard sampleGraphicsClass = new GraphicTrainCard(t, 500, 500);
+        GraphicTrainCard sampleGraphicsClass = new GraphicTrainCard(t, 1670, 0);
         System.out.println(e.getX() +" " + e.getY());
 
     }

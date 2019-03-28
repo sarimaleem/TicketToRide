@@ -10,11 +10,11 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
 
 
     public static void main(String[] args) {
-        JFrame window = new JFrame("SampleTestClass"); // Makes sure that you title this correctly
+        JFrame window = new JFrame("GraphicPlayerRunner"); // Makes sure that you title this correctly
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);
         window.setVisible(true);
-        SampleTestClass board = new SampleTestClass();
+        GraphicPlayerRunner board = new GraphicPlayerRunner();
         window.add(board);
         window.setExtendedState(JFrame.MAXIMIZED_BOTH);
         window.addMouseListener(board);
@@ -27,12 +27,12 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
     }
 
     public void drawGraphicPlayer(Graphics2D graphics2D) {
-        GraphicPlayer graphicsClass = new GraphicPlayer(player, 500, 500);
+        GraphicPlayer graphicsClass = new GraphicPlayer(player, 0, 810);
         graphicsClass.draw(graphics2D);
     }
 
     public void mouseClicked(MouseEvent e) {
-        GraphicPlayer graphicsClass = new GraphicPlayer(player, 500, 500);
+        GraphicPlayer graphicsClass = new GraphicPlayer(player, 0, 810);
         System.out.println(e.getX() +" " + e.getY());
 
     }
