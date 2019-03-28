@@ -34,10 +34,10 @@ public class GraphicPlayer {
         graphics2D.drawRect(x, y , width, height);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
-        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 50, 860);
+        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 55, 860);
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
-        graphics2D.drawString(""+player.getPoints()+" POINTS", 130, 930);
+        graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
     }
 
     public boolean contains(int x, int y) {
