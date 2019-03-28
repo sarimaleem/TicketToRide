@@ -6,7 +6,7 @@ import java.awt.geom.Path2D;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
-public class Path2DTest extends JFrame implements MouseListener {
+public class Path2DTest extends JPanel implements MouseListener {
 
     static Path2D.Double test = new Path2D.Double();
 
@@ -21,8 +21,8 @@ public class Path2DTest extends JFrame implements MouseListener {
         window.addMouseListener(board);
 
 
-        int[] x = new int[]{100, 200, 300, 600};
-        int[] y = new int[]{100, 200, 400, 600};
+        int[] x = new int[]{100, 100, 200, 200};
+        int[] y = new int[]{100, 200, 200, 100};
 
         createPath(test, x, y);
     }
@@ -47,7 +47,9 @@ public class Path2DTest extends JFrame implements MouseListener {
 
 
     public void mouseClicked(MouseEvent e) {
-        System.out.println(e.getX() + " " + e.getY());
+        if (test.contains(new Point(e.getX(), e.getY()))) {
+            System.out.println("SUCCESS");
+        }
     }
 
     public void mousePressed(MouseEvent e) {
