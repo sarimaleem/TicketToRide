@@ -14,11 +14,10 @@ public class Network {
         cities = new HashMap<>();
         paths = new HashMap<>();
 
-        int i = 0;
+
 
         while(in.hasNextLine()) {
 
-            System.out.println(++i);
             String s = in.nextLine();
             String[] temp = s.split(" ");
 
@@ -38,7 +37,6 @@ public class Network {
             Route r = new Route(cities.get(name1), cities.get(name2), color, length);
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
-
         }
 
     }
