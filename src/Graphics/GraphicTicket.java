@@ -27,7 +27,7 @@ public class GraphicTicket extends JPanel implements MouseListener {
 
     public void paintComponent(Graphics graphics) {
         Graphics2D graphics2D = (Graphics2D)graphics;
-        drawTicket(graphics2D,1237,389);
+        drawTicket(graphics2D,789,389);
         repaint();
     }
 
