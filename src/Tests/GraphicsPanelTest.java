@@ -1,4 +1,4 @@
-package Tests;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -10,9 +10,10 @@ import javax.imageio.ImageIO;
 public class GraphicsPanelTest extends JPanel implements MouseListener{
     private BufferedImage map;
     private ArrayList<BufferedImage> cards;
+    private Network n;
 
     private int x,y;
-    public GraphicsPanelTest() {
+    public GraphicsPanelTest() throws FileNotFoundException {
         x=0;
         y=0;
         cards = new ArrayList<>();
@@ -32,7 +33,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
 
         }
         addMouseListener(this);
-        repaint();
+        n = new Network();
     }
     public void paint(Graphics g) {
         Font myFont = new Font("Serif", Font.BOLD, 25);
@@ -60,7 +61,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
     public void mouseReleased(MouseEvent e){
         x=e.getX();
         y=e.getY();
-        repaint();
+        n.printRoute(x, y);
     }
 
 }

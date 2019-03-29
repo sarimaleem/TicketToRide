@@ -1,4 +1,4 @@
-package Tests;
+
 import java.util.*;
 import static java.lang.System.*;
 import java.io.*;
@@ -14,8 +14,15 @@ public class GraphicsTest extends JFrame{
 
 
         GraphicsTest help=new GraphicsTest();
+
+
+
+
+
+
+
     }
-    public GraphicsTest() {
+    public GraphicsTest() throws FileNotFoundException {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(WIDTH,HEIGHT);
         Color C= new Color(110, 160, 148);

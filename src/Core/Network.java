@@ -14,17 +14,16 @@ public class Network {
         cities = new HashMap<>();
         paths = new HashMap<>();
 
+        int i = 0;
+
 
 
         while(in.hasNextLine()) {
 
-            String s = in.nextLine();
-            String[] temp = s.split(" ");
-
-            String name1 = temp[0];
-            String name2 = temp[1];
-            int length = Integer.parseInt(temp[2]);
-            String color = temp[3];
+            String name1 = in.next();
+            String name2 = in.next();
+            int length = in.nextInt();
+            String color = in.next();
 
             if (cities.get(name1) == null) {
                 cities.put(name1, new City(name1));
@@ -37,7 +36,32 @@ public class Network {
             Route r = new Route(cities.get(name1), cities.get(name2), color, length);
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
+
+            if(i++ == 0) {
+
+                Path2D.Double test = new Path2D.Double();
+                test.moveTo(in.nextInt(), in.nextInt());
+
+                while (in.hasNextInt()) {
+                    test.lineTo(in.nextInt(), in.nextInt());
+                }
+
+                test.closePath();
+                paths.put(test, r);
+            }
         }
 
     }
+
+    public void printRoute(int x, int y) {
+        for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name);
+            }
+        }
+    }
+
+
+
+
 }

@@ -1,4 +1,8 @@
 Vancouver Calgary 3 gray
+125 175
+283 160
+285 173
+127 189
 Vancouver Seattle 1 gray
 Vancouver Seattle 1 gray
 Seattle Portland 1 gray
