@@ -11,12 +11,17 @@ public class GraphicTrainCard extends JPanel {
     private int x, y;
     private static final int height = 150, width = 250;
     private BufferedImage image;
+    private boolean vertical;
 
-    public GraphicTrainCard(TrainCard trainCard, int xv, int yv) {
+    public GraphicTrainCard(TrainCard trainCard, int xv, int yv, boolean v) {
         x=xv;
         y=yv;
-
-        String r="C:\\Users\\slhscs292\\Pictures\\colorcards\\"+trainCard.getColor()+"Card.png";
+        vertical=v;
+        String r;
+        if(vertical)
+            r="v"+trainCard.getColor()+"Card.png";
+        else
+            r=trainCard.getColor()+"Card.png";
         try {
             File f = new File(r);
             image = ImageIO.read(f);
@@ -26,11 +31,10 @@ public class GraphicTrainCard extends JPanel {
     }
 
     public void draw(Graphics2D graphics2D) {
-        //affineTransform.rotate(Math.toRadians(90),125,75);
-        graphics2D.translate(125,75);
-        graphics2D.rotate(Math.PI/2);
+        if(vertical)
+            graphics2D.drawImage(image, x, y, height,width , this);
+        else
         graphics2D.drawImage(image, x, y, width,height , this);
-       // graphics2D.rotate(.5);
     }
 
     public boolean contains(int x, int y) {

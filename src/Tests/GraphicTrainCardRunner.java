@@ -27,12 +27,12 @@ public class GraphicTrainCardRunner extends JPanel implements MouseListener {
     }
 
     public void drawGraphicTrainCard(Graphics2D graphics2D) {
-        GraphicTrainCard graphicsClass = new GraphicTrainCard(t, 1670, 0);
+        GraphicTrainCard graphicsClass = new GraphicTrainCard(t, 1670, 0,true);
         graphicsClass.draw(graphics2D);
     }
 
     public void mouseClicked(MouseEvent e) {
-        GraphicTrainCard sampleGraphicsClass = new GraphicTrainCard(t, 1670, 0);
+        GraphicTrainCard sampleGraphicsClass = new GraphicTrainCard(t, 1670, 0,false);
         System.out.println(e.getX() +" " + e.getY());
 
     }
