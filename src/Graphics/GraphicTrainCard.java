@@ -26,7 +26,11 @@ public class GraphicTrainCard extends JPanel {
     }
 
     public void draw(Graphics2D graphics2D) {
+        //affineTransform.rotate(Math.toRadians(90),125,75);
+        graphics2D.translate(125,75);
+        graphics2D.rotate(Math.PI/2);
         graphics2D.drawImage(image, x, y, width,height , this);
+       // graphics2D.rotate(.5);
     }
 
     public boolean contains(int x, int y) {
