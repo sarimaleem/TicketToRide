@@ -1,5 +1,6 @@
 # TicketToRide
-memes are great
+
+
 
 
 Sarim 
@@ -7,7 +8,7 @@ Sarim
 - [ ] Work on Player Class
 - [ ] Work on Network Class
 - [ ] Initialize Network and Routes
-- [ ] Experiment with Path 2D.double
+- [.] Experiment with Path 2D.double
 
 
 David Jobs
