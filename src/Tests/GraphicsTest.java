@@ -1,4 +1,4 @@
-package Tests;
+
 import java.util.*;
 import static java.lang.System.*;
 import java.io.*;
@@ -21,7 +21,7 @@ public class GraphicsTest extends JFrame{
         Color C= new Color(110, 160, 148);
         setBackground(C);
         setResizable(false);
-        add(new GraphicsPanelTest());
+        add(new Tests.GraphicsPanelTest());
         setVisible(true);
     }
 }
