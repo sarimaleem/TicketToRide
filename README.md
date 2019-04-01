@@ -7,16 +7,16 @@
 - [ ]  Click on a route and return it
 - [ ]  Draw contract card from the deck
 - [ ]  Draw and Highlight Train cards
+- [ ]  Fill in Routes
+- [ ]  Drawing train cards from the deck
 
 **Integration**
+- [ ] Player can only select one thing (route selection, drawing contract, drawing traincard
+- [ ] Next Players Turn
+- [ ] Start Game
+- [ ] End Game
 
-
-
-
-
-
-
-**Sarim **
+**Sarim**
 
 - [ ] Work on Player Class
 - [ ] Work on Contract Filled Algorithm
