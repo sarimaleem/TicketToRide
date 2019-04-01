@@ -1,33 +1,36 @@
 # TicketToRide
 
-
-
+OVERALL OBJECTIVES
 
 Sarim 
 
 - [ ] Work on Player Class
-- [ ] Work on Network Class
-- [ ] Initialize Network and Routes
+- [ ] Work on Contract Filled Algorithm
+- [ ] Work on Longest Path Algorithm
+- [X] Initialize Network and Routes
 - [x] Experiment with Path 2D.double
 
 
 David Jobs
 
-- [ ] buffered image on board
-- [ ] work on making all the routes clickable
+- [x] buffered image on board
+- [ ] work on finding all the coordinates for all the routes
 
 
 
 Keo Jobs
-- [ ] work on graphic ticket
-- [ ] work on listing all the Routes
-- [ ] work on listing all the cities
+- [x] work on graphic ticket
+- [ ] initializing the contract deck core class
+- [ ] work on drawing the contract from the deck
+- [x] work on listing all the Routes in a text file
+
 
 
 
 Sami Jobs
-- [ ] work on graphic train card
-- [ ] work on graphic player
+- [x] work on graphic train card
+- [ ] work on graphic player class
+- [ ] work on displaying the contracts for each player
 
 
 
