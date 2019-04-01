@@ -5,13 +5,20 @@ import java.awt.event.MouseListener;
 
 public class GraphicTicket extends JPanel implements MouseListener {
     private Ticket ticket;
+    private int x,y;
     public GraphicTicket() {
+        x=0;
+        y=0;
         ticket=null;
     }
-    public GraphicTicket(Ticket x) {
-        ticket=x;
+    public GraphicTicket(Ticket z) {
+        x=0;
+        y=0;
+        ticket=z;
     }
     public GraphicTicket(City a,City b, int val) {
+        x=0;
+        y=0;
         ticket=new Ticket(a,b,val);
     }
     public static void main(String[] args) {
@@ -27,7 +34,7 @@ public class GraphicTicket extends JPanel implements MouseListener {
 
     public void paintComponent(Graphics graphics) {
         Graphics2D graphics2D = (Graphics2D)graphics;
-        drawTicket(graphics2D,789,389);
+        drawTicket(graphics2D,x,y);
         repaint();
     }
 
@@ -44,8 +51,6 @@ public class GraphicTicket extends JPanel implements MouseListener {
         g.drawString(ticket.getValue()+"",x+90,y+90);
     }
     public void mouseClicked(MouseEvent e) {
-
-
     }
 
     public void mousePressed(MouseEvent e) {
@@ -53,7 +58,9 @@ public class GraphicTicket extends JPanel implements MouseListener {
     }
 
     public void mouseReleased(MouseEvent e) {
-
+        x=e.getX();
+        y=e.getY();
+        repaint();
     }
 
     public void mouseEntered(MouseEvent e) {
