@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 public class GraphicTrainCard extends JPanel {
     private TrainCard trainCard;
     private int x, y;
-    private static final int height = 150, width = 250;
+    private static final int height = 150, width = 250, vheight = 150, vwidth = 100;
     private BufferedImage image;
     private boolean vertical;
 
@@ -32,9 +32,9 @@ public class GraphicTrainCard extends JPanel {
 
     public void draw(Graphics2D graphics2D) {
         if(vertical)
-            graphics2D.drawImage(image, x, y, height,width , this);
+            graphics2D.drawImage(image, x, y, vwidth,vheight , this);
         else
-        graphics2D.drawImage(image, x, y, width,height , this);
+            graphics2D.drawImage(image, x, y, width,height , this);
     }
 
     public boolean contains(int x, int y) {
