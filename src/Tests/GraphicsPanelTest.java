@@ -11,7 +11,6 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
     private BufferedImage map;
     private ArrayList<BufferedImage> cards;
     private Network n;
-
     private int x,y;
     public GraphicsPanelTest() throws FileNotFoundException {
         x=0;
