@@ -1,24 +1,38 @@
 # TicketToRide
 
-OVERALL OBJECTIVES
+**OVERALL OBJECTIVES**
 
-Sarim 
+**Basic Functionality**
+- [ ]  Basic Player display data
+- [ ]  Click on a route and return it
+- [ ]  Draw contract card from the deck
+- [ ]  Draw and Highlight Train cards
+
+**Integration**
+
+
+
+
+
+
+
+**Sarim **
 
 - [ ] Work on Player Class
 - [ ] Work on Contract Filled Algorithm
 - [ ] Work on Longest Path Algorithm
-- [X] Initialize Network and Routes
+- [x] Initialize Network and Routes
 - [x] Experiment with Path 2D.double
 
 
-David Jobs
+**David Jobs**
 
 - [x] buffered image on board
 - [ ] work on finding all the coordinates for all the routes
 
 
 
-Keo Jobs
+**Keo Jobs**
 - [x] work on graphic ticket
 - [ ] initializing the contract deck core class
 - [ ] work on drawing the contract from the deck
@@ -27,7 +41,7 @@ Keo Jobs
 
 
 
-Sami Jobs
+**Sami Jobs**
 - [x] work on graphic train card
 - [ ] work on graphic player class
 - [ ] work on displaying the contracts for each player
