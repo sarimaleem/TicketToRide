@@ -1,8 +1,4 @@
 Vancouver Calgary 3 gray
-125 175
-283 160
-285 173
-127 189
 Vancouver Seattle 1 gray
 Vancouver Seattle 1 gray
 Seattle Portland 1 gray
@@ -89,9 +85,9 @@ Pittsburgh Washington 2 gray
 Pittsburgh Raleigh 2 gray
 Raleigh Washington 2 gray
 Raleigh Washington 2 gray
-Releigh Charleston 2 gray
-Releigh Atlanta 2 gray
-Releigh Atlanta 2 gray
+Raleigh Charleston 2 gray
+Raleigh Atlanta 2 gray
+Raleigh Atlanta 2 gray
 Atlanta Nashville 1 gray
 Nashville Pittsburgh 4 yellow
 Nashville Raleigh 3 black

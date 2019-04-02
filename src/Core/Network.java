@@ -9,14 +9,21 @@ import java.util.Scanner;
 public class Network {
     HashMap<String, City> cities;
     HashMap<Path2D.Double, Route> paths;
+    HashSet<Route> marked;
+
+
+
+
+
+
     public Network() throws FileNotFoundException {
         Scanner in = new Scanner(new File("Routes.txt"));
+
         cities = new HashMap<>();
         paths = new HashMap<>();
+        marked = new HashSet<>();
 
         int i = 0;
-
-
 
         while(in.hasNextLine()) {
 
@@ -36,22 +43,7 @@ public class Network {
             Route r = new Route(cities.get(name1), cities.get(name2), color, length);
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
-
-            if(i < 1) {
-
-                Path2D.Double test = new Path2D.Double();
-                test.moveTo(in.nextInt(), in.nextInt());
-
-                while (in.hasNextInt()) {
-                    test.lineTo(in.nextInt(), in.nextInt());
-                }
-
-                test.closePath();
-                paths.put(test, r);
-                i++;
-            }
         }
-
     }
 
     public void printRoute(int x, int y) {
@@ -62,7 +54,23 @@ public class Network {
         }
     }
 
+    public boolean ticketFinished(City start, City end, Player p) {
+        String trainColor = p.getTrainColor();
+        boolean complete = false;
+        if (start == end) complete = true;
 
-
-
+        for (Route r : start.getRoutes()) {
+            if(!r.isFull()) {
+                continue;
+            } else if(marked.contains(r)) {
+                continue;
+            } else if (!p.getTrainColor().equals(r.getOwner().getTrainColor())) {
+                continue;
+            } else {
+                marked.add(r);
+                complete = complete || ticketFinished(r.getOtherCity(start), end, p);
+            }
+        }
+        return complete;
+    }
 }

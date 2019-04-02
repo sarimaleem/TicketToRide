@@ -41,6 +41,15 @@ public class Route {
         return owner;
     }
 
+    public void setOwner(Player p) {
+        owner = p;
+        full = true;
+    }
+
+    public String toString() {
+        return a.name + " " + b.name;
+    }
+
 
 
 
