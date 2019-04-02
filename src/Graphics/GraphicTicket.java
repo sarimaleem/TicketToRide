@@ -16,7 +16,7 @@ public class GraphicTicket extends JPanel implements MouseListener {
         y=0;
         ticket=z;
     }
-    public GraphicTicket(City a,City b, int val) {
+    public GraphicTicket(String a,String b, int val) {
         x=0;
         y=0;
         ticket=new Ticket(a,b,val);
@@ -46,8 +46,8 @@ public class GraphicTicket extends JPanel implements MouseListener {
         g.drawRoundRect(x,y,225,150,10,10);
         Font t= new Font("Arial", Font.BOLD,30);
         g.setFont(t);
-        g.drawString(ticket.getA().getName()+"",x+5,y+30);
-        g.drawString(ticket.getB().getName()+"",x+5,y+145);
+        g.drawString(ticket.getA()+"",x+5,y+30);
+        g.drawString(ticket.getB()+"",x+5,y+145);
         g.drawString(ticket.getValue()+"",x+90,y+90);
     }
     public void mouseClicked(MouseEvent e) {
