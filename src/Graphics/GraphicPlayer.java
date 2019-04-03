@@ -45,9 +45,17 @@ public class GraphicPlayer {
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
-        graphics2D.setColor(Color.gray);
-        drawRectangle(graphics2D, 1450, 780, 150, 50);
-        graphics2D.drawString("TICKETS", 1470, 813);
+        drawRectangle(graphics2D, 120, 945, 150, 50);
+        graphics2D.drawString("TICKETS", 140, 980);
+        int a=440;
+        int c=458;
+        for(int i=0;i<9;i++){
+            drawRectangle(graphics2D, a, 810, 50, 30);
+            //graphics2D.drawString(""+player.getNumTrainCard("blue"), c, 835);
+            a += 115;
+            c += 115;
+        }
+
         GraphicTrainCard blue = new GraphicTrainCard(b, 415, 850,true);
         GraphicTrainCard green = new GraphicTrainCard(g, 530, 850,true);
         GraphicTrainCard black = new GraphicTrainCard(bl, 645, 850,true);
@@ -68,6 +76,7 @@ public class GraphicPlayer {
         yellow.draw(graphics2D);
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
+        graphics2D.setColor(Color.WHITE);
         graphics2D.fillRect(x, y , w, h);
         graphics2D.setColor(Color.black);
         graphics2D.setStroke(new BasicStroke(3));

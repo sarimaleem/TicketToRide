@@ -16,6 +16,7 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);
         window.setVisible(true);
+        window.setBackground(Color.GRAY);
         GraphicPlayerRunner board = new GraphicPlayerRunner();
         window.add(board);
         window.setExtendedState(JFrame.MAXIMIZED_BOTH);

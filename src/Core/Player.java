@@ -28,4 +28,13 @@ public class Player {
     public void setPoints(int points) {
         this.points = points;
     }
+
+    public int getNumTrainCard(String color) {
+        int cnt = 0;
+        for (int i = 0; i < trainCards.size(); i++) {
+        if(trainCards.get(i).getColor().equals(color))
+            cnt++;
+        }
+        return cnt;
+    }
 }

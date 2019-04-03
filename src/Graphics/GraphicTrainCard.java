@@ -38,10 +38,18 @@ public class GraphicTrainCard extends JPanel {
     }
 
     public boolean contains(int x, int y) {
-        if (x >= this.x && x <= this.x + width && y >= this.y && y <= this.y + height) {
-            return true;
+        if(vertical){
+            if (x >= this.x && x <= this.x + vwidth && y >= this.y && y <= this.y + vheight) {
+                return true;
+            }
+            return false;
         }
-        return false;
+        else {
+            if (x >= this.x && x <= this.x + width && y >= this.y && y <= this.y + height) {
+                return true;
+            }
+            return false;
+        }
     }
 
 
