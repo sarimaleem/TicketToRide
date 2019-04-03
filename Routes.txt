@@ -1,7 +1,23 @@
 Vancouver Calgary 3 gray
+125 175
+283 160
+285 173
+127 189
 Vancouver Seattle 1 gray
+103 200
+119 197
+120 236
+104 237
 Vancouver Seattle 1 gray
+86 203
+100 199
+102 236
+85 239
 Seattle Portland 1 gray
+93 269
+109 272
+89 309
+75 304
 Seattle Portland 1 gray
 Seattle Calgary 4 gray
 Seattle Helena 6 yellow

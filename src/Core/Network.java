@@ -43,7 +43,26 @@ public class Network {
             Route r = new Route(cities.get(name1), cities.get(name2), color, length);
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
+
+            if (i < 4) {
+                Path2D.Double test = new Path2D.Double();
+                test.moveTo(in.nextInt(), in.nextInt());
+
+                while (in.hasNextInt()) {
+                    test.lineTo(in.nextInt(), in.nextInt());
+                }
+
+                test.closePath();
+                paths.put(test, r);
+                i++;
+            }
+
         }
+
+
+
+
+
     }
 
     public void printRoute(int x, int y) {
