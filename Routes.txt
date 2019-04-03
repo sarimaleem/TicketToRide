@@ -14,10 +14,10 @@ Vancouver Seattle 1 gray
 102 236
 85 239
 Seattle Portland 1 gray
-78 261
-94 267
-74 303
-59 300
+93 269
+109 272
+89 309
+75 304
 Seattle Portland 1 gray
 Seattle Calgary 4 gray
 Seattle Helena 6 yellow
@@ -101,9 +101,9 @@ Pittsburgh Washington 2 gray
 Pittsburgh Raleigh 2 gray
 Raleigh Washington 2 gray
 Raleigh Washington 2 gray
-Releigh Charleston 2 gray
-Releigh Atlanta 2 gray
-Releigh Atlanta 2 gray
+Raleigh Charleston 2 gray
+Raleigh Atlanta 2 gray
+Raleigh Atlanta 2 gray
 Atlanta Nashville 1 gray
 Nashville Pittsburgh 4 yellow
 Nashville Raleigh 3 black
