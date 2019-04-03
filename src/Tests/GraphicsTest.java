@@ -13,8 +13,7 @@ public class GraphicsTest extends JFrame{
 
 
 
-        GraphicsTest help=new GraphicsTest();
-
+        GraphicsTest help =new GraphicsTest();
 
 
 

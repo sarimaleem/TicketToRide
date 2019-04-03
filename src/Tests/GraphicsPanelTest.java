@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -49,6 +48,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         g.drawString(x+"", 500, 500);
         g.drawString(y+"", 700, 500);
 
+        repaint();
     }
     public void mousePressed(MouseEvent e){
     }
@@ -61,7 +61,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
     public void mouseReleased(MouseEvent e){
         x=e.getX();
         y=e.getY();
-        n.printRoute(x, y);
+        System.out.println(x);
     }
 
 }
