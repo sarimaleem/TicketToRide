@@ -48,9 +48,13 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         }
         g.drawString(x+"", 500, 500);
         g.drawString(y+"", 700, 500);
-
+        repaint();
     }
     public void mousePressed(MouseEvent e){
+        x=e.getX();
+        y=e.getY();
+        System.out.println(x + " " + y);
+        n.printRoute(x, y);
     }
     public void mouseClicked(MouseEvent e){
     }
@@ -59,9 +63,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
     public void mouseExited(MouseEvent e){
     }
     public void mouseReleased(MouseEvent e){
-        x=e.getX();
-        y=e.getY();
-        n.printRoute(x, y);
+
     }
 
 }

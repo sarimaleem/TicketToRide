@@ -4,7 +4,15 @@ Vancouver Calgary 3 gray
 285 173
 127 189
 Vancouver Seattle 1 gray
+103 200
+119 197
+120 236
+104 237
 Vancouver Seattle 1 gray
+86 203
+100 199
+102 236
+85 239
 Seattle Portland 1 gray
 Seattle Portland 1 gray
 Seattle Calgary 4 gray
