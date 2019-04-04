@@ -16,6 +16,14 @@
 - [ ] Start Game
 - [ ] End Game
 
+
+
+
+
+
+
+**Individual Tasks**
+
 **Sarim**
 
 - [x] Work on Contract Filled Algorithm
