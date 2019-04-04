@@ -1,9 +1,6 @@
 
-import java.util.*;
-import static java.lang.System.*;
 import java.io.*;
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
 
 public class GraphicsTest extends JFrame{
@@ -11,14 +8,8 @@ public class GraphicsTest extends JFrame{
     private static final int HEIGHT = 1080;//830;
     public static void main(String[]args) throws IOException{
 
-
-
+        System.out.println("Hello");
         GraphicsTest help =new GraphicsTest();
-
-
-
-
-
 
     }
     public GraphicsTest() throws FileNotFoundException {
