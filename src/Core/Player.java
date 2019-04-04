@@ -15,6 +15,7 @@ public class Player {
         numTrains = 45;
         points = 0;
         this.trainColor = trainColor;
+        trainCards=new ArrayList<TrainCard>();
     }
 
     public String getTrainColor() {

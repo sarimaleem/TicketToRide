@@ -51,7 +51,7 @@ public class GraphicPlayer {
         int c=458;
         for(int i=0;i<9;i++){
             drawRectangle(graphics2D, a, 810, 50, 30);
-            //graphics2D.drawString(""+player.getNumTrainCard("blue"), c, 835);
+            graphics2D.drawString(""+player.getNumTrainCard("blue"), c, 835);
             a += 115;
             c += 115;
         }
@@ -82,12 +82,12 @@ public class GraphicPlayer {
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.drawRect(x, y ,w, h);
     }
-   // public boolean contains(int x, int y) {
-    //    if (x >= this.x && x <= this.x + width && y >= this.y && y <= this.y + height) {
-    //        return true;
-   //     }
-    //    return false;
-  //  }
+    public boolean contains(int x, int y) {
+        if (x >= 120 && x <= 270 && y >= 945 && y <= 995) {
+            return true;
+        }
+        return false;
+    }
 
 
 
