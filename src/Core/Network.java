@@ -37,7 +37,7 @@ public class Network {
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
 
-            if(i < 14) {
+            if(i < 100) {
 
                 Path2D.Double test = new Path2D.Double();
                 test.moveTo(in.nextInt(), in.nextInt());
@@ -53,7 +53,10 @@ public class Network {
         }
 
     }
-
+    public HashMap getPaths()
+    {
+        return paths;
+    }
     public void printRoute(int x, int y) {
         for (Path2D.Double p : paths.keySet()) {
             if (p.contains(x, y)) {

@@ -2,9 +2,11 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.awt.geom.Path2D;
 import java.io.*;
 import java.util.ArrayList;
 import java.awt.image.BufferedImage;
+import java.util.HashMap;
 import javax.imageio.ImageIO;
 
 public class GraphicsPanelTest extends JPanel implements MouseListener{
@@ -45,11 +47,34 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         {
             g.drawImage(cards.get(i), 200, getHeight()-200, 100, 200, this);
         }
-        g.drawString(x+"", 500, 500);
-        g.drawString(y+"", 700, 500);
-
+        paintRoutes(g, x , y);
         repaint();
 
+    }
+    public void paintRoutes(Graphics g, int x, int y)
+    {
+        HashMap<Path2D.Double, Route> paths = n.getPaths();
+        for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                if(paths.get(p).getColor().equals("gray"))
+                    g.setColor(Color.GRAY);
+                if(paths.get(p).getColor().equals("blue"))
+                    g.setColor(Color.BLUE);
+                if(paths.get(p).getColor().equals("black"))
+                    g.setColor(Color.BLACK);
+                if(paths.get(p).getColor().equals("white"))
+                    g.setColor(Color.WHITE);
+                if(paths.get(p).getColor().equals("red"))
+                    g.setColor(Color.RED);
+                if(paths.get(p).getColor().equals("yellow"))
+                    g.setColor(Color.YELLOW);
+                if(paths.get(p).getColor().equals("orange"))
+                    g.setColor(Color.ORANGE);
+                if(paths.get(p).getColor().equals("purple"))
+                    g.setColor(Color.PINK);
+                g.drawString(paths.get(p).getA().name + " " + paths.get(p).getB().name,500, 500);
+            }
+        }
     }
     public void mousePressed(MouseEvent e){
     }
@@ -64,6 +89,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         y=e.getY();
         System.out.println(x + " " + y);
         n.printRoute(x, y);
+        repaint();
     }
 
 }
