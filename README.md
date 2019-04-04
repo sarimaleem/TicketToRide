@@ -18,11 +18,10 @@
 
 **Sarim**
 
-- [ ] Work on Player Class
 - [x] Work on Contract Filled Algorithm
 - [ ] Work on Longest Path Algorithm
 - [x] Initialize Network and Routes
-- [x] Experiment with Path 2D.double
+- [x] Experiment with Path 2D.double so that a shape works
 
 
 **David Jobs**
@@ -43,7 +42,7 @@
 
 **Sami Jobs**
 - [x] work on graphic train card
-- [ ] work on graphic player class
+- [x] work on graphic player class
 - [ ] work on displaying the contracts for each player
 
 
