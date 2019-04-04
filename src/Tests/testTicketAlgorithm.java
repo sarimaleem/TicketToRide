@@ -37,20 +37,21 @@ public class testTicketAlgorithm {
             System.out.println(route);
         }
 
-        for (Route route : vancouver.getRoutes()) {
+        for (Route route : Denever.getRoutes()) {
             route.setOwner(p);
             System.out.println(route);
         }
 
+        for (Route route : Omaha.getRoutes()) {
+            route.setOwner(p);
+            System.out.println(route);
+        }
 
+        for (Route route : Pittsburgh.getRoutes()) {
+            route.setOwner(p);
+            System.out.println(route);
+        }
 
-
-
-
-
-
-
-
-        System.out.println(n.ticketFinished(vancouver,n.cities.get("Helena"), p));
+        System.out.println(n.ticketFinished(vancouver,Raleigh, p));
     }
 }
