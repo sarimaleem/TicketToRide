@@ -2,6 +2,7 @@ import java.awt.*;
 
 public class GraphicPlayer {
     private Player player;
+    private Boolean tclicked;
     //private int x, y;
     //private static final int height = 230, width = 400;
     TrainCard b = new TrainCard("blue");
@@ -11,9 +12,8 @@ public class GraphicPlayer {
     TrainCard p = new TrainCard("purple");
     TrainCard r = new TrainCard("red");
     TrainCard w = new TrainCard("white");
-    TrainCard wi = new TrainCard("wild");
     TrainCard ye = new TrainCard("yellow");
-
+    TrainCard wi = new TrainCard("wild");
 
     public GraphicPlayer(Player p) {
         player = p;
@@ -55,7 +55,6 @@ public class GraphicPlayer {
             a += 115;
             c += 115;
         }
-
         GraphicTrainCard blue = new GraphicTrainCard(b, 415, 850,true);
         GraphicTrainCard green = new GraphicTrainCard(g, 530, 850,true);
         GraphicTrainCard black = new GraphicTrainCard(bl, 645, 850,true);
@@ -63,8 +62,8 @@ public class GraphicPlayer {
         GraphicTrainCard purple = new GraphicTrainCard(p, 875, 850,true);
         GraphicTrainCard red = new GraphicTrainCard(r, 990, 850,true);
         GraphicTrainCard white = new GraphicTrainCard(w, 1105, 850,true);
-        GraphicTrainCard wild = new GraphicTrainCard(wi, 1220, 850,true);
-        GraphicTrainCard yellow = new GraphicTrainCard(ye, 1335, 850,true);
+        GraphicTrainCard yellow = new GraphicTrainCard(ye, 1220, 850,true);
+        GraphicTrainCard wild = new GraphicTrainCard(wi, 1335, 850,true);
         blue.draw(graphics2D);
         green.draw(graphics2D);
         black.draw(graphics2D);
@@ -72,8 +71,10 @@ public class GraphicPlayer {
         purple.draw(graphics2D);
         red.draw(graphics2D);
         white.draw(graphics2D);
-        wild.draw(graphics2D);
         yellow.draw(graphics2D);
+        wild.draw(graphics2D);
+       // if(tclicked)
+       //     drawRectangle(graphics2D,5,5,500,500);
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
         graphics2D.setColor(Color.WHITE);
@@ -81,6 +82,9 @@ public class GraphicPlayer {
         graphics2D.setColor(Color.black);
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.drawRect(x, y ,w, h);
+    }
+    public void ticketClicked(){
+        tclicked=true;
     }
     public boolean contains(int x, int y) {
         if (x >= 120 && x <= 270 && y >= 945 && y <= 995) {
