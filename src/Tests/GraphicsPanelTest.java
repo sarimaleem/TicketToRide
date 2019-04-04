@@ -72,7 +72,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
                     g.setColor(Color.ORANGE);
                 if(paths.get(p).getColor().equals("purple"))
                     g.setColor(Color.PINK);
-                g.drawString(paths.get(p).getA().name + " " + paths.get(p).getB().name,500, 500);
+                g.drawString(paths.get(p).getA().name + " - " + paths.get(p).getB().name,500, 500);
             }
         }
     }
