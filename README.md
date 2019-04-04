@@ -19,7 +19,7 @@
 **Sarim**
 
 - [ ] Work on Player Class
-- [ ] Work on Contract Filled Algorithm
+- [x] Work on Contract Filled Algorithm
 - [ ] Work on Longest Path Algorithm
 - [x] Initialize Network and Routes
 - [x] Experiment with Path 2D.double
