@@ -4,18 +4,128 @@ Vancouver Calgary 3 gray
 285 173
 127 189
 Vancouver Seattle 1 gray
+104 200
+121 201
+122 242
+104 242
 Vancouver Seattle 1 gray
+84 201
+103 201
+103 240
+85 241
 Seattle Portland 1 gray
+77 261
+94 268
+74 306
+58 300
 Seattle Portland 1 gray
+94 265
+74 304
+91 309
+109 272
 Seattle Calgary 4 gray
+123 248
+173 246
+226 240
+270 211
+291 176
+305 183
+282 220
+237 251
+177 260
+123 259
 Seattle Helena 6 yellow
+121 266
+434 325
+430 338
+119 279
 Calgary Winnipeg 6 white
+318 156
+362 138
+418 129
+471 127
+528 129
+583 141
+629 159
+624 172
+579 155
+529 144
+475 139
+420 143
+371 150
+322 167
 Calgary Helena 4 gray
+324 177
+456 308
+443 317
+310 186
 Portland SanFrancisco 5 purple
+47 327
+26 366
+16 414
+14 459
+18 508
+33 550
+47 545
+33 505
+32 462
+31 417
+44 369
+63 333
 Portland SanFrancisco 5 green
+66 332
+46 368
+36 413
+34 461
+38 510
+53 551
+64 544
+50 507
+49 463
+49 416
+61 376
+82 338
 Portland SaltLakeCity 6 blue
+90 313
+143 323
+192 339
+240 364
+282 395
+318 428
+345 466
+329 468
+307 434
+273 405
+229 373
+189 352
+137 337
+87 330
 SanFrancisco SaltLakeCity 5 white
+68 541
+116 530
+170 514
+217 502
+270 487
+317 473
+323 488
+275 500
+225 514
+174 528
+124 541
+76 556
 SanFrancisco SaltLakeCity 5 orange
+78 557
+125 544
+174 531
+225 518
+276 503
+322 490
+328 499
+278 514
+230 528
+179 542
+130 556
+81 571
 SanFrancisco LosAngeles 3 purple
 SanFrancisco LosAngeles 3 yellow
 SaltLakeCity LasVegas 3 orange
