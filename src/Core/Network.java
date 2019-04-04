@@ -57,7 +57,7 @@ public class Network {
     public void printRoute(int x, int y) {
         for (Path2D.Double p : paths.keySet()) {
             if (p.contains(x, y)) {
-                System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name);
+                System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name + " " + paths.get(p).getColor());
             }
         }
     }

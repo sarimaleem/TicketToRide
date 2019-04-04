@@ -60,19 +60,6 @@ Calgary Helena 4 gray
 443 317
 310 186
 Portland SanFrancisco 5 purple
-47 327
-26 366
-16 414
-14 459
-18 508
-33 550
-47 545
-33 505
-32 462
-31 417
-44 369
-63 333
-Portland SanFrancisco 5 green
 66 332
 46 368
 36 413
@@ -85,6 +72,19 @@ Portland SanFrancisco 5 green
 49 416
 61 376
 82 338
+Portland SanFrancisco 5 green
+47 327
+26 366
+16 414
+14 459
+18 508
+33 550
+47 545
+33 505
+32 462
+31 417
+44 369
+63 333
 Portland SaltLakeCity 6 blue
 90 313
 143 323
@@ -101,19 +101,6 @@ Portland SaltLakeCity 6 blue
 137 337
 87 330
 SanFrancisco SaltLakeCity 5 white
-68 541
-116 530
-170 514
-217 502
-270 487
-317 473
-323 488
-275 500
-225 514
-174 528
-124 541
-76 556
-SanFrancisco SaltLakeCity 5 orange
 78 557
 125 544
 174 531
@@ -126,6 +113,19 @@ SanFrancisco SaltLakeCity 5 orange
 179 542
 130 556
 81 571
+SanFrancisco SaltLakeCity 5 orange
+68 541
+116 530
+170 514
+217 502
+270 487
+317 473
+323 488
+275 500
+225 514
+174 528
+124 541
+76 556
 SanFrancisco LosAngeles 3 purple
 SanFrancisco LosAngeles 3 yellow
 SaltLakeCity LasVegas 3 orange
