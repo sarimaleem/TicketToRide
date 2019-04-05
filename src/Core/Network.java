@@ -1,9 +1,7 @@
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
 
 public class Network {
@@ -37,7 +35,7 @@ public class Network {
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
 
-            if(i < 14) {
+            if(i < 100) {
 
                 Path2D.Double test = new Path2D.Double();
                 test.moveTo(in.nextInt(), in.nextInt());
@@ -53,11 +51,14 @@ public class Network {
         }
 
     }
-
+    public HashMap getPaths()
+    {
+        return paths;
+    }
     public void printRoute(int x, int y) {
         for (Path2D.Double p : paths.keySet()) {
             if (p.contains(x, y)) {
-                System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name);
+                System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name + " " + paths.get(p).getColor());
             }
         }
     }
