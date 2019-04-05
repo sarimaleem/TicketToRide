@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -60,6 +61,13 @@ public class Network {
             if (p.contains(x, y)) {
                 System.out.println(paths.get(p).getA().name + " " + paths.get(p).getB().name + " " + paths.get(p).getColor());
             }
+        }
+    }
+
+
+    public void drawRoutes(Graphics2D graphics2D) {
+        for (Path2D.Double p : paths.keySet()) {
+            graphics2D.draw(p);
         }
     }
 

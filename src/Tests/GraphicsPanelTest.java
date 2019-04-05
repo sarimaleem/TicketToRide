@@ -48,6 +48,10 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
             g.drawImage(cards.get(i), 200, getHeight()-200, 100, 200, this);
         }
         paintRoutes(g, x , y);
+        Graphics2D graphics2D = (Graphics2D)g;
+        graphics2D.setStroke(new BasicStroke(3));
+        graphics2D.setColor(Color.BLACK);
+        n.drawRoutes(graphics2D);
         repaint();
 
     }
