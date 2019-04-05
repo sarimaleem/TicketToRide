@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.geom.Path2D;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 
 public class Path2DTest extends JPanel implements MouseListener {
 
