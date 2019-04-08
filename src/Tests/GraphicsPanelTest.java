@@ -37,6 +37,10 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         n = new Network();
     }
     public void paint(Graphics g) {
+        paintBoard(g);
+
+    }
+    public void paintBoard(Graphics g) {
         Font myFont = new Font("Serif", Font.BOLD, 25);
         g.setFont(myFont);
         g.drawImage(map, 0, 100, getWidth() - 500, getHeight() - 300, this);
@@ -55,8 +59,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         repaint();
 
     }
-    public void paintRoutes(Graphics g, int x, int y)
-    {
+    public void paintRoutes(Graphics g, int x, int y) {
         HashMap<Path2D.Double, Route> paths = n.getPaths();
         for (Path2D.Double p : paths.keySet()) {
             if (p.contains(x, y)) {
