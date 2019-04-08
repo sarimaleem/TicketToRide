@@ -4,7 +4,7 @@
 
 **Basic Functionality**
 - [ ]  Basic Player display data
-- [ ]  Click on a route and return it
+- [x]  Click on a route and return it
 - [ ]  Draw contract card from the deck
 - [ ]  Draw and Highlight Train cards
 - [ ]  Fill in Routes
