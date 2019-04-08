@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
 
 public class GraphicTicket extends JPanel implements MouseListener {
     private Ticket ticket;
@@ -21,7 +22,7 @@ public class GraphicTicket extends JPanel implements MouseListener {
         y=0;
         ticket=new Ticket(a,b,val);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         JFrame window = new JFrame("GraphicTicket"); // Makes sure that you title this correctly
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);

@@ -1,9 +1,15 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
-public class DrawTicket {
+public class DrawTicket{
     private TicketDeck deck;
+    private int x;
+    private int y;
     public DrawTicket() throws IOException {
         deck=new TicketDeck();
         Scanner cards = new Scanner(new File("Tickets.txt"));
