@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class GraphicPlayer {
     private Player player;
-    private Boolean tclicked;
+    private boolean tclicked;
     //private int x, y;
     //private static final int height = 230, width = 400;
     TrainCard b = new TrainCard("blue");
@@ -17,9 +17,22 @@ public class GraphicPlayer {
 
     public GraphicPlayer(Player p) {
         player = p;
+        tclicked = false;
     }
 
     public void draw(Graphics2D graphics2D) {
+        drawPlayer(graphics2D);
+        drawTicketDisplay(graphics2D);
+
+    }
+    public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
+        graphics2D.setColor(Color.WHITE);
+        graphics2D.fillRect(x, y , w, h);
+        graphics2D.setColor(Color.black);
+        graphics2D.setStroke(new BasicStroke(3));
+        graphics2D.drawRect(x, y ,w, h);
+    }
+    public void drawPlayer(Graphics2D graphics2D){
         String color = player.getTrainColor();
         switch (color) {
             case "green":
@@ -73,15 +86,10 @@ public class GraphicPlayer {
         white.draw(graphics2D);
         yellow.draw(graphics2D);
         wild.draw(graphics2D);
-       // if(tclicked)
-       //     drawRectangle(graphics2D,5,5,500,500);
     }
-    public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
-        graphics2D.setColor(Color.WHITE);
-        graphics2D.fillRect(x, y , w, h);
-        graphics2D.setColor(Color.black);
-        graphics2D.setStroke(new BasicStroke(3));
-        graphics2D.drawRect(x, y ,w, h);
+    public void drawTicketDisplay(Graphics2D graphics2D){
+        if(tclicked)
+        drawRectangle(graphics2D,400,100,1000,600);
     }
     public void ticketClicked(){
         tclicked=true;

@@ -31,10 +31,7 @@ public class GraphicTrainCard extends JPanel {
     }
 
     public void draw(Graphics2D graphics2D) {
-        if(vertical)
-            graphics2D.drawImage(image, x, y, vwidth,vheight , this);
-        else
-            graphics2D.drawImage(image, x, y, width,height , this);
+        drawTrainCard(graphics2D);
     }
 
     public boolean contains(int x, int y) {
@@ -50,6 +47,12 @@ public class GraphicTrainCard extends JPanel {
             }
             return false;
         }
+    }
+    public void drawTrainCard(Graphics2D graphics2D){
+        if(vertical)
+            graphics2D.drawImage(image, x, y, vwidth,vheight , this);
+        else
+            graphics2D.drawImage(image, x, y, width,height , this);
     }
 
 

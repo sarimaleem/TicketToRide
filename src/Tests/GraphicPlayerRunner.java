@@ -30,13 +30,12 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
     }
 
     public void drawGraphicPlayer(Graphics2D graphics2D) {
-        GraphicPlayer graphicsClass = new GraphicPlayer(player);
-        graphicsClass.draw(graphics2D);
+        GraphicPlayer graphicPlayer = new GraphicPlayer(player);
+        graphicPlayer.draw(graphics2D);
     }
 
     public void mouseClicked(MouseEvent e) {
-        GraphicPlayer graphicsClass = new GraphicPlayer(player);
-        System.out.println(e.getX() +" " + e.getY());
+
 
     }
 
@@ -45,7 +44,11 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
     }
 
     public void mouseReleased(MouseEvent e) {
-
+        GraphicPlayer graphicPlayer = new GraphicPlayer(player);
+        if(graphicPlayer.contains(e.getX(),e.getY())) {
+            repaint();
+            System.out.println("hi");
+        }
     }
 
     public void mouseEntered(MouseEvent e) {
