@@ -35,7 +35,7 @@
 **David Jobs**
 
 - [x] buffered image on board
-- [ ] work on finding all the coordinates for all the routes
+- [x] work on finding all the coordinates for all the routes
 
 
 
