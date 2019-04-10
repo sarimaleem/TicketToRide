@@ -22,7 +22,10 @@ public class GraphicPlayer {
 
     public void draw(Graphics2D graphics2D) {
         drawPlayer(graphics2D);
-        drawTicketDisplay(graphics2D);
+        System.out.println(tclicked);
+
+        //if(tclicked==true)
+       // drawTicketDisplay(graphics2D);
 
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
@@ -93,9 +96,11 @@ public class GraphicPlayer {
     }
     public void ticketClicked(){
         tclicked=true;
+        System.out.println(tclicked);
     }
     public boolean contains(int x, int y) {
         if (x >= 120 && x <= 270 && y >= 945 && y <= 995) {
+            //System.out.println("brr");
             return true;
         }
         return false;

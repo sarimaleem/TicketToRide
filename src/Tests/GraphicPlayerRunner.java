@@ -7,12 +7,13 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
 
 
     Player player = new Player("yellow");
+    private static JFrame window;
     //TrainCard b = new TrainCard("blue");
     //TrainCard g = new TrainCard("green");
 
 
     public static void main(String[] args) {
-        JFrame window = new JFrame("GraphicPlayerRunner"); // Makes sure that you title this correctly
+        window = new JFrame("GraphicPlayerRunner"); // Makes sure that you title this correctly
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setSize(1920, 1080);
         window.setVisible(true);
@@ -35,7 +36,12 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
     }
 
     public void mouseClicked(MouseEvent e) {
-
+        GraphicPlayer graphicPlayer = new GraphicPlayer(player);
+        if(graphicPlayer.contains(e.getX(),e.getY())) {
+            graphicPlayer.ticketClicked();
+            window.repaint();
+            System.out.println("hi");
+        }
 
     }
 
@@ -44,11 +50,7 @@ public class GraphicPlayerRunner extends JPanel implements MouseListener {
     }
 
     public void mouseReleased(MouseEvent e) {
-        GraphicPlayer graphicPlayer = new GraphicPlayer(player);
-        if(graphicPlayer.contains(e.getX(),e.getY())) {
-            repaint();
-            System.out.println("hi");
-        }
+
     }
 
     public void mouseEntered(MouseEvent e) {
