@@ -41,12 +41,26 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         Font t= new Font("Arial", Font.BOLD,30);
         g2d.setFont(t);
         g2d.setStroke(new BasicStroke(3));
-        g2d.setColor(Color.GRAY);
-        g2d.fillRect(450,200,1000,400);
+        g2d.setColor(Color.LIGHT_GRAY);
+        g2d.fillRect(0,0,2000,1100);
         drawTickets(g2d);
+        g2d.setColor(new Color(240,234,214));
+        g2d.fillRect(1700,900,200,100);
+        if(fin){
+            g2d.fillRect(1250,500,200,100);
+        }
         g2d.setColor(Color.BLACK);
-        g2d.drawRect(1700,800,200,200);
-        g2d.drawRect(1250,500,200,100);
+        g2d.drawRect(1700,900,200,100);
+        if(fin){
+            g2d.drawRect(1250,500,200,100);
+            g2d.drawRect(450,200,1000,400);
+        }
+        if(fin){
+            g2d.drawString("Add",1260,540);
+            g2d.drawString("Remaining",1260,580);
+        }
+        g2d.drawString("Draw",1710,940);
+        g2d.drawString("Contracts",1710,980);
     }
     public void reset(){
         while(tickets.size()>0){
@@ -77,6 +91,10 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         if(tickets.size()==1){
             fin=false;
         }
+        if(fin){
+            g.setColor(Color.GRAY);
+            g.fillRect(450,200,1000,400);
+        }
         if(tickets.size()>0&&fin) {
             GraphicTicket f=new GraphicTicket(tickets.get(0));
             f.drawTicket(g,525,300);
@@ -93,28 +111,28 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         x=e.getX();
         y=e.getY();
-        if(x>=1700&&x<=1900&&y>=800&&y<=1000&&!fin){
-            System.out.println("Test1");
+        if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!fin){
+            //System.out.println("Test1");
             reset();
             repaint();
         }
         if(x>=525&&x<=750&&y>=300&&y<=450&&tickets.size()>1&&fin){
-            System.out.println("Test2");
+            //System.out.println("Test2");
             str="1";
             repaint();
         }
         if(x>=825&&x<=1050&&y>=300&&y<=450&&tickets.size()>1&&fin){
-            System.out.println("Test3");
+            //System.out.println("Test3");
             str="2";
             repaint();
         }
         if(x>=1125&&x<=1350&&y>=300&&y<=450&&tickets.size()==3&&fin){
-            System.out.println("Test4");
+            //System.out.println("Test4");
             str="3";
             repaint();
         }
         if(x>=1250&&x<=1450&&y>=500&&y<=600&&tickets.size()>1&&fin){
-            System.out.println("Test5");
+            //System.out.println("Test5");
             str="null";
             repaint();
         }
