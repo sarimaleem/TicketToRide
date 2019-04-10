@@ -329,10 +329,10 @@ Winnipeg Duluth 4 black
 793 316
 642 196
 Duluth SaultSte.Marie 3 gray
-834 291
-977 240
-983 255
-841 305
+834 296
+977 245
+983 260
+841 310
 Duluth Toronto 6 purple
 822 310
 1138 267
@@ -443,10 +443,10 @@ SaultSte.Marie Montreal 5 black
 1055 211
 1020 231
 SaultSte.Marie Toronto 2 gray
-1023 231
-1127 246
-1126 264
-1020 245
+1023 236
+1127 251
+1126 270
+1020 250
 Chicago Toronto 4 white
 988 384
 1027 351
@@ -553,14 +553,14 @@ NewOrleans Miami 6 red
 1073 725
 1026 748
 Montreal Toronto 3 gray
-1273 169
-1231 192
-1188 214
-1163 253
-1145 246
-1173 206
-1220 173
-1268 159
+1273 174
+1231 197
+1188 219
+1163 258
+1145 251
+1173 211
+1220 178
+1268 164
 Montreal NewYork 3 blue
 1270 180
 1290 179
@@ -601,10 +601,10 @@ Pittsburgh Washington 2 gray
 1302 439
 1207 399
 Pittsburgh Raleigh 2 gray
-1213 402
-1234 481
-1217 488
-1191 404
+1193 410
+1209 407
+1232 493
+1215 493
 Raleigh Washington 2 gray
 1241 501
 1303 438
