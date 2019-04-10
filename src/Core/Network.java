@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -19,10 +20,13 @@ public class Network {
 
         while(in.hasNextLine()) {
 
-            String name1 = in.next();
-            String name2 = in.next();
-            int length = in.nextInt();
-            String color = in.next();
+            String[] temp = in.nextLine().split("-");
+
+            String name1 = temp[0];
+            String name2 = temp[1];
+            int length = Integer.parseInt(temp[2]);
+            String color = temp[3];
+
 
             if (cities.get(name1) == null) {
                 cities.put(name1, new City(name1));
@@ -49,6 +53,8 @@ public class Network {
                 paths.put(test, r);
                 i++;
             }
+            if(i<100)
+                in.nextLine();
         }
 
     }
