@@ -30,6 +30,7 @@
 - [ ] Work on Longest Path Algorithm
 - [x] Initialize Network and Routes
 - [x] Experiment with Path 2D.double so that a shape works
+- [ ] Integrate the classes
 
 
 **David Jobs**
