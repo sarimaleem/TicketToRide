@@ -47,7 +47,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         g.setColor(new Color(100, 50, 50));
         g.setFont(new Font("serif", Font.BOLD, 60));
         g.drawString("Ticket To Ride", 800, 70);
-        paintRoutes(g, x , y);
+        paintRoute(g, x , y);
         Graphics2D graphics2D = (Graphics2D)g;
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.setColor(Color.BLACK);
@@ -55,7 +55,7 @@ public class GraphicsPanelTest extends JPanel implements MouseListener{
         repaint();
 
     }
-    public void paintRoutes(Graphics g, int x, int y) {
+    public void paintRoute(Graphics g, int x, int y) {
         HashMap<Path2D.Double, Route> paths = n.getPaths();
         for (Path2D.Double p : paths.keySet()) {
             if (p.contains(x, y)) {
