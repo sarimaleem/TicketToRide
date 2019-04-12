@@ -3,9 +3,9 @@
 **OVERALL OBJECTIVES**
 
 **Basic Functionality**
-- [ ]  Basic Player display data
+- [ ]  Basic Player display data, including contracts
 - [x]  Click on a route and return it
-- [ ]  Draw contract card from the deck
+- [x]  Draw contract card from the deck
 - [ ]  Draw and Highlight Train cards
 - [ ]  Fill in Routes
 - [ ]  Drawing train cards from the deck
@@ -41,8 +41,8 @@
 
 **Keo Jobs**
 - [x] work on graphic ticket
-- [ ] initializing the contract deck core class
-- [ ] work on drawing the contract from the deck
+- [x] initializing the contract deck core class
+- [x] work on drawing the contract from the deck
 - [x] work on listing all the Routes in a text file
 
 
