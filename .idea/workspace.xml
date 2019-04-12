@@ -137,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="59" />
     <option name="y" value="19" />
     <option name="width" value="1609" />
@@ -175,7 +175,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555092162918" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555092490481" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
   </component>
   <component name="RecentsManager">
@@ -195,9 +195,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GraphicPlayerRunner">
+  <component name="RunManager" selected="Application.GraphicTicket">
     <configuration name="GraphicPlayerRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GraphicPlayerRunner" />
+      <module name="src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphicTicket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GraphicTicket" />
       <module name="src" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -219,6 +226,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphicTicket" />
         <item itemvalue="Application.GraphicPlayerRunner" />
         <item itemvalue="Application.GraphicTrainCardRunner" />
         <item itemvalue="Application.SampleTestClass" />
