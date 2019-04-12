@@ -1,6 +1,7 @@
 import java.awt.*;
+import java.io.IOException;
 
-public class GraphicPlayer {
+public class GraphicPlayer{
     private Player player;
     private boolean tclicked;
     //private int x, y;
@@ -14,15 +15,18 @@ public class GraphicPlayer {
     TrainCard w = new TrainCard("white");
     TrainCard ye = new TrainCard("yellow");
     TrainCard wi = new TrainCard("wild");
+    GraphicDrawTicket tick=new GraphicDrawTicket();
 
-    public GraphicPlayer(Player p) {
+    public GraphicPlayer(Player p) throws IOException {
         player = p;
         tclicked = false;
     }
 
     public void draw(Graphics2D graphics2D) {
         drawPlayer(graphics2D);
+        tick.paint(graphics2D);
         System.out.println(tclicked);
+
 
         //if(tclicked==true)
        // drawTicketDisplay(graphics2D);
