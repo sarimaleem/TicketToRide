@@ -3,7 +3,7 @@
 **OVERALL OBJECTIVES**
 
 **Basic Functionality**
-- [ ]  Basic Player display data, including contracts
+- [x]  Basic Player display data, including contracts
 - [x]  Click on a route and return it
 - [x]  Draw contract card from the deck
 - [ ]  Draw and Highlight Train cards
@@ -31,6 +31,7 @@
 - [x] Initialize Network and Routes
 - [x] Experiment with Path 2D.double so that a shape works
 - [ ] Integrate the classes
+- [x] work on displaying the contracts for each player
 
 
 **David Jobs**
@@ -52,7 +53,7 @@
 **Sami Jobs**
 - [x] work on graphic train card
 - [x] work on graphic player class
-- [ ] work on displaying the contracts for each player
+
 
 
 
