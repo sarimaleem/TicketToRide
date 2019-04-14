@@ -4,7 +4,6 @@ public class Ticket {
     private String b;
     private boolean finished;
 
-
     public Ticket(String a, String b, int value) {
         this.a = a;
         this.b = b;
@@ -12,7 +11,6 @@ public class Ticket {
         this.finished = false;
     }
 
-    
     public String getA(){
         return a;
     }

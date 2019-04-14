@@ -1,56 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cf464aa-06b8-431d-9c55-1cf201f92d3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tickets.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/greenCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orangeCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/src/META-INF/src.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/purpleCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/redCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Core/TicketDeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicPlayerRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicTrainCardRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vblackCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vblueCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vgreenCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vorangeCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vpurpleCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vredCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vwhiteCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vwildCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vyellowCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whiteCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wildCard.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yellowCard.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="57363a03-367c-4567-824f-6a5e35d203a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/src/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/DrawTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/DrawTicket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/GraphicDrawTicket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/GraphicDrawTicketv2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/GraphicTicket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/Player.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/Route.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/Ticket.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/TicketDeck.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/TicketTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/TrainCard.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/DrawTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/DrawTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/TicketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/City.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsPanelTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Network.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Path2DTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Route.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/SampleCoreClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/SampleGraphicsClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/SampleTestClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Ticket.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/TrainCard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/coordinatetest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/networkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleGraphicsClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/SampleGraphicsClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleTestClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/SampleTestClass.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/SampleTestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tests/SampleTestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,11 +72,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#405#406#0" expanded="true" />
+                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#479#480#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+                <element signature="e#548#549#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1589">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -126,24 +131,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/networkTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/Path2DTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-152">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/SampleTestClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="315">
@@ -152,23 +139,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,9 +147,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/Core/Player.java" />
+        <option value="$PROJECT_DIR$/src/Core/Ticket.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" />
       </list>
     </option>
   </component>
@@ -199,24 +170,6 @@
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
@@ -248,10 +201,6 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555267507023" />
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -263,20 +212,6 @@
         </RuleState>
       </list>
     </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="GraphicsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GraphicsTest" />
-      <module name="src" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.GraphicsTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -422,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/src/City.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -461,10 +389,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#405#406#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1589">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -28,7 +28,6 @@ public class SampleGraphicsClass {
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.drawRect(x, y , width, height);
     }
-
     public boolean contains(int x, int y) {
         if (x >= this.x && x <= this.x + width && y >= this.y && y <= this.y + height) {
             return true;
