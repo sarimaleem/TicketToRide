@@ -15,7 +15,6 @@ public class GraphicPlayer{
     TrainCard w = new TrainCard("white");
     TrainCard ye = new TrainCard("yellow");
     TrainCard wi = new TrainCard("wild");
-    GraphicDrawTicket tick=new GraphicDrawTicket();
 
     public GraphicPlayer(Player p) throws IOException {
         player = p;
@@ -24,9 +23,6 @@ public class GraphicPlayer{
 
     public void draw(Graphics2D graphics2D) {
         drawPlayer(graphics2D);
-        tick.paint(graphics2D);
-        System.out.println(tclicked);
-
 
         //if(tclicked==true)
        // drawTicketDisplay(graphics2D);

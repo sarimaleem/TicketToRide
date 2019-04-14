@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
+
     private TicketDeck deck;
     private int x;
     private int y;
@@ -112,31 +113,34 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         x=e.getX();
         y=e.getY();
         if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!fin){
-            //System.out.println("Test1");
             reset();
             repaint();
         }
         if(x>=525&&x<=750&&y>=300&&y<=450&&tickets.size()>1&&fin){
-            //System.out.println("Test2");
             str="1";
             repaint();
         }
         if(x>=825&&x<=1050&&y>=300&&y<=450&&tickets.size()>1&&fin){
-            //System.out.println("Test3");
             str="2";
             repaint();
         }
         if(x>=1125&&x<=1350&&y>=300&&y<=450&&tickets.size()==3&&fin){
-            //System.out.println("Test4");
+
             str="3";
             repaint();
         }
         if(x>=1250&&x<=1450&&y>=500&&y<=600&&tickets.size()>1&&fin){
-            //System.out.println("Test5");
+
             str="null";
             repaint();
         }
     }
+
+
+
+
+
+
     public void mousePressed(MouseEvent e) {
     }
     public void mouseClicked(MouseEvent e) {

@@ -40,10 +40,10 @@ public class Network {
             if(i < 100) {
 
                 Path2D.Double test = new Path2D.Double();
-                test.moveTo(in.nextInt(), in.nextInt());
+                test.moveTo(in.nextInt(), in.nextInt()-100);
 
                 while (in.hasNextInt()) {
-                    test.lineTo(in.nextInt(), in.nextInt());
+                    test.lineTo(in.nextInt(), in.nextInt()-100);
                 }
 
                 test.closePath();
@@ -55,6 +55,7 @@ public class Network {
         }
 
     }
+
     public HashMap getPaths()
     {
         return paths;

@@ -48,6 +48,7 @@ public class GraphicTrainCard extends JPanel {
             return false;
         }
     }
+
     public void drawTrainCard(Graphics2D graphics2D){
         if(vertical)
             graphics2D.drawImage(image, x, y, vwidth,vheight , this);
