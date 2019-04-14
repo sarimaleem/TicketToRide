@@ -14,7 +14,6 @@ public class SampleGraphicsClass {
 
     public void draw(Graphics2D graphics2D) {
         String color = sampleCoreClass.getColor();
-
         switch (color) {
             case "green":
                 graphics2D.setColor(Color.GREEN);

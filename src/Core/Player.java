@@ -2,8 +2,6 @@ import java.util.ArrayList;
 
 public class Player {
 
-
-    //TODO finish player class, including taking traincards
     private int numTrains;
     private int points;
     private String trainColor;
@@ -15,6 +13,7 @@ public class Player {
         numTrains = 45;
         points = 0;
         this.trainColor = trainColor;
+        trainCards = new ArrayList<TrainCard>();
     }
 
     public String getTrainColor() {
@@ -36,6 +35,14 @@ public class Player {
     public void addTicket(Ticket ticket) {
         tickets.add(ticket);
     }
-}
 
-//HI THIS IS A TEST COMMENT
+    public int getNumTrainCard (String color){
+        int cnt = 0;
+        for (int i = 0; i < trainCards.size(); i++) {
+            if (trainCards.get(i).getColor().equals(color))
+                cnt++;
+        }
+        return cnt;
+    }
+
+}

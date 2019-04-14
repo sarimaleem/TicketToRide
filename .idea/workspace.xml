@@ -1,55 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d220dcce-6bdc-4da4-b8f4-6d06095a00bb" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7cf464aa-06b8-431d-9c55-1cf201f92d3e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tickets.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blackCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/greenCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orangeCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/src/META-INF/src.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/purpleCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Core/TicketDeck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicPlayerRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/GraphicTrainCardRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vblackCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vblueCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vgreenCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vorangeCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vpurpleCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vredCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vwhiteCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vwildCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vyellowCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whiteCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wildCard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yellowCard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/City.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsPanelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Network.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Path2DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleCoreClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleGraphicsClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleTestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Ticket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/TrainCard.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/coordinatetest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/networkTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsPanelTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Routes.txt">
+        <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5610">
-              <caret line="330" column="18" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+            <state relative-caret-position="-59">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#827#828#0" expanded="true" />
+                <element signature="e#862#863#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsPanelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -57,21 +128,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tests/networkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="30">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/Path2DTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-152">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/SampleTestClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>nashville ra</find>
-      <find>pittsburgh ne</find>
-      <find>raleigh washington</find>
-      <find>Raleigh Washington</find>
-    </findStrings>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -79,29 +176,47 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Core/Network.java" />
-        <option value="$PROJECT_DIR$/Routes.txt" />
-        <option value="$PROJECT_DIR$/src/Tests/GraphicsPanelTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/Core/Player.java" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-7" />
-    <option name="width" value="835" />
-    <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
@@ -118,17 +233,24 @@
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Graphics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555267507023" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,10 +292,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="107" y="23" width="1609" height="992" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2527122" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -181,7 +303,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -205,23 +327,6 @@
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Routes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5610">
@@ -229,17 +334,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/coordinatetest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/networkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
+        <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/Path2DTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/City.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/SampleTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsPanelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="58" column="59" lean-forward="true" selection-start-line="58" selection-start-column="59" selection-end-line="58" selection-end-column="59" />
+        <state relative-caret-position="30">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Route.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/src/City.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#827#828#0" expanded="true" />
+            <element signature="e#862#863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
