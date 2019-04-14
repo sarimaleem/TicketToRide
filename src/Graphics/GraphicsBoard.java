@@ -59,7 +59,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 ticketY += 300;
             }
         }
-
     }
 
 
