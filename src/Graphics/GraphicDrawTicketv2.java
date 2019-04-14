@@ -72,9 +72,7 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         tickets.add(deck.drawTicket());
         fin=true;
     }
-    public ArrayList<Ticket> getCards(){
-        return tickets;
-    }
+
     public void drawTickets(Graphics2D g) {
         if(str.equals("1")&&tickets.size()>1){
             deck.addTicket(tickets.remove(0));

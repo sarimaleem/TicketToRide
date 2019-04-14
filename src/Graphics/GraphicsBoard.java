@@ -20,19 +20,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void paintComponent(Graphics graphics) {
         Graphics2D graphics2D = (Graphics2D)graphics;
-
-
-
-
-
-
         try {
-            paintBoard(graphics2D);
+            drawBoard(graphics2D);
             drawGraphicPlayer(graphics2D);
         } catch (Exception e) {
 
         }
         drawCurrentPlayerContracts(graphics2D);
+        drawDeck(graphics2D);
 
 
 
@@ -61,11 +56,25 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
     }
 
+    public void drawDeck(Graphics2D graphics2D) {
+
+        int adjX = 100;
+
+        graphics2D.setColor(new Color(240,234,214));
+        graphics2D.fillRect(1700-adjX,900,200,100);
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.drawRect(1700-adjX,900,200,100);
+        graphics2D.drawString("Draw",1710-adjX,940);
+        graphics2D.drawString("Contracts",1710-adjX,980);
+
+
+    }
 
 
 
 
-    public void paintBoard(Graphics2D graphics2D) {
+
+    public void drawBoard(Graphics2D graphics2D) {
         Font myFont = new Font("Serif", Font.BOLD, 25);
         graphics2D.setFont(myFont);
         graphics2D.drawImage(map, 0, 0, getWidth() - 500, getHeight() - 300, this);
