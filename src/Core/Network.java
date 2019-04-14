@@ -2,7 +2,6 @@ import java.awt.*;
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -15,8 +14,6 @@ public class Network {
         paths = new HashMap<>();
 
         int i = 0;
-
-
 
         while(in.hasNextLine()) {
 
@@ -76,8 +73,4 @@ public class Network {
             graphics2D.draw(p);
         }
     }
-
-
-
-
 }
