@@ -33,13 +33,10 @@ public class GameState {
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-
-
-
-
-
-
-
+        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
+        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
+        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
+        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
     }
 
 

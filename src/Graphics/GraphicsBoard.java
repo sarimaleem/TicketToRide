@@ -18,7 +18,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         addMouseListener(this);
     }
 
-    public void paintComponent(Graphics graphics) {
+    public void paint(Graphics graphics) {
         Graphics2D graphics2D = (Graphics2D)graphics;
         drawBoard(graphics2D);
         try {
@@ -33,8 +33,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawCurrentPlayerContracts(Graphics2D graphics2D) {
-        double x = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().x;
-        double y = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().y;
+        double x = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
+        double y = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
 
         if (!(x > 120 && x < 270 && y > 945 && y < 1000)) {
             return;
@@ -43,10 +43,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int ticketX = 100;
         int ticketY = 100;
 
-
         for (Ticket ticket : gameState.getCurrentPlayer().getTickets()) {
             GraphicTicket graphicTicket = new GraphicTicket(ticket);
-            graphicTicket.drawTicket(graphics2D, (int)ticketX, (int)ticketY);
+            graphicTicket.drawTicket(graphics2D, ticketX, ticketY);
             ticketX += 300;
 
             if (ticketX > 1800) {
@@ -59,7 +58,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawDeck(Graphics2D graphics2D) {
 
         int adjX = 100;
-
         graphics2D.setColor(new Color(240,234,214));
         graphics2D.fillRect(1700-adjX,900,200,100);
         graphics2D.setColor(Color.BLACK);
@@ -67,9 +65,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString("Draw",1710-adjX,940);
         graphics2D.drawString("Contracts",1710-adjX,980);
     }
-
-
-
 
 
     public void drawBoard(Graphics2D graphics2D) {

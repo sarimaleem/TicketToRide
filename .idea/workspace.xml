@@ -3,13 +3,27 @@
   <component name="ChangeListManager">
     <list default="true" id="57363a03-367c-4567-824f-6a5e35d203a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/DrawTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/DrawTicket.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicDrawTicketv2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GraphicTicket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicTicket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/SampleTestClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/Network.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Network.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleCoreClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/SampleGraphicsClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/TicketTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/DrawTicket.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/SampleCoreClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/SampleTestClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/SampleGraphicsClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/DrawTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tests/TicketTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,17 +37,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
               <folding>
                 <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
                 <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
@@ -45,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTicket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding>
                 <element signature="e#276#277#0" expanded="true" />
                 <element signature="e#312#313#0" expanded="true" />
@@ -56,23 +70,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="510">
+              <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+              <folding>
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-              <folding>
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -86,23 +100,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+            <state relative-caret-position="85">
+              <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>repaint</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,31 +122,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/Core/Ticket.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" />
         <option value="$PROJECT_DIR$/src/Tests/GraphicPlayerRunner.java" />
         <option value="$PROJECT_DIR$/src/Tests/GraphicsTest.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicsRunner.java" />
-        <option value="$PROJECT_DIR$/src/Core/Network.java" />
         <option value="$PROJECT_DIR$/src/Core/TicketDeck.java" />
         <option value="$PROJECT_DIR$/src/Core/Player.java" />
         <option value="$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
         <option value="$PROJECT_DIR$/src/Tests/SampleTestClass.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
+        <option value="$PROJECT_DIR$/src/Core/Network.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicTicket.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="105" />
-    <option name="y" value="23" />
-    <option name="width" value="1609" />
-    <option name="height" value="992" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -149,6 +155,16 @@
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
+              <item name=".metadata" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
@@ -180,10 +196,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555352599957" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555353431008" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -260,7 +273,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22121535" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22121535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,8 +282,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -356,9 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Routes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4950">
@@ -387,16 +397,6 @@
     <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Tests/GraphicsPanelTest.java" />
     <entry file="file://$PROJECT_DIR$/src/Tests/GraphicTrainCardRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="45" column="62" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -409,29 +409,8 @@
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicDrawTicket.java" />
     <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java" />
     <entry file="file://$PROJECT_DIR$/Tickets.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Core/DrawTicket.java" />
     <entry file="file://$PROJECT_DIR$/src/Tests/TicketTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" />
     <entry file="file://$PROJECT_DIR$/src/Tests/Path2DTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" />
-    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="86" column="25" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
-          <folding>
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/awt/PointerInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -461,6 +440,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/SampleTestClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="71" lean-forward="true" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1132">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -468,10 +484,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tests/SampleTestClass.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="71" lean-forward="true" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+        <state relative-caret-position="510">
+          <caret line="73" column="47" lean-forward="true" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -482,21 +502,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/awt/event/MouseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="38" column="59" lean-forward="true" selection-start-line="38" selection-start-column="59" selection-end-line="38" selection-end-column="59" />
+        <state relative-caret-position="351">
+          <caret line="807" column="6" lean-forward="true" selection-start-line="807" selection-start-column="6" selection-end-line="807" selection-end-column="6" />
           <folding>
-            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
-            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+            <element signature="e#34764#34765#0" expanded="true" />
+            <element signature="e#34788#34789#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/DrawTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTicket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding>
             <element signature="e#276#277#0" expanded="true" />
             <element signature="e#312#313#0" expanded="true" />
@@ -504,99 +538,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="34" column="62" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="62" />
+        <state relative-caret-position="272">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+          <folding>
+            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8.0_51</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>src</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8.0_51</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
