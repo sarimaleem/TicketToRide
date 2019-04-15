@@ -4,39 +4,12 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.IOException;
 
-public class GraphicTicket extends JPanel implements MouseListener {
+public class GraphicTicket    {
     private Ticket ticket;
     private int x,y;
-    public GraphicTicket() {
-        x=0;
-        y=0;
-        ticket=null;
-    }
-    public GraphicTicket(Ticket z) {
-        x=0;
-        y=0;
-        ticket=z;
-    }
-    public GraphicTicket(String a,String b, int val) {
-        x=0;
-        y=0;
-        ticket=new Ticket(a,b,val);
-    }
-    public static void main(String[] args) throws IOException {
-        JFrame window = new JFrame("GraphicTicket"); // Makes sure that you title this correctly
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setSize(1920, 1080);
-        window.setVisible(true);
-        GraphicTicket board = new GraphicTicket();
-        window.add(board);
-        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        window.addMouseListener(board);
-    }
 
-    public void paintComponent(Graphics graphics) {
-        Graphics2D graphics2D = (Graphics2D)graphics;
-        drawTicket(graphics2D,x,y);
-        repaint();
+    public GraphicTicket(Ticket ticket) {
+        this.ticket = ticket;
     }
 
     public void drawTicket(Graphics2D g,int x,int y) {
@@ -50,26 +23,6 @@ public class GraphicTicket extends JPanel implements MouseListener {
         g.drawString(ticket.getA()+"",x+5,y+30);
         g.drawString(ticket.getB()+"",x+5,y+145);
         g.drawString(ticket.getValue()+"",x+90,y+90);
-    }
-    public void mouseClicked(MouseEvent e) {
-    }
-
-    public void mousePressed(MouseEvent e) {
-
-    }
-
-    public void mouseReleased(MouseEvent e) {
-        x=e.getX();
-        y=e.getY();
-        repaint();
-    }
-
-    public void mouseEntered(MouseEvent e) {
-
-    }
-
-    public void mouseExited(MouseEvent e) {
-
     }
 }
 
