@@ -57,7 +57,7 @@ public class GraphicPlayer{
         graphics2D.drawRect(5, 780 ,400, 230);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
-        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 55, 860);
+        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 80, 860);
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);

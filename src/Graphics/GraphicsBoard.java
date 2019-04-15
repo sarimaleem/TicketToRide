@@ -64,8 +64,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.fillRect(1700-adjX,900,200,100);
         graphics2D.setColor(Color.BLACK);
         graphics2D.drawRect(1700-adjX,900,200,100);
-        graphics2D.drawString("Draw",1710-adjX,940);
-        graphics2D.drawString("Contracts",1710-adjX,980);
+        graphics2D.drawString("Draw",1765-adjX,940);
+        graphics2D.drawString("Contracts",1740-adjX,980);
 
 
     }
