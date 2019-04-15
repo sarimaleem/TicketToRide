@@ -23,10 +23,6 @@ public class GraphicPlayer{
 
     public void draw(Graphics2D graphics2D) {
         drawPlayer(graphics2D);
-
-        //if(tclicked==true)
-       // drawTicketDisplay(graphics2D);
-
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
         graphics2D.setColor(Color.WHITE);

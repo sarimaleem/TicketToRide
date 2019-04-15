@@ -20,17 +20,15 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void paintComponent(Graphics graphics) {
         Graphics2D graphics2D = (Graphics2D)graphics;
+        drawBoard(graphics2D);
         try {
-            drawBoard(graphics2D);
             drawGraphicPlayer(graphics2D);
-        } catch (Exception e) {
-
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
-
-
-
         repaint();
     }
 
@@ -38,7 +36,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         double x = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().x;
         double y = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().y;
 
-        if (!(x > 121 && x < 271 && y > 949 && y < 998)) return;
+        if (!(x > 120 && x < 270 && y > 945 && y < 1000)) {
+            return;
+        }
 
         int ticketX = 100;
         int ticketY = 100;
@@ -66,8 +66,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawRect(1700-adjX,900,200,100);
         graphics2D.drawString("Draw",1710-adjX,940);
         graphics2D.drawString("Contracts",1710-adjX,980);
-
-
     }
 
 
@@ -94,8 +92,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void mousePressed(MouseEvent e) {
 
     }
+
     public void mouseClicked(MouseEvent e) {
     }
+
     public void mouseReleased(MouseEvent e) {
         int x =e.getX();
         int y =e.getY();
