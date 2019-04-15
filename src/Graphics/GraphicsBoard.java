@@ -18,7 +18,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         addMouseListener(this);
     }
 
-    public void paint(Graphics graphics) {
+    public void paintComponent(Graphics graphics) {
+        super.paintComponent(graphics);
         Graphics2D graphics2D = (Graphics2D)graphics;
         drawBoard(graphics2D);
         try {
