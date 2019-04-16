@@ -50,4 +50,15 @@ public class Player {
         return tickets;
     }
 
+    public boolean isValidCardCombination(String color, int length) {
+        int totalCards = getNumTrainCard(color) + getNumTrainCard("wild");
+        if (totalCards >= length)
+            return true;
+        return false;
+    }
+
+
+
+
+
 }
