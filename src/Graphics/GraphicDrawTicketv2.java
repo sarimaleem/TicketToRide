@@ -15,7 +15,7 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
     private String str;
     ArrayList<Ticket> tickets;
     private boolean fin;
-
+    private int lazy;
     public GraphicDrawTicketv2() throws IOException {
         fin=true;
         tickets=new ArrayList<Ticket>(3);
@@ -43,15 +43,15 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         g2d.setFont(t);
         g2d.setStroke(new BasicStroke(3));
         g2d.setColor(Color.LIGHT_GRAY);
-        g2d.fillRect(0,0,2000,1100);
+        //g2d.fillRect(0,0,2000,1100);
         drawTickets(g2d);
         g2d.setColor(new Color(240,234,214));
-        g2d.fillRect(1700,900,200,100);
+        //g2d.fillRect(1700,900,200,100);
         if(fin){
             g2d.fillRect(1250,500,200,100);
         }
         g2d.setColor(Color.BLACK);
-        g2d.drawRect(1700,900,200,100);
+        //g2d.drawRect(1700,900,200,100);
         if(fin){
             g2d.drawRect(1250,500,200,100);
             g2d.drawRect(450,200,1000,400);
@@ -60,8 +60,14 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
             g2d.drawString("Add",1260,540);
             g2d.drawString("Remaining",1260,580);
         }
-        g2d.drawString("Draw",1710,940);
-        g2d.drawString("Contracts",1710,980);
+        //g2d.drawString("Draw",1710,940);
+        //g2d.drawString("Contracts",1710,980);
+    }
+    public ArrayList<Ticket> getContacts(){
+        if(fin){
+            return null;
+        }
+        return tickets;
     }
     public void reset(){
         while(tickets.size()>0){
@@ -72,7 +78,6 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         tickets.add(deck.drawTicket());
         fin=true;
     }
-
     public void drawTickets(Graphics2D g) {
         if(str.equals("1")&&tickets.size()>1){
             deck.addTicket(tickets.remove(0));
@@ -110,10 +115,10 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         x=e.getX();
         y=e.getY();
-        if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!fin){
+        /*if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!fin){
             reset();
             repaint();
-        }
+        }*/
         if(x>=525&&x<=750&&y>=300&&y<=450&&tickets.size()>1&&fin){
             str="1";
             repaint();
@@ -133,12 +138,6 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
             repaint();
         }
     }
-
-
-
-
-
-
     public void mousePressed(MouseEvent e) {
     }
     public void mouseClicked(MouseEvent e) {
