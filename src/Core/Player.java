@@ -8,6 +8,8 @@ public class Player {
     private ArrayList<TrainCard> trainCards;
     private ArrayList<Ticket> tickets;
     private int trainPoints;
+    private ArrayList<PotentialRoute> potentialRoutes;
+
 
     public Player(String trainColor) {
         numTrains = 45;
@@ -15,6 +17,9 @@ public class Player {
         this.trainColor = trainColor;
         trainCards = new ArrayList<TrainCard>();
         tickets = new ArrayList<>();
+        potentialRoutes = new ArrayList<>();
+
+
     }
 
     public String getTrainColor() {
@@ -37,13 +42,24 @@ public class Player {
         tickets.add(ticket);
     }
 
-    public int getNumTrainCard (String color){
+    public int getNumTrainCard(String color) {
         int cnt = 0;
         for (int i = 0; i < trainCards.size(); i++) {
             if (trainCards.get(i).getColor().equals(color))
                 cnt++;
         }
         return cnt;
+    }
+
+    public void removeTrainCards(String color, int n) {
+        while (n > -1) {
+            for (TrainCard trainCard : trainCards) {
+                if (trainCard.getColor().equals(color)) {
+                    trainCards.remove(trainCard);
+                    n--;
+                }
+            }
+        }
     }
 
     public ArrayList<Ticket> getTickets() {
@@ -57,8 +73,23 @@ public class Player {
         return false;
     }
 
+    public void makePotentialRoutes(Route r) {
+        potentialRoutes.clear();
+        String[] colors = new String[]{"blue", "green", "black", "orange", "purple", "red", "white", "yellow"};
+        for (String color : colors) {
+            if (isValidCardCombination(color, r.getLength())) {
+                potentialRoutes.add(new PotentialRoute(color, this, r));
+            }
+        }
+    }
 
+    public void clearPotentialRoutes() {
+        potentialRoutes.clear();
+    }
 
+    public ArrayList<PotentialRoute> getPotentialRoutes() {
+        return potentialRoutes;
+    }
 
 
 }

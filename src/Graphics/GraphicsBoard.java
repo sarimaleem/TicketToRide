@@ -27,10 +27,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        drawPotentialRoutes(graphics2D);
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
         repaint();
+        System.out.println(gameState.getCurrentPlayer().getPotentialRoutes());
     }
 
     public void drawCurrentPlayerContracts(Graphics2D graphics2D) {
@@ -56,6 +57,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
     }
 
+    public void drawPotentialRoutes(Graphics2D graphics2D) {
+        for (PotentialRoute potentialRoute : gameState.getCurrentPlayer().getPotentialRoutes()) {
+            potentialRoute.draw(graphics2D);
+        }
+    }
+
     public void drawDeck(Graphics2D graphics2D) {
 
         int adjX = 100;
@@ -68,7 +75,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString("Contracts",1710-adjX,980);
     }
 
-
     public void drawBoard(Graphics2D graphics2D) {
         Font myFont = new Font("Serif", Font.BOLD, 25);
         graphics2D.setFont(myFont);
@@ -78,7 +84,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 //      graphics2D.drawString("Ticket To Ride", 600, 70);
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.setColor(Color.BLACK);
-        gameState.getNetwork().drawRoutes(graphics2D);
+        gameState.getNetwork().drawAndFillRoutes(graphics2D);
     }
 
     public void drawGraphicPlayer(Graphics2D graphics2D) throws IOException {
@@ -98,9 +104,21 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int y =e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
+
+        Route r = gameState.getNetwork().getRoute(x, y);
+        if (r == null || r.getOwner() != null) {
+            return;
+        } else {
+            //r.setOwner(gameState.getCurrentPlayer());
+            gameState.getCurrentPlayer().makePotentialRoutes(r);
+            gameState.nextTurn();
+        }
+
     }
+
     public void mouseEntered(MouseEvent e) {
     }
+
     public void mouseExited(MouseEvent e) {
 
     }

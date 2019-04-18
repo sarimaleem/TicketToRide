@@ -15,28 +15,19 @@ public class GameState {
         players.add(new Player("blue"));
         players.add(new Player("green"));
         players.add(new Player("yellow"));
-        currentPlayer = 0;
 
+        currentPlayer = 0;
 
         network = new Network();
         ticketDeck = new TicketDeck();
 
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
+        for (Player p : getPlayers()) {
+            for (int i = 0; i < 10; i++) {
+                p.addTrainCard(new TrainCard("purple"));
+            }
+        }
+
+
     }
 
 
@@ -51,4 +42,10 @@ public class GameState {
     public Network getNetwork() {
         return network;
     }
+
+    public void nextTurn() {
+        currentPlayer = (currentPlayer + 1)%players.size();
+    }
+
+
 }

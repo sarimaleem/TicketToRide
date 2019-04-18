@@ -18,7 +18,6 @@ public class City {
         routes.add(r);
     }
 
-
     public ArrayList<Route> getRoutes() {
         return routes;
     }

@@ -2,20 +2,31 @@ import java.awt.*;
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Network {
     HashMap<String, City> cities;
     HashMap<Path2D.Double, Route> paths;
+    HashMap<String, Color> stringColorHashMap;
+
+
     public Network() throws FileNotFoundException {
+
         Scanner in = new Scanner(new File("Routes.txt"));
         cities = new HashMap<>();
         paths = new HashMap<>();
+        stringColorHashMap = new HashMap<>();
+        stringColorHashMap.put("red", Color.red);
+        stringColorHashMap.put("blue", Color.blue);
+        stringColorHashMap.put("yellow", Color.yellow);
+        stringColorHashMap.put("green", Color.green);
+
 
         int i = 0;
 
-        while(in.hasNextLine()) {
+        while (in.hasNextLine()) {
 
             String[] temp = in.nextLine().split("-");
 
@@ -37,27 +48,26 @@ public class Network {
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
 
-            if(i < 100) {
+            if (i < 100) {
 
                 Path2D.Double test = new Path2D.Double();
-                test.moveTo(in.nextInt(), in.nextInt()-100);
+                test.moveTo(in.nextInt(), in.nextInt() - 100);
 
                 while (in.hasNextInt()) {
-                    test.lineTo(in.nextInt(), in.nextInt()-100);
+                    test.lineTo(in.nextInt(), in.nextInt() - 100);
                 }
 
                 test.closePath();
                 paths.put(test, r);
                 i++;
             }
-            if(i<100)
+            if (i < 100)
                 in.nextLine();
         }
 
     }
 
-    public HashMap getPaths()
-    {
+    public HashMap getPaths() {
         return paths;
     }
 
@@ -69,10 +79,24 @@ public class Network {
         }
     }
 
-
-    public void drawRoutes(Graphics2D graphics2D) {
+    public Route getRoute(int x, int y) {
         for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                return paths.get(p);
+            }
+        }
+        return null;
+    }
+
+
+    public void drawAndFillRoutes(Graphics2D graphics2D) {
+        for (Path2D.Double p : paths.keySet()) {
+            graphics2D.setColor(Color.BLACK);
             graphics2D.draw(p);
+            if (paths.get(p).getOwner() != null) {
+                graphics2D.setColor(stringColorHashMap.get(paths.get(p).getOwner().getTrainColor()));
+                graphics2D.fill(p);
+            }
         }
     }
 }
