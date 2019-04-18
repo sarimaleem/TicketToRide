@@ -7,16 +7,18 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 public class GraphicsBoard extends JPanel implements MouseListener {
+    
     private GameState gameState;
     private BufferedImage map;
     private GraphicDrawTicketv2 con;
-    private boolean keo;
+    private boolean lunch;
+    
     public GraphicsBoard() throws IOException {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
         con=new GraphicDrawTicketv2();
-        keo=false;
+        lunch=false;
     }
     public void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
@@ -29,12 +31,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
-        if(keo){
+        if(lunch){
             con.paint(graphics2D);
             if(con.getContacts()!=null){
                 for(Ticket t:con.getContacts())
                     gameState.getCurrentPlayer().addTicket(t);
-                keo=false;
+                lunch=false;
                 con.reset();
             }
         }
@@ -59,6 +61,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
     }
     public void drawDeck(Graphics2D graphics2D) {
+        Font myFont = new Font("Arial", Font.BOLD, 25);
+        graphics2D.setFont(myFont);
         int adjX = 00;
         graphics2D.setColor(new Color(240,234,214));
         graphics2D.fillRect(1700-adjX,900,200,100);
@@ -91,10 +95,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int x =e.getX();
         int y =e.getY();
         System.out.println(x + " " + y);
-        if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!keo){
-            keo=true;
+        if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!lunch){
+            lunch=true;
         }
-        if(keo){
+        if(lunch){
             con.mouseReleased(e);
         }else{
             gameState.getNetwork().printRoute(x, y);
