@@ -7,6 +7,7 @@ public class GameState {
     private Network network;
     int currentPlayer;
     TicketDeck ticketDeck;
+    TrainCardDeck trainCardDeck;
 
     public GameState() throws FileNotFoundException {
 
@@ -33,6 +34,7 @@ public class GameState {
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
         getCurrentPlayer().addTicket(ticketDeck.drawTicket());
+        trainCardDeck=new TrainCardDeck();
 
 
 
@@ -46,6 +48,10 @@ public class GameState {
         return players.get(currentPlayer);
     }
 
+    public TrainCardDeck getTrainCardDeck() {
+        return trainCardDeck;
+    }
+
     public ArrayList<Player> getPlayers() {
         return players;
     }
@@ -53,4 +59,5 @@ public class GameState {
     public Network getNetwork() {
         return network;
     }
+
 }
