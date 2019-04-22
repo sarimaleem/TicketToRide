@@ -6,6 +6,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class GraphicsBoard extends JPanel implements MouseListener {
 
@@ -27,7 +28,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        drawStatistics(gameState, graphics2D);
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
         repaint();
@@ -83,6 +84,33 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawGraphicPlayer(Graphics2D graphics2D) throws IOException {
         GraphicPlayer graphicPlayer = new GraphicPlayer(gameState.getCurrentPlayer());
         graphicPlayer.draw(graphics2D);
+    }
+
+    public void drawStatistics(GameState game, Graphics2D graphics2D)
+    {
+        ArrayList<Player> players = game.getPlayers();
+        graphics2D.setColor(new Color(0, 0, 0));
+        graphics2D.drawRect(1414, 0, 500, 500);
+        graphics2D.setFont(new Font("serif", Font.BOLD, 30));
+        graphics2D.drawString("Statistics", 1600, 30);
+        graphics2D.setFont(new Font("serif", Font.BOLD, 20));
+        graphics2D.drawString(players.get(0).getTrainColor(),1465, 75);
+        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75);
+        graphics2D.drawString(players.get(2).getTrainColor(),1465, 300);
+        graphics2D.drawString(players.get(3).getTrainColor(),1735, 300);
+        drawInfo(players.get(0), new Point(1465, 75), graphics2D);
+
+    }
+
+    private void drawInfo(Player player, Point point, Graphics2D graphics2D)
+    {
+        graphics2D.setFont(new Font("serif", Font.BOLD, 15));
+        graphics2D.drawString("Points: ",(int)point.getX(), (int)point.getY()+30);
+        graphics2D.drawString(""+player.getPoints(),(int)point.getX()+50, (int)point.getY()+30);
+        graphics2D.drawString("Trains: ",(int)point.getX(), (int)point.getY()+50);
+        graphics2D.drawString(""+player.getNumTrainCard(player.getTrainColor()),(int)point.getX()+50, (int)point.getY()+50);
+        graphics2D.drawString("Contracts Completed: ",(int)point.getX(), (int)point.getY()+70);
+        graphics2D.drawString("Contracts Remaining: ",(int)point.getX(), (int)point.getY()+90);
     }
 
     public void mousePressed(MouseEvent e) {
