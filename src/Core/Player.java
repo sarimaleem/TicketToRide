@@ -50,4 +50,24 @@ public class Player {
         return tickets;
     }
 
+    public int numTicketsCompleted()
+    {
+        int num = 0;
+        for(int i = 0; i < tickets.size(); i++)
+        {
+            if(tickets.get(i).getFinished())
+                num++;
+        }
+        return num;
+    }
+
+    public int numTicketsNotCompleted()
+    {
+        return tickets.size() - numTicketsCompleted();
+    }
+
+    public int getNumTrains()
+    {
+        return numTrains;
+    }
 }
