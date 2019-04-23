@@ -90,7 +90,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     {
         ArrayList<Player> players = game.getPlayers();
         graphics2D.setColor(new Color(0, 0, 0));
-        graphics2D.drawRect(1414, 0, 500, 350);
+        graphics2D.drawRect(1414, 0, 500, 320);
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
         graphics2D.drawString("Statistics", 1600, 30);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
