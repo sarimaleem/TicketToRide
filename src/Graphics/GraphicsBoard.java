@@ -70,10 +70,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
 
     public void drawBoard(Graphics2D graphics2D) {
-        Font myFont = new Font("Serif", Font.BOLD, 25);
-        graphics2D.setFont(myFont);
+        this.setBackground(new Color(110, 160, 148));
         graphics2D.drawImage(map, 0, 0, getWidth() - 500, getHeight() - 300, this);
-        graphics2D.setColor(new Color(100, 50, 50));
+
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
 //      graphics2D.drawString("Ticket To Ride", 600, 70);
         graphics2D.setStroke(new BasicStroke(3));
@@ -89,8 +88,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawStatistics(GameState game, Graphics2D graphics2D)
     {
         ArrayList<Player> players = game.getPlayers();
-        graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.drawRect(1414, 0, 500, 320);
+        graphics2D.setColor(Color.cyan);
+        graphics2D.fillRect(1414, 0, 500, 320);
+        graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
         graphics2D.drawString("Statistics", 1600, 30);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
