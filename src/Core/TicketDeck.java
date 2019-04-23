@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.ArrayList;
@@ -7,6 +8,7 @@ import java.util.Scanner;
 
 public class TicketDeck {
     private ArrayList<Ticket> deck;
+
 
     public TicketDeck() throws FileNotFoundException {
         deck = new ArrayList<Ticket>();
@@ -19,6 +21,9 @@ public class TicketDeck {
             String[] str=tick.split("-");
             deck.add(new Ticket(str[1],str[2],Integer.parseInt(str[0])));
         }
+
+
+
         shuffle();
     }
     public void addTicket(Ticket ad){

@@ -1,12 +1,9 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Collections;
-import java.util.LinkedList;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class TrainCardDeck {
     private ArrayList<TrainCard> deck;
+    private ArrayList<TrainCard> faceUpCards;
 
     public TrainCardDeck() {
         deck = new ArrayList<>();
@@ -21,7 +18,16 @@ public class TrainCardDeck {
             TrainCard t = new TrainCard("wild");
             deck.add(t);
         }
+
+        faceUpCards = new ArrayList<>();
         shuffle();
+
+        for (int i = 0; i < 5; i++) {
+            faceUpCards.add(deck.remove(0));
+        }
+
+
+
     }
     public void addCard(TrainCard t){
         deck.add(t);
@@ -29,8 +35,20 @@ public class TrainCardDeck {
     public void shuffle(){
         Collections.shuffle(deck);
     }
-    public TrainCard drawCard(){
-        return deck.remove(0);
+    public TrainCard drawCard(int index){
+        TrainCard toRemove = deck.remove(index);
+        faceUpCards.add(deck.remove(0));
+        return toRemove;
     }
+    public TrainCard drawFaceUpCard(int index){
+        TrainCard toRemove = faceUpCards.remove(index);
+        faceUpCards.add(this.drawCard(0));
+        return toRemove;
+    }
+
+    public ArrayList<TrainCard> getFaceUpCards() {
+        return faceUpCards;
+    }
+
 }
 

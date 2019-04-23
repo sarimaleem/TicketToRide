@@ -95,7 +95,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawGraphicCards(Graphics2D graphics2D) throws IOException {
-        GraphicCards graphicCards=new GraphicCards(gameState.getTrainCardDeck());
+        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
         graphicCards.draw(graphics2D);
     }
 

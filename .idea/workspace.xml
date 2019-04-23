@@ -2,122 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57363a03-367c-4567-824f-6a5e35d203a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Core/TrainCardDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/153474676-postmessagerelay.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/2165846448-lcs_client_bin.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/2197464460-docos_binary_i18n.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/2345136667-docs_offline_iframe_api_bin.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/3416897374-lcs_receiver_bin.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Black_Card(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Black_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Blue_Card(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Blue_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Board with tickets.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/City Cords.txt(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/City Cords.txt.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Game_Board.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Getting started.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Green_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Orange_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Purple_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Red_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/White_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Wild_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/Yellow_Card.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/api.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/board(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/board.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi(1).loaded_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi(2).loaded_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi.loaded_0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi.loaded_1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi.loaded_2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cb=gapi.loaded_3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/chat_load.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/cleardot.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/client(1).html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/drive_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/empty_state_shared_files_v2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/googleapis.proxy.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_document_x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_document_x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_folder_x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_image_x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_image_x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_presentation_x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_presentation_x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_spreadsheet_x128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_spreadsheet_x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/icon_1_text_x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/iframeapi.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/jpeg(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/lazy.min.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/m=core" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/pdf(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/plain" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/plain(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/png(1)" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/postmessageRelay.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/proxy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/psDJOMEN-Gt-kYnzHttn5GGc8LdDM2TL5qmr7yJNyfM.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/rpc_shindig_random.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/rs=AA2YrTuPgav5pzkjYB501kPIVUVqoaEIdw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/rs=AA2YrTvF2P0sRcOCMjKOIgMYe9RGh7lIsA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/rs=AFB8gsyC8fMgjsQ_63t2RjmtvuhjB234GA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/saved_resource.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/session_load.js.download" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(10).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(11).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(12).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(13).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(14).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(15).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(16).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(17).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(18).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(19).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(2).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(20).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(21).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(22).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(23).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(24).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(25).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(26).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(27).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(28).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(29).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(3).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(30).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(31).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(32).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(33).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(34).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(35).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(4).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(5).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(6).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(7).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(8).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed(9).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/unnamed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/vnd.google-apps(1).document" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/vnd.google-apps(2).presentation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/vnd.google-apps.document" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TicketToRide/Black_files/vnd.google-apps.presentation" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/GraphicTrainCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicTrainCard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/src/TicketDeck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/TicketDeck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/TicketDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/TicketDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/TrainCardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/TrainCardDeck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
     </list>
@@ -130,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+            <state relative-caret-position="425">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
@@ -144,14 +34,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicCards.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+            <state relative-caret-position="274">
+              <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#611#612#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/ArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="443" selection-start-line="443" selection-end-line="443" />
             </state>
           </provider>
         </entry>
@@ -159,10 +60,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="308">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#1299#1300#0" expanded="true" />
+                <element signature="e#1324#1325#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="153">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,10 +86,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
+        <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state>
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -192,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="-34">
+              <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -213,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="42" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="1139">
+              <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
             </state>
           </provider>
         </entry>
@@ -245,12 +150,13 @@
         <option value="$PROJECT_DIR$/src/Tests/GraphicTicketRunner.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicDrawTicketv2.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
-        <option value="$PROJECT_DIR$/src/Core/TicketDeck.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" />
-        <option value="$PROJECT_DIR$/src/Core/TrainCardDeck.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicCards.java" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
+        <option value="$PROJECT_DIR$/src/Core/TicketDeck.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicCards.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java" />
+        <option value="$PROJECT_DIR$/src/Core/TrainCardDeck.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java" />
       </list>
     </option>
   </component>
@@ -265,7 +171,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -301,10 +206,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555526234869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556044627050" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -378,13 +284,21 @@
       <option name="presentableId" value="Default" />
       <updated>1554478238028</updated>
     </task>
+    <task id="LOCAL-00001" summary="a">
+      <created>1555612678861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1555612678877</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="105" y="23" width="1609" height="992" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3111685" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31891543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -442,7 +356,8 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/.gitignore">
@@ -602,23 +517,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/swing/RepaintManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="745">
+          <caret line="813" selection-start-line="813" selection-end-line="813" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -631,77 +540,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="42" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/swing/RepaintManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1578" selection-start-line="1578" selection-end-line="1578" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="1055" selection-start-line="1055" selection-end-line="1055" />
+        <state relative-caret-position="1139">
+          <caret line="68" column="54" selection-start-line="68" selection-start-column="54" selection-end-line="68" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="652" selection-start-line="652" selection-end-line="652" />
+        <state relative-caret-position="176">
+          <caret line="443" selection-start-line="443" selection-end-line="443" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="425">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="153">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicCards.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="-34">
+          <caret line="10" column="52" selection-start-line="10" selection-start-column="52" selection-end-line="10" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/src.zip!/javax/swing/JComponent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="97" column="79" selection-start-line="97" selection-start-column="79" selection-end-line="97" selection-end-column="79" />
+        <state relative-caret-position="184">
+          <caret line="1756" column="19" selection-start-line="1756" selection-start-column="19" selection-end-line="1756" selection-end-column="19" />
+          <folding>
+            <element signature="e#66280#66281#0" expanded="true" />
+            <element signature="e#66364#66365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
-            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#1299#1300#0" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/TicketDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="60" column="39" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
           </folding>
         </state>
       </provider>
