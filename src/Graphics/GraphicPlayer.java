@@ -47,10 +47,10 @@ public class GraphicPlayer{
                 graphics2D.setColor(Color.YELLOW);
                 break;
         }
-        graphics2D.fillRect(5, 780 , 400, 230);
+        graphics2D.fillRect(5, 780 , 380, 230);
         graphics2D.setColor(Color.BLACK);
         graphics2D.setStroke(new BasicStroke(3));
-        graphics2D.drawRect(5, 780 ,400, 230);
+        graphics2D.drawRect(5, 780 ,380, 230);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
         graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 55, 860);
@@ -59,23 +59,23 @@ public class GraphicPlayer{
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
         drawRectangle(graphics2D, 120, 945, 150, 50);
         graphics2D.drawString("TICKETS", 140, 980);
-        int a=440;
-        int c=458;
+        int rectX=420;//box
+        int numCardX=438;
         for(int i=0;i<9;i++){
-            drawRectangle(graphics2D, a, 810, 50, 30);
-            graphics2D.drawString(""+player.getNumTrainCard("blue"), c, 835);
-            a += 115;
-            c += 115;
+            drawRectangle(graphics2D, rectX, 810, 50, 30);
+            graphics2D.drawString(""+player.getNumTrainCard("blue"), numCardX, 835);
+            rectX += 115;
+            numCardX += 115;
         }
-        GraphicTrainCard blue = new GraphicTrainCard(b, 415, 850,true);
-        GraphicTrainCard green = new GraphicTrainCard(g, 530, 850,true);
-        GraphicTrainCard black = new GraphicTrainCard(bl, 645, 850,true);
-        GraphicTrainCard orange = new GraphicTrainCard(o, 760, 850,true);
-        GraphicTrainCard purple = new GraphicTrainCard(p, 875, 850,true);
-        GraphicTrainCard red = new GraphicTrainCard(r, 990, 850,true);
-        GraphicTrainCard white = new GraphicTrainCard(w, 1105, 850,true);
-        GraphicTrainCard yellow = new GraphicTrainCard(ye, 1220, 850,true);
-        GraphicTrainCard wild = new GraphicTrainCard(wi, 1335, 850,true);
+        GraphicTrainCard blue = new GraphicTrainCard(b, 395, 850,true);
+        GraphicTrainCard green = new GraphicTrainCard(g, 510, 850,true);
+        GraphicTrainCard black = new GraphicTrainCard(bl, 625, 850,true);
+        GraphicTrainCard orange = new GraphicTrainCard(o, 740, 850,true);
+        GraphicTrainCard purple = new GraphicTrainCard(p, 855, 850,true);
+        GraphicTrainCard red = new GraphicTrainCard(r, 970, 850,true);
+        GraphicTrainCard white = new GraphicTrainCard(w, 1085, 850,true);
+        GraphicTrainCard yellow = new GraphicTrainCard(ye, 1200, 850,true);
+        GraphicTrainCard wild = new GraphicTrainCard(wi, 1315, 850,true);
         blue.draw(graphics2D);
         green.draw(graphics2D);
         black.draw(graphics2D);

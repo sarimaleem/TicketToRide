@@ -58,7 +58,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawDeck(Graphics2D graphics2D) {
-
         int adjX = 100;
         graphics2D.setColor(new Color(240,234,214));
         graphics2D.fillRect(1700-adjX,900,200,100);
@@ -72,6 +71,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawBoard(Graphics2D graphics2D) {
         this.setBackground(new Color(110, 160, 148));
         graphics2D.drawImage(map, 0, 0, getWidth() - 500, getHeight() - 300, this);
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.drawLine(1415, 0, 1415, getHeight());
+        graphics2D.setColor(new Color(62, 94, 100));
+        graphics2D.fillRect(0, getHeight()-300, getWidth()-500, 300);
 
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
 //      graphics2D.drawString("Ticket To Ride", 600, 70);
