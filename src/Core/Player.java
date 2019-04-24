@@ -52,13 +52,16 @@ public class Player {
     }
 
     public void removeTrainCards(String color, int n) {
-        while (n > -1) {
-            for (TrainCard trainCard : trainCards) {
-                if (trainCard.getColor().equals(color)) {
-                    trainCards.remove(trainCard);
-                    n--;
-                }
+
+        int numRemoved = 0;
+        for (int i = 0; i < trainCards.size(); i++) {
+            if (trainCards.get(i).getColor().equals(color)) {
+                trainCards.remove(i--);
+                numRemoved++;
             }
+
+            if(numRemoved == n)
+                return;
         }
     }
 

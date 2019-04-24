@@ -28,13 +28,11 @@ public class GameState {
         }
 
         for (Player p : getPlayers()) {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 5; i++) {
                 p.addTrainCard(new TrainCard("red"));
-                //p.addTrainCard(new TrainCard("wild"));
+                p.addTrainCard(new TrainCard("wild"));
             }
         }
-
-
     }
 
 

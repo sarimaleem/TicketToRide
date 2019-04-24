@@ -7,6 +7,9 @@ public class PotentialRoute {
     Route route;
     static final int width = 25, height = 25;
 
+    //TODO fix the gray route case
+    //TODO fix the concurrent Modification error
+
     public PotentialRoute(String color, Player player, Route route) {
         this.player = player;
         this.route = route;
@@ -30,7 +33,6 @@ public class PotentialRoute {
     public void draw(Graphics2D graphics2D) {
         graphics2D.setColor(new Color(0, 204, 202));
         graphics2D.fillOval(x, y, width, height);
-
         graphics2D.setColor(Color.BLACK);
         graphics2D.drawLine(x+5, y+12, x+20, y+12);
         graphics2D.drawLine(x+12, y+5, x+12, y+20);
@@ -46,6 +48,8 @@ public class PotentialRoute {
 
         int length = route.getLength();
         String color = route.getColor();
+
+        System.out.println("SUCCESS");
 
         if (player.getNumTrainCard(color) - length >= 0) {
             player.removeTrainCards(color, length);

@@ -54,9 +54,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
 
         graphics2D.drawRect(1462, 914, 62, 63);
+        graphics2D.drawString("Cheat", 1465, 950);
 
 
-        if (hoverX > 1462 && hoverX < 1564 && hoverY > 914 && hoverY < 977) {
+        if (hoverX > 1462 && hoverX < 1526 && hoverY > 914 && hoverY < 977) {
             int y = 775;
             for (Player player : gameState.getPlayers()) {
                 graphics2D.setColor(colorHashMap.get(player.getTrainColor()));
@@ -136,18 +137,23 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void mouseReleased(MouseEvent e) {
+
         int x =e.getX();
         int y =e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
 
         Route r = gameState.getNetwork().getRoute(x, y);
-        if (r == null || r.getOwner() != null) {
-            return;
-        } else {
+        if (r != null && r.getOwner() == null)
             gameState.getCurrentPlayer().makePotentialRoutes(r);
-        }
 
+
+        for (PotentialRoute p : gameState.getCurrentPlayer().getPotentialRoutes()) {
+            if (p.contains(x, y)) {
+                p.activate();
+                gameState.nextTurn();
+            }
+        }
     }
 
     public void mouseEntered(MouseEvent e) {

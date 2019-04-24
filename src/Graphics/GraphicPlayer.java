@@ -59,14 +59,14 @@ public class GraphicPlayer{
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
         drawRectangle(graphics2D, 120, 945, 150, 50);
         graphics2D.drawString("TICKETS", 140, 980);
-        int a=440;
-        int c=458;
+        int rectX=440;
+        int numCardX=458;
         String[] colors = {"blue", "green", "black", "orange", "purple", "red", "white", "yellow", "wild"};
         for(int i=0;i<9;i++){
-            drawRectangle(graphics2D, a, 810, 50, 30);
-            graphics2D.drawString(""+player.getNumTrainCard(colors[i]), c, 835);
-            a += 115;
-            c += 115;
+            drawRectangle(graphics2D, rectX, 810, 50, 30);
+            graphics2D.drawString(""+player.getNumTrainCard(colors[i]), numCardX, 835);
+            rectX += 115;
+            numCardX += 115;
         }
         GraphicTrainCard blue = new GraphicTrainCard(b, 415, 850,true);
         GraphicTrainCard green = new GraphicTrainCard(g, 530, 850,true);
