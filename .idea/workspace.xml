@@ -6,20 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="57363a03-367c-4567-824f-6a5e35d203a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/City.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GameState.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/GraphicsBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Network.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Network.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/src/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/src/Route.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/src/Route.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/City.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/PotentialRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/PotentialRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/potentialRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/PotentialRoute.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,14 +26,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="850">
+              <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
               <folding>
                 <element signature="method#Player#0;class#Player#0" />
                 <element signature="method#removeTrainCards#0;class#Player#0" />
-                <element signature="method#isValidCardCombination#0;class#Player#0" />
-                <element signature="e#2247#2248#0" expanded="true" />
-                <element signature="e#2286#2287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,19 +49,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="113" column="33" lean-forward="true" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+            <state relative-caret-position="198">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
-                <element signature="e#728#782#0" />
-                <element signature="e#805#849#0" />
-                <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
-                <element signature="e#1330#1361#1" />
-                <element signature="e#1490#1778#1" />
-                <element signature="e#1690#1768#1" />
                 <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
                 <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
                 <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
@@ -85,10 +68,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
+              <folding>
+                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#787#788#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Routes.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -96,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="289">
+              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,15 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-              <folding>
-                <element signature="e#1001#1002#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="578">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -121,23 +113,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+            <state relative-caret-position="1530">
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="63" selection-end-column="107" />
-              <folding>
-                <element signature="e#749#750#0" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -198,12 +177,12 @@
         <option value="$PROJECT_DIR$/src/Core/Route.java" />
         <option value="$PROJECT_DIR$/src/Graphics/potentialRoute.java" />
         <option value="$PROJECT_DIR$/src/Graphics/PotentialRoute.java" />
-        <option value="$PROJECT_DIR$/src/Core/PotentialRoute.java" />
         <option value="$PROJECT_DIR$/src/Core/Network.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
         <option value="$PROJECT_DIR$/src/Core/Player.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
+        <option value="$PROJECT_DIR$/src/Core/PotentialRoute.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
       </list>
     </option>
   </component>
@@ -347,9 +326,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22547974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23294243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -359,7 +337,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -530,6 +508,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="80" column="72" selection-start-line="80" selection-start-column="72" selection-end-line="80" selection-end-column="72" />
+          <folding>
+            <element signature="method#Player#0;class#Player#0" />
+            <element signature="method#removeTrainCards#0;class#Player#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Route.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -537,6 +526,51 @@
           <folding>
             <element signature="method#Route#0;class#Route#0" />
             <element signature="method#getOtherCity#0;class#Route#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="18" />
+          <folding>
+            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#787#788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Routes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -555,39 +589,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Routes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="7" lean-forward="true" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="method#Player#0;class#Player#0" />
-            <element signature="method#removeTrainCards#0;class#Player#0" />
-            <element signature="method#isValidCardCombination#0;class#Player#0" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="113" column="33" lean-forward="true" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
+        <state relative-caret-position="198">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
-            <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
-            <element signature="e#728#782#0" />
-            <element signature="e#805#849#0" />
-            <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
-            <element signature="e#1330#1361#1" />
-            <element signature="e#1490#1778#1" />
-            <element signature="e#1690#1768#1" />
             <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
             <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
             <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
@@ -595,48 +601,6 @@
             <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
             <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
             <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="62" column="18" lean-forward="true" selection-start-line="62" selection-start-column="18" selection-end-line="63" selection-end-column="107" />
-          <folding>
-            <element signature="e#749#750#0" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="24" column="42" lean-forward="true" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="e#1001#1002#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
           </folding>
         </state>
       </provider>

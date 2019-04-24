@@ -30,6 +30,10 @@ public class PotentialRoute {
     public void draw(Graphics2D graphics2D) {
         graphics2D.setColor(new Color(0, 204, 202));
         graphics2D.fillOval(x, y, width, height);
+
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.drawLine(x+5, y+12, x+20, y+12);
+        graphics2D.drawLine(x+12, y+5, x+12, y+20);
     }
 
 

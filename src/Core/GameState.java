@@ -27,6 +27,13 @@ public class GameState {
             }
         }
 
+        for (Player p : getPlayers()) {
+            for (int i = 0; i < 3; i++) {
+                p.addTrainCard(new TrainCard("red"));
+                //p.addTrainCard(new TrainCard("wild"));
+            }
+        }
+
 
     }
 

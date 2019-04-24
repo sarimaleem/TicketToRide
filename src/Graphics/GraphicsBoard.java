@@ -6,16 +6,24 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class GraphicsBoard extends JPanel implements MouseListener {
 
     private GameState gameState;
     private BufferedImage map;
+    private boolean cheatButton = true;
+    HashMap<String, Color> colorHashMap;
 
     public GraphicsBoard() throws IOException {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
+        colorHashMap = new HashMap<>();
+        colorHashMap.put("yellow", Color.yellow);
+        colorHashMap.put("blue", Color.blue);
+        colorHashMap.put("green", Color.green);
+        colorHashMap.put("red", Color.red);
     }
 
     public void paintComponent(Graphics graphics) {
@@ -30,8 +38,36 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         drawPotentialRoutes(graphics2D);
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
+        drawCheatStatistics(graphics2D);
         repaint();
-        System.out.println(gameState.getCurrentPlayer().getPotentialRoutes());
+
+
+
+//        System.out.println(gameState.getCurrentPlayer().getPotentialRoutes());
+    }
+
+    public void drawCheatStatistics(Graphics2D graphics2D) {
+
+        String[] colors = {"blue", "green", "black", "orange", "purple", "red", "white", "yellow", "wild"};
+
+        double hoverX = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
+        double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
+
+        graphics2D.drawRect(1462, 914, 62, 63);
+
+
+        if (hoverX > 1462 && hoverX < 1564 && hoverY > 914 && hoverY < 977) {
+            int y = 775;
+            for (Player player : gameState.getPlayers()) {
+                graphics2D.setColor(colorHashMap.get(player.getTrainColor()));
+                int c=500;
+                for(int i=0;i<9;i++){
+                    graphics2D.drawString(""+player.getNumTrainCard(colors[i]), c, y);
+                    c += 115;
+                }
+                y += 20;
+            }
+        }
     }
 
     public void drawCurrentPlayerContracts(Graphics2D graphics2D) {
@@ -109,9 +145,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         if (r == null || r.getOwner() != null) {
             return;
         } else {
-            //r.setOwner(gameState.getCurrentPlayer());
             gameState.getCurrentPlayer().makePotentialRoutes(r);
-            gameState.nextTurn();
         }
 
     }

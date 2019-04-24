@@ -66,9 +66,9 @@ public class Player {
         return tickets;
     }
 
-    public boolean isValidCardCombination(String color, int length) {
+    public boolean isValidCardCombination(String color, int length, String routeColor) {
         int totalCards = getNumTrainCard(color) + getNumTrainCard("wild");
-        if (totalCards >= length)
+        if (totalCards >= length && (color.equals(routeColor) || routeColor.equals("gray")))
             return true;
         return false;
     }
@@ -77,7 +77,7 @@ public class Player {
         potentialRoutes.clear();
         String[] colors = new String[]{"blue", "green", "black", "orange", "purple", "red", "white", "yellow"};
         for (String color : colors) {
-            if (isValidCardCombination(color, r.getLength())) {
+            if (isValidCardCombination(color, r.getLength(), r.getColor())) {
                 potentialRoutes.add(new PotentialRoute(color, this, r));
             }
         }
