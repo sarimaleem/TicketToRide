@@ -63,12 +63,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawDeck(Graphics2D graphics2D) {
 
-        int adjX = 100;
+        int adjX = 230;
 
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-adjX,900,200,100);
+        graphics2D.fillRect(1700-adjX,900,150,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-adjX,900,200,100);
+        graphics2D.drawRect(1700-adjX,900,150,100);
         graphics2D.drawString("Draw",1710-adjX,940);
         graphics2D.drawString("Contracts",1710-adjX,980);
     }
@@ -111,6 +111,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int y =e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
+        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
+        if(graphicCards.contains(x,y)){
+            gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
+            repaint();
+        }
     }
     public void mouseEntered(MouseEvent e) {
     }

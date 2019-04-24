@@ -37,12 +37,11 @@ public class TrainCardDeck {
     }
     public TrainCard drawCard(int index){
         TrainCard toRemove = deck.remove(index);
-        faceUpCards.add(deck.remove(0));
         return toRemove;
     }
     public TrainCard drawFaceUpCard(int index){
         TrainCard toRemove = faceUpCards.remove(index);
-        faceUpCards.add(this.drawCard(0));
+        faceUpCards.add(index,deck.remove(0));
         return toRemove;
     }
 

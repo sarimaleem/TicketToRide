@@ -65,9 +65,10 @@ public class GraphicPlayer{
         graphics2D.drawString("TICKETS", 140, 980);
         int a=440;
         int c=458;
-        for(int i=0;i<9;i++){
+        String [] colors={"blue","green","black","orange","purple","red","white","yellow","wild"};
+        for(int i=0;i<colors.length;i++){
             drawRectangle(graphics2D, a, 810, 50, 30);
-            graphics2D.drawString(""+player.getNumTrainCard("blue"), c, 835);
+            graphics2D.drawString(""+player.getNumTrainCard(colors[i]), c, 835);
             a += 115;
             c += 115;
         }
