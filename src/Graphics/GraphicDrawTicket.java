@@ -7,30 +7,19 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
-
+public class GraphicDrawTicket extends JPanel implements MouseListener {
     private TicketDeck deck;
     private int x;
     private int y;
     private String str;
     ArrayList<Ticket> tickets;
-    private boolean fin;
-    private int lazy;
-    public GraphicDrawTicketv2() throws IOException {
-        fin=true;
+    private boolean finish;
+    public GraphicDrawTicket(GameState gameState){
+        finish =true;
         tickets=new ArrayList<Ticket>(3);
         str="";
-        x=0;
-        y=0;
-        deck=new TicketDeck();
-        Scanner cards = new Scanner(new File("Tickets.txt"));
-        int total=cards.nextInt();
-        String space=cards.nextLine();
-        for(int x=0;x<total;x++){
-            String tick=cards.nextLine();
-            String[] str=tick.split("-");
-            deck.addTicket(new Ticket(str[1],str[2],Integer.parseInt(str[0])));
-        }
+        x = y = 0;
+        deck = gameState.getTicketDeck();
         deck.shuffle();
         tickets.add(deck.drawTicket());
         tickets.add(deck.drawTicket());
@@ -47,24 +36,24 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         drawTickets(g2d);
         g2d.setColor(new Color(240,234,214));
         //g2d.fillRect(1700,900,200,100);
-        if(fin){
+        if(finish){
             g2d.fillRect(1250,500,200,100);
         }
         g2d.setColor(Color.BLACK);
         //g2d.drawRect(1700,900,200,100);
-        if(fin){
+        if(finish){
             g2d.drawRect(1250,500,200,100);
             g2d.drawRect(450,200,1000,400);
         }
-        if(fin){
-            g2d.drawString("Add",1260,540);
+        if(finish){
+            g2d.drawString("Take",1260,540);
             g2d.drawString("Remaining",1260,580);
         }
         //g2d.drawString("Draw",1710,940);
         //g2d.drawString("Contracts",1710,980);
     }
-    public ArrayList<Ticket> getContacts(){
-        if(fin){
+    public ArrayList<Ticket> getContracts(){
+        if(finish){
             return null;
         }
         return tickets;
@@ -76,10 +65,10 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
         tickets.add(deck.drawTicket());
         tickets.add(deck.drawTicket());
         tickets.add(deck.drawTicket());
-        fin=true;
+        finish =true;
     }
     public void drawTickets(Graphics2D g) {
-        if(str.equals("1")&&tickets.size()>1){
+        if(str.equals("1")&&tickets.size()>0){
             deck.addTicket(tickets.remove(0));
             str="";
         }else if(str.equals("2")){
@@ -89,25 +78,23 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
             deck.addTicket(tickets.remove(2));
             str="";
         }else if(str.equals("null")){
-            fin=false;
+            finish =false;
             str="";
         }
-        if(tickets.size()==1){
-            fin=false;
-        }
-        if(fin){
+
+        if(finish){
             g.setColor(Color.GRAY);
             g.fillRect(450,200,1000,400);
         }
-        if(tickets.size()>0&&fin) {
+        if(tickets.size()>0&& finish) {
             GraphicTicket f=new GraphicTicket(tickets.get(0));
             f.drawTicket(g,525,300);
         }
-        if(tickets.size()>1&&fin) {
+        if(tickets.size()>1&& finish) {
             GraphicTicket s=new GraphicTicket(tickets.get(1));
             s.drawTicket(g,825,300);
         }
-        if(tickets.size()>2&&fin) {
+        if(tickets.size()>2&& finish) {
             GraphicTicket t=new GraphicTicket(tickets.get(2));
             t.drawTicket(g,1125,300);
         }
@@ -115,24 +102,21 @@ public class GraphicDrawTicketv2 extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         x=e.getX();
         y=e.getY();
-        /*if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!fin){
-            reset();
-            repaint();
-        }*/
-        if(x>=525&&x<=750&&y>=300&&y<=450&&tickets.size()>1&&fin){
+
+        if(x>=525&&x<=750&&y>=300&&y<=450&&tickets.size()>1&& finish){
             str="1";
             repaint();
         }
-        if(x>=825&&x<=1050&&y>=300&&y<=450&&tickets.size()>1&&fin){
+        if(x>=825&&x<=1050&&y>=300&&y<=450&&tickets.size()>1&& finish){
             str="2";
             repaint();
         }
-        if(x>=1125&&x<=1350&&y>=300&&y<=450&&tickets.size()==3&&fin){
+        if(x>=1125&&x<=1350&&y>=300&&y<=450&&tickets.size()==3&& finish){
 
             str="3";
             repaint();
         }
-        if(x>=1250&&x<=1450&&y>=500&&y<=600&&tickets.size()>1&&fin){
+        if(x>=1250&&x<=1450&&y>=500&&y<=600&& finish){
 
             str="null";
             repaint();

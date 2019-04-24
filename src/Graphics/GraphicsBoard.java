@@ -10,15 +10,18 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     
     private GameState gameState;
     private BufferedImage map;
-    private GraphicDrawTicketv2 con;
-    private boolean lunch;
-    
+    private GraphicDrawTicket contracts;
+    private GraphicOpeningDrawTicket open;
+    private boolean GraphicsDrawTicketIsRunning,start;
+    private int egg;
     public GraphicsBoard() throws IOException {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
-        con=new GraphicDrawTicketv2();
-        lunch=false;
+        open = new GraphicOpeningDrawTicket(gameState);
+        GraphicsDrawTicketIsRunning =false;
+        start=true;
+        egg=0;
     }
     public void paintComponent(Graphics graphics) {
         super.paintComponent(graphics);
@@ -30,14 +33,33 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             e.printStackTrace();
         }
         drawCurrentPlayerContracts(graphics2D);
-        drawDeck(graphics2D);
-        if(lunch){
-            con.paint(graphics2D);
-            if(con.getContacts()!=null){
-                for(Ticket t:con.getContacts())
+        if(start){
+            open.paint(graphics2D);
+            if(open.getContracts()!=null){
+                for(Ticket t: open.getContracts())
                     gameState.getCurrentPlayer().addTicket(t);
-                lunch=false;
-                con.reset();
+                if(egg!=3){
+                    open.reset();
+                }
+                gameState.nextTurn();
+                egg++;
+            }
+        }
+        if(egg==4){
+            start=false;
+            gameState.setTicketDeck(open.ReturnRemainingDeck());
+            contracts=new GraphicDrawTicket(gameState);
+            egg++;
+        }
+        drawDeck(graphics2D);
+        if(GraphicsDrawTicketIsRunning){
+            contracts.paint(graphics2D);
+            if(contracts.getContracts()!=null){
+                for(Ticket t: contracts.getContracts())
+                    gameState.getCurrentPlayer().addTicket(t);
+                GraphicsDrawTicketIsRunning =false;
+                contracts.reset();
+                gameState.nextTurn();
             }
         }
         repaint();
@@ -95,13 +117,17 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int x =e.getX();
         int y =e.getY();
         System.out.println(x + " " + y);
-        if(x>=1700&&x<=1900&&y>=900&&y<=1000&&!lunch){
-            lunch=true;
-        }
-        if(lunch){
-            con.mouseReleased(e);
-        }else{
-            gameState.getNetwork().printRoute(x, y);
+        if(start){
+            open.mouseReleased(e);
+        }else {
+            if (x >= 1700 && x <= 1900 && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning) {
+                GraphicsDrawTicketIsRunning = true;
+            }
+            if (GraphicsDrawTicketIsRunning) {
+                contracts.mouseReleased(e);
+            } else {
+                gameState.getNetwork().printRoute(x, y);
+            }
         }
     }
     public void mouseEntered(MouseEvent e) {

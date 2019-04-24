@@ -14,18 +14,6 @@ public class GameState {
         currentPlayer = 0;
         network = new Network();
         ticketDeck = new TicketDeck();
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
-        getCurrentPlayer().addTicket(ticketDeck.drawTicket());
     }
     public Player getCurrentPlayer() {
         return players.get(currentPlayer);
@@ -35,5 +23,14 @@ public class GameState {
     }
     public Network getNetwork() {
         return network;
+    }
+    public void setTicketDeck(TicketDeck a){
+        ticketDeck=a;
+    }
+    public TicketDeck getTicketDeck() {
+        return ticketDeck;
+    }
+    public void nextTurn() {
+        currentPlayer = (currentPlayer + 1)%players.size();
     }
 }
