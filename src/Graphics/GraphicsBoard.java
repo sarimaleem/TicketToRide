@@ -17,6 +17,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
+        this.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
     }
 
     public void paintComponent(Graphics graphics) {
@@ -28,7 +29,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        drawStatistics(gameState, graphics2D);
+        drawLeaderBoard(gameState, graphics2D);
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
         repaint();
@@ -58,13 +59,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawDeck(Graphics2D graphics2D) {
-        int adjX = 100;
+        int adjX = 250;
+        int adjY = 100;
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-adjX,900,200,100);
+        graphics2D.fillRect(1700-adjX,900-adjY,200,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-adjX,900,200,100);
-        graphics2D.drawString("Draw",1710-adjX,940);
-        graphics2D.drawString("Contracts",1710-adjX,980);
+        graphics2D.drawRect(1700-adjX,900-adjY,200,100);
+        graphics2D.drawString("Draw",1710-adjX,940-adjY);
+        graphics2D.drawString("Contracts",1710-adjX,980-adjY);
     }
 
 
@@ -75,12 +77,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawLine(1415, 0, 1415, getHeight());
         graphics2D.setColor(new Color(62, 94, 100));
         graphics2D.fillRect(0, getHeight()-300, getWidth()-500, 300);
-
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
 //      graphics2D.drawString("Ticket To Ride", 600, 70);
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.setColor(Color.BLACK);
         gameState.getNetwork().drawRoutes(graphics2D);
+
     }
 
     public void drawGraphicPlayer(Graphics2D graphics2D) throws IOException {
@@ -88,7 +90,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphicPlayer.draw(graphics2D);
     }
 
-    public void drawStatistics(GameState game, Graphics2D graphics2D)
+    public void drawLeaderBoard(GameState game, Graphics2D graphics2D)
     {
         ArrayList<Player> players = game.getPlayers();
         graphics2D.drawRect(1414, 0, 500, 320);
@@ -96,7 +98,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.fillRect(1414, 0, 500, 320);
         graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
-        graphics2D.drawString("Statistics", 1600, 30);
+        graphics2D.drawString("Leader Board", 1570, 30);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
         graphics2D.drawString(players.get(0).getTrainColor(),1465, 75);
         graphics2D.drawString(players.get(1).getTrainColor(),1735, 75);

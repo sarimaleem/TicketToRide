@@ -53,12 +53,12 @@ public class GraphicPlayer{
         graphics2D.drawRect(5, 780 ,380, 230);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
-        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 55, 860);
+        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 85, 860);
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
         drawRectangle(graphics2D, 120, 945, 150, 50);
-        graphics2D.drawString("TICKETS", 140, 980);
+        graphics2D.drawString("Contracts", 140, 980);
         int rectX=420;//box
         int numCardX=438;
         for(int i=0;i<9;i++){
