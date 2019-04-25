@@ -5,14 +5,14 @@ public class PotentialRoute {
     int x, y;
     Player player;
     Route route;
+    String cardColorTradingIn;
     static final int width = 25, height = 25;
 
-    //TODO fix the gray route case
-    //TODO fix the concurrent Modification error
 
     public PotentialRoute(String color, Player player, Route route) {
         this.player = player;
         this.route = route;
+        this.cardColorTradingIn = color;
         setCoordinates(color);
     }
 
@@ -47,16 +47,13 @@ public class PotentialRoute {
     public void activate() {
 
         int length = route.getLength();
-        String color = route.getColor();
 
-        System.out.println("SUCCESS");
-
-        if (player.getNumTrainCard(color) - length >= 0) {
-            player.removeTrainCards(color, length);
+        if (player.getNumTrainCard(cardColorTradingIn) - length >= 0) {
+            player.removeTrainCards(cardColorTradingIn, length);
         } else {
-            int numNormalCards = player.getNumTrainCard(color);
+            int numNormalCards = player.getNumTrainCard(cardColorTradingIn);
             int wildCardsNeeded = length - numNormalCards;
-            player.removeTrainCards(color, numNormalCards);
+            player.removeTrainCards(cardColorTradingIn, numNormalCards);
             player.removeTrainCards("wild", wildCardsNeeded);
         }
 

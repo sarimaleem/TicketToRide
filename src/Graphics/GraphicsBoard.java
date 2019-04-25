@@ -148,12 +148,18 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             gameState.getCurrentPlayer().makePotentialRoutes(r);
 
 
-        for (PotentialRoute p : gameState.getCurrentPlayer().getPotentialRoutes()) {
+
+        for (int i = 0; i < gameState.getCurrentPlayer().getPotentialRoutes().size(); i++) {
+            PotentialRoute p = gameState.getCurrentPlayer().getPotentialRoutes().get(i);
             if (p.contains(x, y)) {
                 p.activate();
                 gameState.nextTurn();
             }
         }
+
+
+
+
     }
 
     public void mouseEntered(MouseEvent e) {
