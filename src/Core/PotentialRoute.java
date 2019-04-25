@@ -8,7 +8,6 @@ public class PotentialRoute {
     String cardColorTradingIn;
     static final int width = 25, height = 25;
 
-
     public PotentialRoute(String color, Player player, Route route) {
         this.player = player;
         this.route = route;
