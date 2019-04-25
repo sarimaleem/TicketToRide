@@ -15,6 +15,7 @@ public class Player {
         this.trainColor = trainColor;
         trainCards = new ArrayList<TrainCard>();
         tickets = new ArrayList<>();
+        trainPoints=2;
     }
 
     public String getTrainColor() {
@@ -44,6 +45,12 @@ public class Player {
                 cnt++;
         }
         return cnt;
+    }
+    public int getTrainPoints(){
+        return trainPoints;
+    }
+    public void setTrainPoints(int tPoints){
+        trainPoints=tPoints;
     }
 
     public ArrayList<Ticket> getTickets() {

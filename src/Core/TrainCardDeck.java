@@ -25,9 +25,6 @@ public class TrainCardDeck {
         for (int i = 0; i < 5; i++) {
             faceUpCards.add(deck.remove(0));
         }
-
-
-
     }
     public void addCard(TrainCard t){
         deck.add(t);
@@ -44,10 +41,25 @@ public class TrainCardDeck {
         faceUpCards.add(index,deck.remove(0));
         return toRemove;
     }
-
     public ArrayList<TrainCard> getFaceUpCards() {
         return faceUpCards;
     }
-
+    public boolean hasThreeWild(){
+        int cnt=0;
+        for(int i=0;i<5;i++){
+            if(faceUpCards.get(i).getColor().equals("wild"))
+                cnt++;
+        }
+        if(cnt>=3)
+            return true;
+        return false;
+    }
+    public void resetFaceUpCards(){
+            for(int i=0;i<5;i++){
+                deck.add(faceUpCards.remove(i));
+                faceUpCards.set(i,drawCard(0));
+            }
+            shuffle();
+    }
 }
 

@@ -9,30 +9,12 @@ import java.util.ArrayList;
 public class GraphicFaceUpCards extends JPanel {
     TrainCardDeck deck;
     TrainCard pickedCard;
-    //ArrayList<TrainCard> cards=new ArrayList<TrainCard>();
-    // a = new TrainCard("blue");
-    //TrainCard b = new TrainCard("green");
-    //TrainCard c = new TrainCard("black");
-    // d = new TrainCard("orange");
-    //TrainCard e = new TrainCard("purple");
-
-
     public GraphicFaceUpCards() {
         deck = new TrainCardDeck();
     }
 
     public GraphicFaceUpCards(TrainCardDeck d) {
         deck = d;
-        //displayedCards=new ArrayList<>();
-        //for(int i=0;i<5;i++){
-        //TrainCard t=deck.drawCard();
-        //  displayedCards.set(i,deck.drawCard());
-        //}
-        //cards.add(a);
-        //cards.add(b);
-        //cards.add(c);
-        //cards.add(d);
-        //cards.add(e);
     }
 
     public void draw(Graphics2D graphics2D) {
@@ -48,7 +30,6 @@ public class GraphicFaceUpCards extends JPanel {
             graphicTrainCard.draw(graphics2D);
             y += 110;
         }
-
         drawRectangle(graphics2D,1730,900,150,100);
         graphics2D.drawString("Draw",1770,940);
         graphics2D.drawString("Train Card",1740,980);
@@ -76,12 +57,10 @@ public class GraphicFaceUpCards extends JPanel {
                 return true;
 
             }
-
+            if (x >= 1730 && x <= 1880 && y >= 900 && y <= 1000){
+                return true;
+            }
         }
-        System.out.println("chiken");
         return false;
     }
-
-//HI this is a test
-
 }

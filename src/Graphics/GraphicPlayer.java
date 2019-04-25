@@ -4,8 +4,6 @@ import java.io.IOException;
 public class GraphicPlayer{
     private Player player;
     private boolean tclicked;
-    //private int x, y;
-    //private static final int height = 230, width = 400;
     TrainCard b = new TrainCard("blue");
     TrainCard g = new TrainCard("green");
     TrainCard bl = new TrainCard("black");
@@ -23,10 +21,6 @@ public class GraphicPlayer{
 
     public void draw(Graphics2D graphics2D) {
         drawPlayer(graphics2D);
-
-        //if(tclicked==true)
-       // drawTicketDisplay(graphics2D);
-
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
         graphics2D.setColor(Color.WHITE);
@@ -101,7 +95,6 @@ public class GraphicPlayer{
     }
     public boolean contains(int x, int y) {
         if (x >= 120 && x <= 270 && y >= 945 && y <= 995) {
-            //System.out.println("brr");
             return true;
         }
         return false;
