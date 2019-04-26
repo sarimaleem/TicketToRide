@@ -59,7 +59,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawDeck(Graphics2D graphics2D) {
-        int adjX = 250;
+        int adjX = 270;
         int adjY = 100;
         graphics2D.setColor(new Color(240,234,214));
         graphics2D.fillRect(1700-adjX,900-adjY,200,100);
@@ -73,15 +73,17 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawBoard(Graphics2D graphics2D) {
         this.setBackground(new Color(110, 160, 148));
         graphics2D.drawImage(map, 0, 0, getWidth() - 500, getHeight() - 300, this);
-        graphics2D.setColor(Color.BLACK);
-        graphics2D.drawLine(1415, 0, 1415, getHeight());
         graphics2D.setColor(new Color(62, 94, 100));
         graphics2D.fillRect(0, getHeight()-300, getWidth()-500, 300);
-        graphics2D.setFont(new Font("serif", Font.BOLD, 60));
-//      graphics2D.drawString("Ticket To Ride", 600, 70);
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.drawLine(1415, 0, 1415, getHeight());
+
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.setColor(Color.BLACK);
         gameState.getNetwork().drawRoutes(graphics2D);
+        graphics2D.setFont(new Font("serif", Font.BOLD, 60));
+        graphics2D.drawString("Ticket To Ride", 1470, 70);
+
 
     }
 
@@ -92,22 +94,23 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawLeaderboard(GameState game, Graphics2D graphics2D)
     {
+        int adjY = 100;
         ArrayList<Player> players = game.getPlayers();
-        graphics2D.drawRect(1414, 0, 500, 320);
+        graphics2D.drawRect(1414, adjY, 500, 320);
         graphics2D.setColor(Color.cyan);
-        graphics2D.fillRect(1414, 0, 500, 320);
+        graphics2D.fillRect(1414, adjY, 500, 320);
         graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
-        graphics2D.drawString("Leaderboard", 1570, 30);
+        graphics2D.drawString("Leaderboard", 1570, 30+adjY);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
-        graphics2D.drawString(players.get(0).getTrainColor(),1465, 75);
-        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75);
-        graphics2D.drawString(players.get(2).getTrainColor(),1465, 200);
-        graphics2D.drawString(players.get(3).getTrainColor(),1735, 200);
-        drawInfo(players.get(0), new Point(1465, 75), graphics2D);
-        drawInfo(players.get(1), new Point(1735, 75), graphics2D);
-        drawInfo(players.get(2), new Point(1465, 200), graphics2D);
-        drawInfo(players.get(3), new Point(1735, 200), graphics2D);
+        graphics2D.drawString(players.get(0).getTrainColor(),1465, 75+adjY);
+        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75+adjY);
+        graphics2D.drawString(players.get(2).getTrainColor(),1465, 200+adjY);
+        graphics2D.drawString(players.get(3).getTrainColor(),1735, 200+adjY);
+        drawInfo(players.get(0), new Point(1465, 75+adjY), graphics2D);
+        drawInfo(players.get(1), new Point(1735, 75+adjY), graphics2D);
+        drawInfo(players.get(2), new Point(1465, 200+adjY), graphics2D);
+        drawInfo(players.get(3), new Point(1735, 200+adjY), graphics2D);
     }
 
     private void drawInfo(Player player, Point point, Graphics2D graphics2D)
