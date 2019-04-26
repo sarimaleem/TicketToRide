@@ -12,17 +12,16 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     
     private GameState gameState;
     private BufferedImage map;
-
-    private boolean cheatButton = true;
     HashMap<String, Color> colorHashMap;
 
 
     private GraphicDrawTicket contracts;
-    private GraphicOpeningDrawTicket open;
+    private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
-    private int egg;
+    private int numTurnsPassed;
 
     public GraphicsBoard() throws IOException {
+
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
@@ -35,17 +34,19 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         colorHashMap.put("red", Color.red);
 
 
-        open = new GraphicOpeningDrawTicket(gameState);
+        BeginningTicketSelection = new GraphicOpeningDrawTicket(gameState);
         GraphicsDrawTicketIsRunning =false;
         start=true;
-        egg=0;
+        numTurnsPassed =0;
 
 
     }
     public void paintComponent(Graphics graphics) {
+
         super.paintComponent(graphics);
         Graphics2D graphics2D = (Graphics2D)graphics;
         drawBoard(graphics2D);
+
         try {
             drawGraphicPlayer(graphics2D);
         } catch (IOException e) {
@@ -53,24 +54,27 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
         drawPotentialRoutes(graphics2D);
         drawCurrentPlayerContracts(graphics2D);
+
         if(start){
-            open.paint(graphics2D);
-            if(open.getContracts()!=null){
-                for(Ticket t: open.getContracts())
+            BeginningTicketSelection.paint(graphics2D);
+            if(BeginningTicketSelection.getContracts()!=null){
+                for(Ticket t: BeginningTicketSelection.getContracts())
                     gameState.getCurrentPlayer().addTicket(t);
-                if(egg!=3){
-                    open.reset();
+                if(numTurnsPassed !=3){
+                    BeginningTicketSelection.reset();
                 }
                 gameState.nextTurn();
-                egg++;
+                numTurnsPassed++;
             }
         }
-        if(egg==4){
+
+        if(numTurnsPassed == 4){
             start=false;
-            gameState.setTicketDeck(open.ReturnRemainingDeck());
+            gameState.setTicketDeck(BeginningTicketSelection.ReturnRemainingDeck());
             contracts=new GraphicDrawTicket(gameState);
-            egg++;
+            numTurnsPassed++;
         }
+
         drawDeck(graphics2D);
 
         drawCheatStatistics(graphics2D);
@@ -189,30 +193,35 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         gameState.getNetwork().printRoute(x, y);
 
-        Route r = gameState.getNetwork().getRoute(x, y);
-        if (r != null && r.getOwner() == null)
-            gameState.getCurrentPlayer().makePotentialRoutes(r);
 
-
-
-        for (int i = 0; i < gameState.getCurrentPlayer().getPotentialRoutes().size(); i++) {
-            PotentialRoute p = gameState.getCurrentPlayer().getPotentialRoutes().get(i);
-            if (p.contains(x, y)) {
-                p.activate();
-                gameState.nextTurn();
-            }
-        }
 
         if(start){
-            open.mouseReleased(e);
-        }else {
+            BeginningTicketSelection.mouseReleased(e);
+        } else {
             if (x >= 1700 && x <= 1900 && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning) {
+                gameState.clearPotentialRoutes();
                 GraphicsDrawTicketIsRunning = true;
             }
             if (GraphicsDrawTicketIsRunning) {
+                gameState.clearPotentialRoutes();
                 contracts.mouseReleased(e);
             } else {
                 gameState.getNetwork().printRoute(x, y);
+
+                Route r = gameState.getNetwork().getRoute(x, y);
+                if (r != null && r.getOwner() == null)
+                    gameState.getCurrentPlayer().makePotentialRoutes(r);
+
+
+
+                for (int i = 0; i < gameState.getCurrentPlayer().getPotentialRoutes().size(); i++) {
+                    PotentialRoute p = gameState.getCurrentPlayer().getPotentialRoutes().get(i);
+                    if (p.contains(x, y)) {
+                        p.activate();
+                        gameState.nextTurn();
+                    }
+                }
+
             }
         }
     }

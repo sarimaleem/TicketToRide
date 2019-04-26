@@ -62,4 +62,8 @@ public class GameState {
         currentPlayer = (currentPlayer + 1)%players.size();
     }
 
+    public void clearPotentialRoutes() {
+        getCurrentPlayer().clearPotentialRoutes();
+    }
+
 }
