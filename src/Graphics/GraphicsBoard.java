@@ -111,9 +111,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int y =e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
-        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
         if(gameState.getTrainCardDeck().hasThreeWild())
             gameState.getTrainCardDeck().resetFaceUpCards();
+        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
         if(gameState.getCurrentPlayer().getTrainPoints()>0) {
             if (graphicCards.contains(x, y)) {
                 if (graphicCards.getPickedCard() == null) {
@@ -125,6 +125,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 }
                 repaint();
             }
+            if(gameState.getTrainCardDeck().hasThreeWild())
+                gameState.getTrainCardDeck().resetFaceUpCards();
         }
     }
     public void mouseEntered(MouseEvent e) {

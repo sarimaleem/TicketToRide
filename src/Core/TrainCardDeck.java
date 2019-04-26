@@ -57,7 +57,7 @@ public class TrainCardDeck {
     public void resetFaceUpCards(){
             for(int i=0;i<5;i++){
                 deck.add(faceUpCards.remove(i));
-                faceUpCards.set(i,drawCard(0));
+                faceUpCards.add(drawCard(0));
             }
             shuffle();
     }
