@@ -1,15 +1,16 @@
-//import javax.swing.*;
-//import java.io.IOException;
-//
-//public class TicketTest {
-//    public static void main(String[] args) throws IOException {
-//        JFrame window = new JFrame("TicketTest"); // Makes sure that you title this correctly
-//        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        window.setSize(1920, 1080);
-//        window.setVisible(true);
-//        GraphicDrawTicket board = new GraphicDrawTicket();
-//        window.add(board);
-//        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
-//        window.addMouseListener(board);
-//    }
-//}
+import javax.swing.*;
+import java.io.IOException;
+
+public class TicketTest {
+    public static void main(String[] args) throws IOException {
+        JFrame window = new JFrame("TicketTest"); // Makes sure that you title this correctly
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setSize(1920, 1080);
+        window.setVisible(true);
+        GraphicTicket board = new GraphicTicket("Washington","New York",60);
+        board.CompleteTicket();
+        window.add(board);
+        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        window.addMouseListener(board);
+    }
+}

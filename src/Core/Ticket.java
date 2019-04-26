@@ -25,6 +25,9 @@ public class Ticket {
     public boolean getFinished() {
         return finished;
     }
+    public void setFinished(){
+        finished=true;
+    }
     public String toString(){
         return a+" "+b+" "+value;
     }
