@@ -59,14 +59,13 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     public void drawDeck(Graphics2D graphics2D) {
-        int adjX = 270;
-        int adjY = 100;
+        int adjX = 100;
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-adjX,900-adjY,200,100);
+        graphics2D.fillRect(1700-adjX,900,200,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-adjX,900-adjY,200,100);
-        graphics2D.drawString("Draw",1710-adjX,940-adjY);
-        graphics2D.drawString("Contracts",1710-adjX,980-adjY);
+        graphics2D.drawRect(1700-adjX,900,200,100);
+        graphics2D.drawString("Draw",1710-adjX,940);
+        graphics2D.drawString("Contracts",1710-adjX,980);
     }
 
 
