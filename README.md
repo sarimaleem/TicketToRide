@@ -13,8 +13,9 @@
 **Integration**
 - [ ] Player can only select one thing (route selection, drawing contract, drawing traincard
 - [ ] Next Players Turn
-- [ ] Start Game
+- [x] Start Game
 - [ ] End Game
+- [ ] Player gets points for drawing routes and finishing tickets
 
 **Extra**
 - [ ] Make the cursor clearer
@@ -22,6 +23,7 @@
 - [ ] Title??
 - [ ] Do a checkmark when the players contract is completed
 - [ ] Fix inconsistencies
+- [ ] 
 
 
 
@@ -62,7 +64,7 @@
 - [x] work on graphic train card
 - [x] work on graphic player class
 - [ ] work on drawing the cards from the deck
-- [ ]
+- [ ] 
 
 
 
