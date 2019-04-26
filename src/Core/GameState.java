@@ -59,5 +59,7 @@ public class GameState {
     public Network getNetwork() {
         return network;
     }
-
+    public void nextTurn() {
+        currentPlayer = (currentPlayer + 1)%players.size();
+    }
 }

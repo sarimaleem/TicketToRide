@@ -127,6 +127,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             }
             if(gameState.getTrainCardDeck().hasThreeWild())
                 gameState.getTrainCardDeck().resetFaceUpCards();
+            if(gameState.getCurrentPlayer().getTrainPoints()==0)
+                gameState.nextTurn();
         }
     }
     public void mouseEntered(MouseEvent e) {
