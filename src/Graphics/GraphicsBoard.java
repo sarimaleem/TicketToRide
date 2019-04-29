@@ -17,7 +17,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
-        this.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
+       // this.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
     }
 
     public void paintComponent(Graphics graphics) {

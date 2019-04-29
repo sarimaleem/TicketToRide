@@ -207,10 +207,10 @@ Phoenix-El Paso-3-gray
 506 751
 356 715
 Helena-Winnipeg-4-blue
-466 309
-612 183
-626 191
-477 318
+615 184
+629 193
+479 319
+465 307
 Helena-Duluth-6-orange
 471 322
 792 318
@@ -324,10 +324,10 @@ Winnipeg-Sault Ste. Marie-6-gray
 980 235
 667 181
 Winnipeg-Duluth-4-black
-656 186
-810 304
-793 316
-642 196
+651 185
+804 306
+794 316
+641 196
 Duluth-Sault Ste. Marie-3-gray
 834 296
 977 245
