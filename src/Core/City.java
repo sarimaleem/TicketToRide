@@ -22,9 +22,12 @@ public class City {
         return routes;
     }
 
-
     public String toString() {
         return name + " " + routes;
+    }
+
+    public String getName() {
+        return name;
     }
 
 

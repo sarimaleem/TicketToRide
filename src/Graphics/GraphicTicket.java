@@ -1,9 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 import java.io.IOException;
-import java.util.Scanner;
 import java.io.*;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
@@ -59,7 +56,7 @@ public class GraphicTicket extends JPanel {
         g.drawString(ticket.getA()+"",x+5,y+30);
         g.drawString(ticket.getB()+"",x+5,y+145);
         g.drawString(ticket.getValue()+"",x+90,y+90);
-        if(ticket.getFinished()){
+        if(ticket.isFinished()){
             g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 0.6f));
             g.drawImage(check,x,y,225,150,this);
             g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1));

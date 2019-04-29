@@ -63,6 +63,22 @@ public class GameState {
     }
 
     public void clearPotentialRoutes() {
+        ArrayList<Ticket> tickets = getCurrentPlayer().getTickets();
+
+
+        for (int i = 0; i < tickets.size(); i++) {
+            Ticket t = tickets.get(i);
+
+            if (getNetwork().ticketFinished(t.getA(), t.getB(), getCurrentPlayer())) {
+                t.setFinished();
+            }
+
+            getNetwork().resetMarked();
+
+        }
+
+
+
         getCurrentPlayer().clearPotentialRoutes();
     }
 

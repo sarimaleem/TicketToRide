@@ -4,12 +4,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class Network {
     HashMap<String, City> cities;
     HashMap<Path2D.Double, Route> paths;
     HashMap<String, Color> stringColorHashMap;
+    HashSet<Route> marked;
 
 
     public Network() throws FileNotFoundException {
@@ -99,4 +101,31 @@ public class Network {
             }
         }
     }
+
+    public boolean ticketFinished(String start, String end, Player p) {
+
+        boolean complete = false;
+        if (start.equals(end)) complete = true;
+
+        for (Route r : cities.get(start).getRoutes()) {
+            if(!r.isFull()) {
+                continue;
+            } else if(marked.contains(r)) {
+                continue;
+            } else if (!p.getTrainColor().equals(r.getOwner().getTrainColor())) {
+                continue;
+            } else {
+                marked.add(r);
+                complete = complete || ticketFinished(r.getOtherCity(cities.get(start)).getName(), end, p);
+            }
+        }
+        return complete;
+    }
+
+
+    public void resetMarked() {
+        marked = new HashSet<>();
+    }
+
+
 }

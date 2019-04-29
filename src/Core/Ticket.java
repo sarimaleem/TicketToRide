@@ -22,9 +22,15 @@ public class Ticket {
         return value;
     }
 
-    public boolean getFinished() {
+    public boolean isFinished() {
         return finished;
     }
+
+
+    public void setFinished() {
+        finished = true;
+    }
+
     public String toString(){
         return a+" "+b+" "+value;
     }
