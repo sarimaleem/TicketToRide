@@ -16,7 +16,7 @@ public class PotentialRoute {
     }
 
     public void setCoordinates(String color) {
-        int blueCardX = 455;
+        int blueCardX = 435;
         if (color.equals("blue")) x = blueCardX;
         else if(color.equals("green")) x = blueCardX + 115;
         else if(color.equals("black")) x = blueCardX + 115*2;
