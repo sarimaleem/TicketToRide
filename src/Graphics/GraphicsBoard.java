@@ -121,11 +121,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                     gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints()-1);
                 } else {
                     gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
-                    if(graphicCards.getPickedCard().getColor().equals("wild"))
-                    gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints()-2);
-                    else {
-                        gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints() - 1);
-                    }
+                    gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints() - 1);
                 }
                 repaint();
             }
