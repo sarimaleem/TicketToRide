@@ -7,6 +7,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.ArrayList;
+
 
 public class GraphicsBoard extends JPanel implements MouseListener {
     
@@ -26,6 +28,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
 
+       // this.setCursor(new Cursor(Cursor.CROSSHAIR_CURSOR));
 
         colorHashMap = new HashMap<>();
         colorHashMap.put("yellow", Color.yellow);
@@ -52,7 +55,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         drawPotentialRoutes(graphics2D);
+
+        drawLeaderboard(gameState, graphics2D);
+
         drawCurrentPlayerContracts(graphics2D);
 
         if(start){
@@ -143,6 +150,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
     }
 
+
     public void drawPotentialRoutes(Graphics2D graphics2D) {
         for (PotentialRoute potentialRoute : gameState.getCurrentPlayer().getPotentialRoutes()) {
             potentialRoute.draw(graphics2D);
@@ -151,9 +159,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
 
     public void drawDeck(Graphics2D graphics2D) {
-        Font myFont = new Font("Arial", Font.BOLD, 25);
-        graphics2D.setFont(myFont);
-        int adjX = 00;
+        int adjX = 0;
+
         graphics2D.setColor(new Color(240,234,214));
         graphics2D.fillRect(1700-adjX,900,200,100);
         graphics2D.setColor(Color.BLACK);
@@ -165,20 +172,63 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
 
     public void drawBoard(Graphics2D graphics2D) {
-        Font myFont = new Font("Serif", Font.BOLD, 25);
-        graphics2D.setFont(myFont);
+        this.setBackground(new Color(110, 160, 148));
         graphics2D.drawImage(map, 0, 0, getWidth() - 500, getHeight() - 300, this);
-        graphics2D.setColor(new Color(100, 50, 50));
-        graphics2D.setFont(new Font("serif", Font.BOLD, 60));
-//      graphics2D.drawString("Ticket To Ride", 600, 70);
+        graphics2D.setColor(new Color(62, 94, 100));
+        graphics2D.fillRect(0, getHeight()-300, getWidth()-500, 300);
+        graphics2D.setColor(Color.BLACK);
+        graphics2D.drawLine(1415, 0, 1415, getHeight());
+
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.setColor(Color.BLACK);
+
         gameState.getNetwork().drawAndFillRoutes(graphics2D);
+        graphics2D.setFont(new Font("serif", Font.BOLD, 60));
+        graphics2D.drawString("Ticket To Ride", 1470, 70);
+
+
     }
     public void drawGraphicPlayer(Graphics2D graphics2D) throws IOException {
         GraphicPlayer graphicPlayer = new GraphicPlayer(gameState.getCurrentPlayer());
         graphicPlayer.draw(graphics2D);
     }
+
+
+    public void drawLeaderboard(GameState game, Graphics2D graphics2D)
+    {
+        int adjY = 100;
+        ArrayList<Player> players = game.getPlayers();
+        graphics2D.drawRect(1414, adjY, 500, 320);
+        graphics2D.setColor(Color.cyan);
+        graphics2D.fillRect(1414, adjY, 500, 320);
+        graphics2D.setColor(new Color(0, 0, 0));
+        graphics2D.setFont(new Font("serif", Font.BOLD, 30));
+        graphics2D.drawString("Leaderboard", 1570, 30+adjY);
+        graphics2D.setFont(new Font("serif", Font.BOLD, 20));
+        graphics2D.drawString(players.get(0).getTrainColor(),1465, 75+adjY);
+        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75+adjY);
+        graphics2D.drawString(players.get(2).getTrainColor(),1465, 200+adjY);
+        graphics2D.drawString(players.get(3).getTrainColor(),1735, 200+adjY);
+        drawInfo(players.get(0), new Point(1465, 75+adjY), graphics2D);
+        drawInfo(players.get(1), new Point(1735, 75+adjY), graphics2D);
+        drawInfo(players.get(2), new Point(1465, 200+adjY), graphics2D);
+        drawInfo(players.get(3), new Point(1735, 200+adjY), graphics2D);
+    }
+
+    private void drawInfo(Player player, Point point, Graphics2D graphics2D)
+    {
+        graphics2D.setFont(new Font("serif", Font.BOLD, 15));
+        graphics2D.drawString("Points: ",(int)point.getX(), (int)point.getY()+30);
+        graphics2D.drawString(""+player.getPoints(),(int)point.getX()+50, (int)point.getY()+30);
+        graphics2D.drawString("Trains: ",(int)point.getX(), (int)point.getY()+50);
+        graphics2D.drawString(""+player.getNumTrains(),(int)point.getX()+50, (int)point.getY()+50);
+        graphics2D.drawString("Contracts Completed: ",(int)point.getX(), (int)point.getY()+70);
+        graphics2D.drawString(""+player.numTicketsCompleted(),(int)point.getX()+150, (int)point.getY()+70);
+        graphics2D.drawString("Contracts Remaining: ",(int)point.getX(), (int)point.getY()+90);
+        graphics2D.drawString(""+player.numTicketsNotCompleted(),(int)point.getX()+150, (int)point.getY()+90);
+    }
+
+
     public void mousePressed(MouseEvent e) {
 
     }
