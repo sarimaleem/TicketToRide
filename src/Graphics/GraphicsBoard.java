@@ -6,16 +6,29 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class GraphicsBoard extends JPanel implements MouseListener {
 
     private GameState gameState;
     private BufferedImage map;
+    HashMap<String, Color> colorHashMap;
 
     public GraphicsBoard() throws IOException {
         gameState = new GameState();
         map = ImageIO.read(new File("board.jpg"));
         addMouseListener(this);
+
+        colorHashMap = new HashMap<>();
+
+        colorHashMap.put("red", Color.red);
+        colorHashMap.put("blue", Color.blue);
+        colorHashMap.put("green", Color.green);
+        colorHashMap.put("yellow", Color.yellow);
+
+
+
+
     }
 
     public void paintComponent(Graphics graphics) {
@@ -35,6 +48,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
         drawCurrentPlayerContracts(graphics2D);
         repaint();
+
+        drawCheatStatistics(graphics2D);
+
+
+
+
     }
 
     public void drawCurrentPlayerContracts(Graphics2D graphics2D) {
@@ -71,6 +90,31 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawRect(1700-adjX,900,150,100);
         graphics2D.drawString("Draw",1710-adjX,940);
         graphics2D.drawString("Contracts",1710-adjX,980);
+    }
+
+    public void drawCheatStatistics(Graphics2D graphics2D) {
+
+        String[] colors = {"blue", "green", "black", "orange", "purple", "red", "white", "yellow", "wild"};
+
+        double hoverX = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
+        double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
+
+        graphics2D.drawRect(1462, 914, 62, 63);
+        graphics2D.drawString("Cheat", 1465, 950);
+
+
+        if (hoverX > 1462 && hoverX < 1526 && hoverY > 914 && hoverY < 977) {
+            int y = 775;
+            for (Player player : gameState.getPlayers()) {
+                graphics2D.setColor(colorHashMap.get(player.getTrainColor()));
+                int c=500;
+                for(int i=0;i<9;i++){
+                    graphics2D.drawString(""+player.getNumTrainCard(colors[i]), c, y);
+                    c += 115;
+                }
+                y += 20;
+            }
+        }
     }
 
 
@@ -111,16 +155,16 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int y =e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
-        if(gameState.getTrainCardDeck().hasThreeWild())
-            gameState.getTrainCardDeck().resetFaceUpCards();
+
         GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
+
         if(gameState.getCurrentPlayer().getTrainPoints()>0) {
             if (graphicCards.contains(x, y)) {
                 if (graphicCards.getPickedCard() == null) {
                     gameState.getCurrentPlayer().addTrainCard(gameState.getTrainCardDeck().drawCard(0));
                     gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints()-1);
-                }
-                else {
+                } else {
+
                     if(graphicCards.getPickedCard().getColor().equals("wild")){
                         if(gameState.getCurrentPlayer().getTrainPoints()==2) {
                             gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
@@ -135,10 +179,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                         }
                     }
                 }
-                repaint();
             }
+
             if(gameState.getTrainCardDeck().hasThreeWild())
                 gameState.getTrainCardDeck().resetFaceUpCards();
+
             if(gameState.getCurrentPlayer().getTrainPoints()<1)
                 gameState.nextTurn();
         }
