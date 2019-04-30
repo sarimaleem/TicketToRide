@@ -15,6 +15,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GameState gameState;
     private BufferedImage map;
     HashMap<String, Color> colorHashMap;
+    private static int deckXAdj = 180;
 
 
     private GraphicDrawTicket contracts;
@@ -44,6 +45,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
 
     }
+
     public void paintComponent(Graphics graphics) {
 
         super.paintComponent(graphics);
@@ -111,15 +113,16 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         double hoverX = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
         double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
 
-        graphics2D.drawRect(1462, 914, 62, 63);
-        graphics2D.drawString("Cheat", 1465, 950);
+        graphics2D.drawRect(1442, 914, 62, 63);
+        graphics2D.setFont(new Font("serif",Font.BOLD , 20));
+        graphics2D.drawString("Cheat", 1445, 950);
 
 
-        if (hoverX > 1462 && hoverX < 1526 && hoverY > 914 && hoverY < 977) {
+        if (hoverX > 1442 && hoverX < 1506 && hoverY > 914 && hoverY < 977) {
             int y = 775;
             for (Player player : gameState.getPlayers()) {
                 graphics2D.setColor(colorHashMap.get(player.getTrainColor()));
-                int c=500;
+                int c=480;
                 for(int i=0;i<9;i++){
                     graphics2D.drawString(""+player.getNumTrainCard(colors[i]), c, y);
                     c += 115;
@@ -128,6 +131,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             }
         }
     }
+
     public void drawCurrentPlayerContracts(Graphics2D graphics2D) {
 
         double x = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().x;
@@ -150,26 +154,21 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
     }
 
-
     public void drawPotentialRoutes(Graphics2D graphics2D) {
         for (PotentialRoute potentialRoute : gameState.getCurrentPlayer().getPotentialRoutes()) {
             potentialRoute.draw(graphics2D);
         }
     }
 
-
     public void drawDeck(Graphics2D graphics2D) {
-        int adjX = 0;
 
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-adjX,900,200,100);
+        graphics2D.fillRect(1700- deckXAdj,900,200,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-adjX,900,200,100);
-        graphics2D.drawString("Draw",1710-adjX,940);
-        graphics2D.drawString("Contracts",1710-adjX,980);
+        graphics2D.drawRect(1700- deckXAdj,900,200,100);
+        graphics2D.drawString("Draw",1710- deckXAdj,940);
+        graphics2D.drawString("Contracts",1710- deckXAdj,980);
     }
-
-
 
     public void drawBoard(Graphics2D graphics2D) {
         this.setBackground(new Color(110, 160, 148));
@@ -188,14 +187,13 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
 
     }
+
     public void drawGraphicPlayer(Graphics2D graphics2D) throws IOException {
         GraphicPlayer graphicPlayer = new GraphicPlayer(gameState.getCurrentPlayer());
         graphicPlayer.draw(graphics2D);
     }
 
-
-    public void drawLeaderboard(GameState game, Graphics2D graphics2D)
-    {
+    public void drawLeaderboard(GameState game, Graphics2D graphics2D) {
         int adjY = 100;
         ArrayList<Player> players = game.getPlayers();
         graphics2D.drawRect(1414, adjY, 500, 320);
@@ -215,8 +213,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         drawInfo(players.get(3), new Point(1735, 200+adjY), graphics2D);
     }
 
-    private void drawInfo(Player player, Point point, Graphics2D graphics2D)
-    {
+    private void drawInfo(Player player, Point point, Graphics2D graphics2D) {
         graphics2D.setFont(new Font("serif", Font.BOLD, 15));
         graphics2D.drawString("Points: ",(int)point.getX(), (int)point.getY()+30);
         graphics2D.drawString(""+player.getPoints(),(int)point.getX()+50, (int)point.getY()+30);
@@ -228,10 +225,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString(""+player.numTicketsNotCompleted(),(int)point.getX()+150, (int)point.getY()+90);
     }
 
-
     public void mousePressed(MouseEvent e) {
 
     }
+
     public void mouseClicked(MouseEvent e) {
     }
 
@@ -248,7 +245,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
-            if (x >= 1700 && x <= 1900 && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning) {
+            if (x >= 1700- deckXAdj && x <= 1900- deckXAdj && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning) {
                 gameState.clearPotentialRoutes();
                 GraphicsDrawTicketIsRunning = true;
             }
@@ -259,10 +256,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 gameState.getNetwork().printRoute(x, y);
 
                 Route r = gameState.getNetwork().getRoute(x, y);
-                if (r != null && r.getOwner() == null)
+
+                if (r != null && r.getOwner() == null) {
                     gameState.getCurrentPlayer().makePotentialRoutes(r);
-
-
+                }
 
                 for (int i = 0; i < gameState.getCurrentPlayer().getPotentialRoutes().size(); i++) {
                     PotentialRoute p = gameState.getCurrentPlayer().getPotentialRoutes().get(i);

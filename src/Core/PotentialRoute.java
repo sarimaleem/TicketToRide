@@ -57,6 +57,29 @@ public class PotentialRoute {
         }
 
         route.setOwner(player);
+
+        //adding points
+        switch (length) {
+            case 1:
+                player.setPoints(player.getPoints() + 1);
+                break;
+            case 2:
+                player.setPoints(player.getPoints() + 2);
+                break;
+            case 3:
+                player.setPoints(player.getPoints() + 4);
+                break;
+            case 4:
+                player.setPoints(player.getPoints() + 7);
+                break;
+            case 5:
+                player.setPoints(player.getPoints() + 10);
+                break;
+            case 6:
+                player.setPoints(player.getPoints() + 15);
+                break;
+        }
+
         player.clearPotentialRoutes();
     }
 
