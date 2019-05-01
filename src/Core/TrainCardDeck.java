@@ -28,23 +28,10 @@ public class TrainCardDeck {
             faceUpCards.add(deck.remove(0));
         }
     }
-    public void addCard(TrainCard t){
-        deck.add(t);
-    }
+
     public void shuffle(){
         Collections.shuffle(deck);
     }
-
-
-
-
-
-    public TrainCard drawCard(int index){
-        TrainCard toRemove = deck.remove(index);
-        return toRemove;
-    }
-
-
 
     public void drawFaceUpCard(int index, Player player) {
 
@@ -92,14 +79,11 @@ public class TrainCardDeck {
         }
     }
 
-
-
     public ArrayList<TrainCard> getFaceUpCards() {
         return faceUpCards;
     }
 
-
-    public boolean hasThreeWild(){
+    public boolean hasThreeWild() {
         int cnt=0;
         for(int i=0;i<5;i++){
             if(faceUpCards.get(i).getColor().equals("wild"))

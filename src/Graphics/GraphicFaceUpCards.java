@@ -9,9 +9,6 @@ public class GraphicFaceUpCards extends JPanel {
         deck = d;
     }
 
-    public void draw(Graphics2D graphics2D) {
-        drawGraphicCards(graphics2D);
-    }
 
     public void drawGraphicCards(Graphics2D graphics2D) {
         drawRectangle(graphics2D,1720,340,170,670);
@@ -22,6 +19,8 @@ public class GraphicFaceUpCards extends JPanel {
             graphicTrainCard.draw(graphics2D);
             y += 110;
         }
+
+        graphics2D.setFont(new Font("serif",Font.BOLD , 20));
         drawRectangle(graphics2D,1730,900,150,100);
         graphics2D.drawString("Draw",1770,940);
         graphics2D.drawString("Train Card",1740,980);

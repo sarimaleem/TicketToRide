@@ -17,11 +17,9 @@ public class GameState {
         players.add(new Player("yellow"));
         currentPlayer = 0;
 
-
-        currentPlayer = 0;
-
         network = new Network();
         ticketDeck = new TicketDeck();
+        trainCardDeck = new TrainCardDeck();
 
         for (Player p : getPlayers()) {
             for (int i = 0; i < 10; i++) {
@@ -36,10 +34,6 @@ public class GameState {
                 p.addTrainCard(new TrainCard("wild"));
             }
         }
-
-
-        network = new Network();
-        ticketDeck = new TicketDeck();
 
     }
 
@@ -89,7 +83,7 @@ public class GameState {
 
 
     public void nextTurn() {
-        players.get(currentPlayer).setTrainPoints(2);
+        getCurrentPlayer().setTrainPoints(2);
         currentPlayer = (currentPlayer + 1)%players.size();
     }
 }

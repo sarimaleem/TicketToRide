@@ -16,7 +16,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GameState gameState;
     private BufferedImage map;
     HashMap<String, Color> colorHashMap;
-    private static int deckXAdj = 180;
+    private static int ticketDeckXAdj = 160;
     private GraphicDrawTicket contracts;
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
@@ -164,14 +164,13 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawDeck(Graphics2D graphics2D) {
 
-        int adjX = 230;
-
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-adjX,900,150,100);
+        graphics2D.fillRect(1700-ticketDeckXAdj,900,150,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-adjX,900,150,100);
-        graphics2D.drawString("Draw",1710-adjX,940);
-        graphics2D.drawString("Contracts",1710-adjX,980);
+        graphics2D.drawRect(1700-ticketDeckXAdj,900,150,100);
+        graphics2D.setFont(new Font("serif",Font.BOLD , 20));
+        graphics2D.drawString("Draw",1710-ticketDeckXAdj,940);
+        graphics2D.drawString("Contracts",1710-ticketDeckXAdj,980);
     }
 
     public void drawBoard(Graphics2D graphics2D) {
@@ -231,7 +230,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawGraphicCards(Graphics2D graphics2D) throws IOException {
         GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
-        graphicCards.draw(graphics2D);
+        graphicCards.drawGraphicCards(graphics2D);
 
     }
 
@@ -251,22 +250,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
-            if (x >= 1700- deckXAdj && x <= 1900- deckXAdj && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning) {
+            if (x >= 1700- ticketDeckXAdj && x <= 1900- ticketDeckXAdj && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.clearPotentialRoutes();
                 GraphicsDrawTicketIsRunning = true;
             }
-            if (GraphicsDrawTicketIsRunning) {
+            if (GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.clearPotentialRoutes();
                 contracts.mouseReleased(e);
-            } else if (gameState.getCurrentPlayer().getPoints() != 2) {
-                GraphicFaceUpCards graphicCards = new GraphicFaceUpCards(gameState.getTrainCardDeck());
-                int pickedCardIndex = graphicCards.getCardIndex(x, y);
-                gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
-
-                if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
-                    gameState.nextTurn();
-                }
-            } else {
+            } else if (gameState.getCurrentPlayer().getTrainPoints() == 2){
                 gameState.getNetwork().printRoute(x, y);
 
                 Route r = gameState.getNetwork().getRoute(x, y);
@@ -282,14 +273,18 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                         gameState.nextTurn();
                     }
                 }
+            }
 
+            GraphicFaceUpCards graphicCards = new GraphicFaceUpCards(gameState.getTrainCardDeck());
+            int pickedCardIndex = graphicCards.getCardIndex(x, y);
+
+            gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
+
+            if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
+                gameState.nextTurn();
             }
         }
     }
-
-
-
-
 
     public void mouseEntered(MouseEvent e) {
     }
