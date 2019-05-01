@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.Path2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -12,6 +13,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     private GameState gameState;
     private BufferedImage map;
+    private int xCord = 0;
+    private int yCord = 0;
 
     public GraphicsBoard() throws IOException {
         gameState = new GameState();
@@ -32,6 +35,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         drawLeaderboard(gameState, graphics2D);
         drawCurrentPlayerContracts(graphics2D);
         drawDeck(graphics2D);
+        highlight(graphics2D);
         repaint();
     }
 
@@ -125,6 +129,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString(""+player.numTicketsNotCompleted(),(int)point.getX()+150, (int)point.getY()+90);
     }
 
+    public void highlight(Graphics2D graphics2D)
+    {
+        gameState.getNetwork().highlight(graphics2D, xCord, yCord);
+    }
     public void mousePressed(MouseEvent e) {
 
     }
@@ -135,8 +143,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void mouseReleased(MouseEvent e) {
         int x =e.getX();
         int y =e.getY();
+        xCord = e.getX();
+        yCord = e.getY();
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
+        repaint();
     }
     public void mouseEntered(MouseEvent e) {
     }

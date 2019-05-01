@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Network {
     HashMap<String, City> cities;
     HashMap<Path2D.Double, Route> paths;
+
     public Network() throws FileNotFoundException {
         Scanner in = new Scanner(new File("Routes.txt"));
         cities = new HashMap<>();
@@ -15,7 +16,7 @@ public class Network {
 
         int i = 0;
 
-        while(in.hasNextLine()) {
+        while (in.hasNextLine()) {
 
             String[] temp = in.nextLine().split("-");
 
@@ -37,27 +38,26 @@ public class Network {
             cities.get(name1).addRoute(r);
             cities.get(name2).addRoute(r);
 
-            if(i < 100) {
+            if (i < 100) {
 
                 Path2D.Double test = new Path2D.Double();
-                test.moveTo(in.nextInt(), in.nextInt()-100);
+                test.moveTo(in.nextInt(), in.nextInt() - 100);
 
                 while (in.hasNextInt()) {
-                    test.lineTo(in.nextInt(), in.nextInt()-100);
+                    test.lineTo(in.nextInt(), in.nextInt() - 100);
                 }
 
                 test.closePath();
                 paths.put(test, r);
                 i++;
             }
-            if(i<100)
+            if (i < 100)
                 in.nextLine();
         }
 
     }
 
-    public HashMap getPaths()
-    {
+    public HashMap getPaths() {
         return paths;
     }
 
@@ -69,6 +69,15 @@ public class Network {
         }
     }
 
+    public void highlight(Graphics2D graphics2D, int x, int y)
+    {
+        for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                graphics2D.setColor(Color.YELLOW);
+                graphics2D.draw(p);
+            }
+        }
+    }
 
     public void drawRoutes(Graphics2D graphics2D) {
         for (Path2D.Double p : paths.keySet()) {
