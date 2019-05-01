@@ -59,6 +59,7 @@ public class GameState {
     public Network getNetwork() {
         return network;
     }
+
     public void nextTurn() {
         players.get(currentPlayer).setTrainPoints(2);
         currentPlayer = (currentPlayer + 1)%players.size();

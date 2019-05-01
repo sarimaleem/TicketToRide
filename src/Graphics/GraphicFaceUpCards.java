@@ -1,17 +1,9 @@
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 import java.util.ArrayList;
 
 public class GraphicFaceUpCards extends JPanel {
     TrainCardDeck deck;
-    TrainCard pickedCard;
-    public GraphicFaceUpCards() {
-        deck = new TrainCardDeck();
-    }
 
     public GraphicFaceUpCards(TrainCardDeck d) {
         deck = d;
@@ -41,26 +33,25 @@ public class GraphicFaceUpCards extends JPanel {
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.drawRect(x, y ,w, h);
     }
-    public TrainCard getPickedCard(){
-        return pickedCard;
-    }
 
-    public boolean contains(int x, int y) {
-        int z=350;
+    public int getCardIndex(int x, int y) {
+        int startY = 350;
         ArrayList<TrainCard> faceUpCards = deck.getFaceUpCards();
-        for (int i = 0; i < 5; i++) {
-            GraphicTrainCard graphicTrainCard = new GraphicTrainCard(faceUpCards.get(i), 1730, z, false);
-            z += 110;
-            if (graphicTrainCard.contains(x, y)) {
-                pickedCard=faceUpCards.get(i);
-                deck.drawFaceUpCard(i);
-                return true;
 
-            }
-            if (x >= 1730 && x <= 1880 && y >= 900 && y <= 1000){
-                return true;
-            }
+        if (x >= 1730 && x <= 1880 && y >= 900 && y <= 1000){
+            return 5; // card from deck
         }
-        return false;
+
+        for (int i = 0; i < 5; i++) {
+            GraphicTrainCard graphicTrainCard = new GraphicTrainCard(faceUpCards.get(i), 1730, startY, false);
+
+            if (graphicTrainCard.contains(x, y)) {
+                return i;
+            }
+
+            startY += 110;
+        }
+        return -1;
     }
+
 }

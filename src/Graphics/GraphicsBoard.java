@@ -156,38 +156,19 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         System.out.println(x + " " + y);
         gameState.getNetwork().printRoute(x, y);
 
-        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
+        GraphicFaceUpCards graphicCards = new GraphicFaceUpCards(gameState.getTrainCardDeck());
+        int pickedCardIndex = graphicCards.getCardIndex(x, y);
+        gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
 
-        if(gameState.getCurrentPlayer().getTrainPoints()>0) {
-            if (graphicCards.contains(x, y)) {
-                if (graphicCards.getPickedCard() == null) {
-                    gameState.getCurrentPlayer().addTrainCard(gameState.getTrainCardDeck().drawCard(0));
-                    gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints()-1);
-                } else {
-
-                    if(graphicCards.getPickedCard().getColor().equals("wild")){
-                        if(gameState.getCurrentPlayer().getTrainPoints()==2) {
-                            gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
-                            gameState.nextTurn();
-                            System.out.println("ok");
-                        }
-                    }
-                    else {
-                        if(!graphicCards.getPickedCard().getColor().equals("wild")) {
-                            gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
-                            gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints() - 1);
-                        }
-                    }
-                }
-            }
-
-            if(gameState.getTrainCardDeck().hasThreeWild())
-                gameState.getTrainCardDeck().resetFaceUpCards();
-
-            if(gameState.getCurrentPlayer().getTrainPoints()<1)
-                gameState.nextTurn();
+        if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
+            gameState.nextTurn();
         }
+
     }
+
+
+
+
     public void mouseEntered(MouseEvent e) {
     }
     public void mouseExited(MouseEvent e) {
