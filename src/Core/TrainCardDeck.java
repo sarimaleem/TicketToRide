@@ -52,10 +52,10 @@ public class TrainCardDeck {
             return;
         }
 
-        if (index == 6) {
+        if (index == 5) {
             //picks from the deck
             TrainCard toAdd = deck.remove(0);
-            player.setTrainPoints(player.getPoints() - 1);
+            player.setTrainPoints(player.getTrainPoints() - 1);
             player.addTrainCard(toAdd);
             return;
         }
@@ -64,54 +64,32 @@ public class TrainCardDeck {
 
         if (toAddColor.equals("wild") && player.getTrainPoints() < 2) {
             return;
-        } else {
+        } else if (toAddColor.equals("wild") && player.getTrainPoints() == 2){
             TrainCard toAdd = faceUpCards.remove(index);
             player.addTrainCard(toAdd);
             faceUpCards.add(index, deck.remove(0));
-            return;
+            player.setTrainPoints(0);
+            solveWildCardProblem();
+
+        } else {
+            //not wild card
+            TrainCard toAdd = faceUpCards.remove(index);
+            player.addTrainCard(toAdd);
+            faceUpCards.add(index, deck.remove(0));
+            player.setTrainPoints(player.getTrainPoints() -1);
+            solveWildCardProblem();
         }
+    }
 
-
-
-
-
-//        TrainCard toRemove = faceUpCards.remove(index);
-//        faceUpCards.add(index,deck.remove(0));
-//        return toRemove;
-
-
-//        if(gameState.getCurrentPlayer().getTrainPoints()>0) {
-//            if (graphicCards.contains(x, y)) {
-//                if (graphicCards.getPickedCard() == null) {
-//                    gameState.getCurrentPlayer().addTrainCard(gameState.getTrainCardDeck().drawCard(0));
-//                    gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints()-1);
-//                } else {
-//
-//                    if(graphicCards.getPickedCard().getColor().equals("wild")){
-//                        if(gameState.getCurrentPlayer().getTrainPoints()==2) {
-//                            gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
-//                            gameState.nextTurn();
-//                            System.out.println("ok");
-//                        }
-//                    }
-//                    else {
-//                        if(!graphicCards.getPickedCard().getColor().equals("wild")) {
-//                            gameState.getCurrentPlayer().addTrainCard(graphicCards.getPickedCard());
-//                            gameState.getCurrentPlayer().setTrainPoints(gameState.getCurrentPlayer().getTrainPoints() - 1);
-//                        }
-//                    }
-//                }
-//            }
-//
-//            if(gameState.getTrainCardDeck().hasThreeWild())
-//                gameState.getTrainCardDeck().resetFaceUpCards();
-//
-//            if(gameState.getCurrentPlayer().getTrainPoints()<1)
-//                gameState.nextTurn();
-//        }
-
-
-
+    public void solveWildCardProblem() {
+        while (hasThreeWild()) {
+            deck.addAll(faceUpCards);
+            faceUpCards.clear();
+            Collections.shuffle(deck);
+            for (int i = 0; i < 5; i++) {
+                faceUpCards.add(deck.remove(0));
+            }
+        }
     }
 
 
@@ -131,19 +109,5 @@ public class TrainCardDeck {
             return true;
         return false;
     }
-
-
-    public void resetFaceUpCards(){
-            for(int i=0;i<5;i++){
-                deck.add(faceUpCards.remove(i));
-                faceUpCards.add(drawCard(0));
-            }
-            shuffle();
-    } // FIX THIS THIS HAS A BUG
-
-
-
-
-
 }
 
