@@ -5,6 +5,10 @@ public class GameState {
     private Network network;
     int currentPlayer;
     TicketDeck ticketDeck;
+
+    TrainCardDeck trainCardDeck;
+
+
     public GameState() throws FileNotFoundException {
         players = new ArrayList<>();
         players.add(new Player("red"));
@@ -25,6 +29,7 @@ public class GameState {
             }
         }
 
+
         for (Player p : getPlayers()) {
             for (int i = 0; i < 5; i++) {
                 p.addTrainCard(new TrainCard("red"));
@@ -42,6 +47,10 @@ public class GameState {
         return players.get(currentPlayer);
     }
 
+    public TrainCardDeck getTrainCardDeck() {
+        return trainCardDeck;
+    }
+
     public ArrayList<Player> getPlayers() {
         return players;
     }
@@ -56,10 +65,6 @@ public class GameState {
 
     public TicketDeck getTicketDeck() {
         return ticketDeck;
-    }
-
-    public void nextTurn() {
-        currentPlayer = (currentPlayer + 1)%players.size();
     }
 
     public void clearPotentialRoutes() {
@@ -82,4 +87,9 @@ public class GameState {
         getCurrentPlayer().clearPotentialRoutes();
     }
 
+
+    public void nextTurn() {
+        players.get(currentPlayer).setTrainPoints(2);
+        currentPlayer = (currentPlayer + 1)%players.size();
+    }
 }

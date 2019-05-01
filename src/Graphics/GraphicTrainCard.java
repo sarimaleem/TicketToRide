@@ -2,14 +2,13 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class GraphicTrainCard extends JPanel {
     private TrainCard trainCard;
     private int x, y;
-    private static final int height = 150, width = 250, vheight = 150, vwidth = 100;
+    private static final int height = 100, width = 150, vheight = 150, vwidth = 100;
     private BufferedImage image;
     private boolean vertical;
 

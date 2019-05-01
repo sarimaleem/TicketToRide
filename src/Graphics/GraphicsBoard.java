@@ -10,18 +10,18 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 
+
 public class GraphicsBoard extends JPanel implements MouseListener {
     
     private GameState gameState;
     private BufferedImage map;
     HashMap<String, Color> colorHashMap;
     private static int deckXAdj = 180;
-
-
     private GraphicDrawTicket contracts;
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
     private int numTurnsPassed;
+
 
     public GraphicsBoard() throws IOException {
 
@@ -44,6 +44,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         numTurnsPassed =0;
 
 
+
     }
 
     public void paintComponent(Graphics graphics) {
@@ -59,9 +60,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         drawPotentialRoutes(graphics2D);
-
         drawLeaderboard(gameState, graphics2D);
-
         drawCurrentPlayerContracts(graphics2D);
 
         if(start){
@@ -85,6 +84,13 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         drawDeck(graphics2D);
+        try {
+            drawGraphicCards(graphics2D);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        drawCurrentPlayerContracts(graphics2D);
+        repaint();
 
         drawCheatStatistics(graphics2D);
 
@@ -98,12 +104,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 gameState.nextTurn();
             }
         }
-
         repaint();
-
-
-
-//        System.out.println(gameState.getCurrentPlayer().getPotentialRoutes());
     }
 
     public void drawCheatStatistics(Graphics2D graphics2D) {
@@ -140,6 +141,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         if (!(x > 120 && x < 270 && y > 945 && y < 1000)) {
             return;
         }
+
         int ticketX = 100;
         int ticketY = 100;
 
@@ -162,12 +164,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawDeck(Graphics2D graphics2D) {
 
+        int adjX = 230;
+
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700- deckXAdj,900,200,100);
+        graphics2D.fillRect(1700-adjX,900,150,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700- deckXAdj,900,200,100);
-        graphics2D.drawString("Draw",1710- deckXAdj,940);
-        graphics2D.drawString("Contracts",1710- deckXAdj,980);
+        graphics2D.drawRect(1700-adjX,900,150,100);
+        graphics2D.drawString("Draw",1710-adjX,940);
+        graphics2D.drawString("Contracts",1710-adjX,980);
     }
 
     public void drawBoard(Graphics2D graphics2D) {
@@ -215,14 +219,20 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     private void drawInfo(Player player, Point point, Graphics2D graphics2D) {
         graphics2D.setFont(new Font("serif", Font.BOLD, 15));
-        graphics2D.drawString("Points: ",(int)point.getX(), (int)point.getY()+30);
-        graphics2D.drawString(""+player.getPoints(),(int)point.getX()+50, (int)point.getY()+30);
-        graphics2D.drawString("Trains: ",(int)point.getX(), (int)point.getY()+50);
-        graphics2D.drawString(""+player.getNumTrains(),(int)point.getX()+50, (int)point.getY()+50);
-        graphics2D.drawString("Contracts Completed: ",(int)point.getX(), (int)point.getY()+70);
-        graphics2D.drawString(""+player.numTicketsCompleted(),(int)point.getX()+150, (int)point.getY()+70);
-        graphics2D.drawString("Contracts Remaining: ",(int)point.getX(), (int)point.getY()+90);
-        graphics2D.drawString(""+player.numTicketsNotCompleted(),(int)point.getX()+150, (int)point.getY()+90);
+        graphics2D.drawString("Points: ", (int) point.getX(), (int) point.getY() + 30);
+        graphics2D.drawString("" + player.getPoints(), (int) point.getX() + 50, (int) point.getY() + 30);
+        graphics2D.drawString("Trains: ", (int) point.getX(), (int) point.getY() + 50);
+        graphics2D.drawString("" + player.getNumTrains(), (int) point.getX() + 50, (int) point.getY() + 50);
+        graphics2D.drawString("Contracts Completed: ", (int) point.getX(), (int) point.getY() + 70);
+        graphics2D.drawString("" + player.numTicketsCompleted(), (int) point.getX() + 150, (int) point.getY() + 70);
+        graphics2D.drawString("Contracts Remaining: ", (int) point.getX(), (int) point.getY() + 90);
+        graphics2D.drawString("" + player.numTicketsNotCompleted(), (int) point.getX() + 150, (int) point.getY() + 90);
+    }
+
+    public void drawGraphicCards(Graphics2D graphics2D) throws IOException {
+        GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
+        graphicCards.draw(graphics2D);
+
     }
 
     public void mousePressed(MouseEvent e) {
@@ -238,10 +248,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int y =e.getY();
         System.out.println(x + " " + y);
 
-        gameState.getNetwork().printRoute(x, y);
-
-
-
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
@@ -252,6 +258,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             if (GraphicsDrawTicketIsRunning) {
                 gameState.clearPotentialRoutes();
                 contracts.mouseReleased(e);
+            } else if (gameState.getCurrentPlayer().getPoints() != 2) {
+                GraphicFaceUpCards graphicCards = new GraphicFaceUpCards(gameState.getTrainCardDeck());
+                int pickedCardIndex = graphicCards.getCardIndex(x, y);
+                gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
+
+                if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
+                    gameState.nextTurn();
+                }
             } else {
                 gameState.getNetwork().printRoute(x, y);
 
@@ -272,6 +286,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             }
         }
     }
+
+
+
+
 
     public void mouseEntered(MouseEvent e) {
     }

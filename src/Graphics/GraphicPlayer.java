@@ -4,8 +4,6 @@ import java.io.IOException;
 public class GraphicPlayer{
     private Player player;
     private boolean tclicked;
-    //private int x, y;
-    //private static final int height = 230, width = 400;
     TrainCard b = new TrainCard("blue");
     TrainCard g = new TrainCard("green");
     TrainCard bl = new TrainCard("black");
@@ -33,6 +31,7 @@ public class GraphicPlayer{
     }
     public void drawPlayer(Graphics2D graphics2D){
         String color = player.getTrainColor();
+
         switch (color) {
             case "green":
                 graphics2D.setColor(Color.GREEN);
@@ -47,29 +46,35 @@ public class GraphicPlayer{
                 graphics2D.setColor(Color.YELLOW);
                 break;
         }
+
         graphics2D.fillRect(5, 780 , 380, 230);
         graphics2D.setColor(Color.BLACK);
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.drawRect(5, 780 ,380, 230);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
-        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 85, 860);
+
+        graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 80, 860);
+
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
         drawRectangle(graphics2D, 120, 945, 150, 50);
-
         graphics2D.drawString("Contracts", 140, 980);
+
+
         int rectX=420;//box
         int numCardX=438;
         String[] colors = {"blue", "green", "black", "orange", "purple", "red", "white", "yellow", "wild"};
         for(int i=0;i<9;i++){
             drawRectangle(graphics2D, rectX, 810, 50, 30);
             graphics2D.drawString(""+player.getNumTrainCard(colors[i]), numCardX, 835);
-
             rectX += 115;
             numCardX += 115;
+
         }
+
+
         GraphicTrainCard blue = new GraphicTrainCard(b, 395, 850,true);
         GraphicTrainCard green = new GraphicTrainCard(g, 510, 850,true);
         GraphicTrainCard black = new GraphicTrainCard(bl, 625, 850,true);
@@ -89,23 +94,4 @@ public class GraphicPlayer{
         yellow.draw(graphics2D);
         wild.draw(graphics2D);
     }
-    public void drawTicketDisplay(Graphics2D graphics2D){
-        if(tclicked)
-        drawRectangle(graphics2D,400,100,1000,600);
-    }
-    public void ticketClicked(){
-        tclicked=true;
-        System.out.println(tclicked);
-    }
-    public boolean contains(int x, int y) {
-        if (x >= 120 && x <= 270 && y >= 945 && y <= 995) {
-            //System.out.println("brr");
-            return true;
-        }
-        return false;
-    }
-
-
-
-
 }

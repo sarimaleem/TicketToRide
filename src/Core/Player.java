@@ -18,8 +18,7 @@ public class Player {
         trainCards = new ArrayList<TrainCard>();
         tickets = new ArrayList<>();
         potentialRoutes = new ArrayList<>();
-
-
+        trainPoints=2;
     }
 
     public String getTrainColor() {
@@ -49,6 +48,12 @@ public class Player {
                 cnt++;
         }
         return cnt;
+    }
+    public int getTrainPoints(){
+        return trainPoints;
+    }
+    public void setTrainPoints(int tPoints){
+        trainPoints=tPoints;
     }
 
     public void removeTrainCards(String color, int n) {
