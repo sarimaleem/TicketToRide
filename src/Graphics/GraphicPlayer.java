@@ -58,6 +58,7 @@ public class GraphicPlayer{
 
         myFont = new Font("Courier", Font.BOLD, 25);
         graphics2D.setFont(myFont);
+        graphics2D.drawString(""+ player.getNumTrains()+ " TRAINS", 130, 900);
         graphics2D.drawString(""+player.getPoints()+" POINTS", 135, 930);
         drawRectangle(graphics2D, 120, 945, 150, 50);
         graphics2D.drawString("Contracts", 140, 980);

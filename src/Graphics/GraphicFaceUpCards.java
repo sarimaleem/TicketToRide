@@ -22,8 +22,8 @@ public class GraphicFaceUpCards extends JPanel {
 
         graphics2D.setFont(new Font("serif",Font.BOLD , 20));
         drawRectangle(graphics2D,1730,660,150,100);
-        graphics2D.drawString("Draw",1770,940);
-        graphics2D.drawString("Train Card",1740,980);
+        graphics2D.drawString("Draw",1770,700);
+        graphics2D.drawString("Train Card",1740,740);
     }
     public void drawRectangle(Graphics2D graphics2D,int x,int y, int w, int h){
         graphics2D.setColor(new Color(240,234,214));
@@ -34,10 +34,10 @@ public class GraphicFaceUpCards extends JPanel {
     }
 
     public int getCardIndex(int x, int y) {
-        int startY = 350;
+        int startY = 100;
         ArrayList<TrainCard> faceUpCards = deck.getFaceUpCards();
 
-        if (x >= 1730 && x <= 1880 && y >= 900 && y <= 1000){
+        if (x >= 1730 && x <= 1880 && y >= 660 && y <= 760){
             return 5; // card from deck
         }
 
