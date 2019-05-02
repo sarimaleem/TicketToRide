@@ -199,21 +199,21 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawLeaderboard(GameState game, Graphics2D graphics2D) {
         int adjY = 100;
         ArrayList<Player> players = game.getPlayers();
-        graphics2D.drawRect(1414, adjY, 500, 320);
+        graphics2D.drawRect(1414, adjY, 250, 600);
         graphics2D.setColor(Color.cyan);
-        graphics2D.fillRect(1414, adjY, 500, 320);
+        graphics2D.fillRect(1414, adjY, 250, 600);
         graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
-        graphics2D.drawString("Leaderboard", 1570, 30+adjY);
+        graphics2D.drawString("Leaderboard", 1450, 30+adjY);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
         graphics2D.drawString(players.get(0).getTrainColor(),1465, 75+adjY);
-        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75+adjY);
-        graphics2D.drawString(players.get(2).getTrainColor(),1465, 200+adjY);
-        graphics2D.drawString(players.get(3).getTrainColor(),1735, 200+adjY);
+        graphics2D.drawString(players.get(1).getTrainColor(),1465, 200+adjY);
+        graphics2D.drawString(players.get(2).getTrainColor(),1465, 325+adjY);
+        graphics2D.drawString(players.get(3).getTrainColor(),1465, 450+adjY);
         drawInfo(players.get(0), new Point(1465, 75+adjY), graphics2D);
-        drawInfo(players.get(1), new Point(1735, 75+adjY), graphics2D);
-        drawInfo(players.get(2), new Point(1465, 200+adjY), graphics2D);
-        drawInfo(players.get(3), new Point(1735, 200+adjY), graphics2D);
+        drawInfo(players.get(1), new Point(1465, 200+adjY), graphics2D);
+        drawInfo(players.get(2), new Point(1465, 325+adjY), graphics2D);
+        drawInfo(players.get(3), new Point(1465, 450+adjY), graphics2D);
     }
 
     private void drawInfo(Player player, Point point, Graphics2D graphics2D) {
@@ -246,7 +246,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int x =e.getX();
         int y =e.getY();
         System.out.println(x + " " + y);
-
+        System.out.println(ticketDeckXAdj);
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
