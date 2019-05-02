@@ -8,21 +8,22 @@
 - [x]  Draw contract card from the deck
 - [x]  Draw and Highlight Train cards
 - [x]  Fill in Routes
-- [ ]  Drawing train cards from the deck
+- [x]  Drawing train cards from the deck
 
 **Integration**
-- [ ] Player can only select one thing (route selection, drawing contract, drawing traincard
+- [x] Player can only select one thing (route selection, drawing contract, drawing traincard
 - [x] Next Players Turn
 - [x] Start Game
 - [ ] End Game
 - [ ] Player gets points for drawing routes and finishing tickets
+- [ ] longest path works
 
 **Extra**
 - [ ] Make the cursor clearer
 - [ ] Do some fancy highlighting
 - [x] Title??
 - [x] Do a checkmark when the players contract is completed
-- [ ] Fix inconsistencies
+- [x] Fix inconsistencies
 - [ ] 
 
 
@@ -35,9 +36,10 @@
 - [ ] Work on Longest Path Algorithm
 - [x] Initialize Network and Routes
 - [x] Experiment with Path 2D.double so that a shape works
-- [ ] Integrate the classes
+- [x] Integrate the classes
 - [x] work on displaying the contracts for each player
 - [x] work on letting the player trade in cards to fill in the route
+- [x] fix errors in drawing the cards from the deck
 
 
 **David Jobs**
@@ -46,7 +48,7 @@
 - [x] work on finding all the coordinates for all the routes
 - [x] statistics display
 - [x] make the board have better colors
-- [ ] make the board look prettier
+- [x] make the board look prettier
 
 
 
@@ -63,7 +65,7 @@
 **Sami Jobs**
 - [x] work on graphic train card
 - [x] work on graphic player class
-- [ ] work on drawing the cards from the deck
+- [x] work on drawing the cards from the deck
 - [ ] 
 
 
