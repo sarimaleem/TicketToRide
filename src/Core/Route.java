@@ -47,6 +47,7 @@ public class Route {
 
     public void setOwner(Player o) {
         owner = o;
+        full = true;
     }
 
 

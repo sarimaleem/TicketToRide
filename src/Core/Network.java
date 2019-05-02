@@ -107,18 +107,25 @@ public class Network {
         boolean complete = false;
         if (start.equals(end)) complete = true;
 
+        System.out.println("start: " + start + "End: " + end);
         for (Route r : cities.get(start).getRoutes()) {
+
+            System.out.println("route: " + r.getA().getName() + " " + r.getB().getName());
+
             if(!r.isFull()) {
                 continue;
             } else if(marked.contains(r)) {
                 continue;
-            } else if (!p.getTrainColor().equals(r.getOwner().getTrainColor())) {
+            } else if (!(p == r.getOwner())) {
                 continue;
             } else {
                 marked.add(r);
                 complete = complete || ticketFinished(r.getOtherCity(cities.get(start)).getName(), end, p);
             }
         }
+
+        System.out.println(complete);
+
         return complete;
     }
 

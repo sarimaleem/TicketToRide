@@ -318,7 +318,7 @@ El Paso-Houston-6-green
 628 799
 576 788
 527 767
-Winnipeg-Sault Ste. Marie-6-gray
+Winnipeg-Sault St. Marie-6-gray
 670 168
 982 220
 980 235
@@ -328,7 +328,7 @@ Winnipeg-Duluth-4-black
 804 306
 794 316
 641 196
-Duluth-Sault Ste. Marie-3-gray
+Duluth-Sault St. Marie-3-gray
 834 296
 977 245
 983 260
@@ -429,7 +429,7 @@ Houston-New Orleans-2-gray
 972 744
 976 760
 876 774
-Sault Ste. Marie-Montreal-5-black
+Sault St. Marie-Montreal-5-black
 1010 219
 1046 195
 1098 171
@@ -442,7 +442,7 @@ Sault Ste. Marie-Montreal-5-black
 1102 188
 1058 207
 1021 232
-Sault Ste. Marie-Toronto-2-gray
+Sault St. Marie-Toronto-2-gray
 1023 236
 1127 251
 1126 270
@@ -611,19 +611,19 @@ Raleigh-Washington-2-gray
 1254 514
 1319 449
 1306 440
-Releigh-Charleston-2-gray
+Raleigh-Charleston-2-gray
 1248 540
 1292 563
 1279 590
 1297 596
 1317 561
 1258 527
-Releigh-Atlanta-2-gray
+Raleigh-Atlanta-2-gray
 1216 521
 1141 573
 1149 588
 1229 533
-Releigh-Atlanta-2-gray
+Raleigh-Atlanta-2-gray
 1149 588
 1229 533
 1239 545

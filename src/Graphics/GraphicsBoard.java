@@ -245,7 +245,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         int x =e.getX();
         int y =e.getY();
-        System.out.println(x + " " + y);
 
         if(start){
             BeginningTicketSelection.mouseReleased(e);

@@ -22,8 +22,8 @@ public class GameState {
         trainCardDeck = new TrainCardDeck();
 
         for (Player p : getPlayers()) {
-            for (int i = 0; i < 4; i++) {
-                p.addTrainCard(trainCardDeck.drawFromDeck());
+            for (int i = 0; i < 40; i++) {
+                p.addTrainCard(new TrainCard("wild"));
             }
         }
     }
@@ -53,8 +53,22 @@ public class GameState {
     }
 
     public void clearPotentialRoutes() {
-        ArrayList<Ticket> tickets = getCurrentPlayer().getTickets();
+        ;
 
+
+
+
+
+
+        getCurrentPlayer().clearPotentialRoutes();
+    }
+
+
+    public void nextTurn() {
+        getCurrentPlayer().setTrainPoints(2);
+
+
+        ArrayList<Ticket> tickets = getCurrentPlayer().getTickets();
 
         for (int i = 0; i < tickets.size(); i++) {
             Ticket t = tickets.get(i);
@@ -66,15 +80,9 @@ public class GameState {
             getNetwork().resetMarked();
 
         }
+        System.out.println();
 
-
-
-        getCurrentPlayer().clearPotentialRoutes();
-    }
-
-
-    public void nextTurn() {
-        getCurrentPlayer().setTrainPoints(2);
         currentPlayer = (currentPlayer + 1)%players.size();
+
     }
 }
