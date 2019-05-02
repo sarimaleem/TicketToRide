@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="12d3e9f5-8dcd-4ee4-8ad0-256a8fab6f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/PotentialRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/PotentialRoute.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/TrainCardDeck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/TrainCardDeck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,21 +20,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="283" column="13" lean-forward="true" selection-start-line="283" selection-start-column="13" selection-end-line="283" selection-end-column="13" />
+            <state relative-caret-position="4335">
+              <caret line="263" selection-start-line="263" selection-end-line="263" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
               </folding>
             </state>
@@ -43,24 +34,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+            <state relative-caret-position="374">
+              <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
+                <element signature="e#372#525#1" />
+                <element signature="e#415#515#1" />
+                <element signature="e#563#648#1" />
+                <element signature="e#747#803#1" />
+                <element signature="n#!!block;n#shuffle#0;n#TrainCardDeck#0" />
                 <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
+                <element signature="e#965#996#1" />
+                <element signature="e#1022#1237#1" />
+                <element signature="e#1373#1404#1" />
+                <element signature="e#1472#1707#1" />
+                <element signature="e#1713#2000#1" />
                 <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
+                <element signature="e#2080#2306#1" />
+                <element signature="e#2232#2296#1" />
                 <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
+                <element signature="e#2483#2578#1" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java">
+        <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+            <state relative-caret-position="323">
+              <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,17 +74,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="649">
+              <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTicket.java">
+        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="53" column="44" lean-forward="true" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+            <state relative-caret-position="442">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2125">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="242">
+                <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+              <folding>
+                <element signature="e#3061#3062#0" expanded="true" />
+                <element signature="e#3093#3094#0" expanded="true" />
+                <element signature="e#3147#3148#0" expanded="true" />
+                <element signature="e#3186#3187#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +131,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+            <state relative-caret-position="-286">
+              <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
               <folding>
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#705#706#0" expanded="true" />
@@ -100,32 +142,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
+        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicTrainCardRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="44" column="28" selection-start-line="44" selection-start-column="28" selection-end-line="44" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-              <folding>
-                <element signature="n#!!block;n#setTicketDeck#0;n#GameState#0" />
-                <element signature="method#clearPotentialRoutes#0;class#GameState#0" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -146,12 +166,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/Core/Player.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicPlayer.java" />
+        <option value="$PROJECT_DIR$/src/Core/PotentialRoute.java" />
+        <option value="$PROJECT_DIR$/src/Core/Player.java" />
         <option value="$PROJECT_DIR$/src/Core/TrainCardDeck.java" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -165,17 +187,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
               <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TicketToRide" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TicketToRide" type="b2602c69:ProjectViewProjectNode" />
@@ -204,8 +223,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,10 +359,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="992" extended-state="0" />
+    <frame x="-7" y="0" width="1514" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22790202" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,7 +372,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36777776" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36761487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,16 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -514,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="75" column="5" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+        <state relative-caret-position="2125">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
         </state>
       </provider>
     </entry>
@@ -523,17 +530,6 @@
     <entry file="file://$PROJECT_DIR$/out/production/src/GraphicFaceUpCards.class" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="54" column="15" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
-          <folding>
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicTrainCard.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -551,18 +547,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicFaceUpCards.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -573,46 +562,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        <state relative-caret-position="4335">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
-            <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
-            <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
-            <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
+            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-286">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="326">
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
+          <folding>
+            <element signature="e#3061#3062#0" expanded="true" />
+            <element signature="e#3093#3094#0" expanded="true" />
+            <element signature="e#3147#3148#0" expanded="true" />
+            <element signature="e#3186#3187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="98" column="27" lean-forward="true" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="27" />
+          <folding>
+            <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
+            <element signature="e#372#525#1" />
+            <element signature="e#415#515#1" />
+            <element signature="e#563#648#1" />
+            <element signature="e#747#803#1" />
+            <element signature="n#!!block;n#shuffle#0;n#TrainCardDeck#0" />
+            <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
+            <element signature="e#965#996#1" />
+            <element signature="e#1022#1237#1" />
+            <element signature="e#1373#1404#1" />
+            <element signature="e#1472#1707#1" />
+            <element signature="e#1713#2000#1" />
+            <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
+            <element signature="e#2080#2306#1" />
+            <element signature="e#2232#2296#1" />
+            <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
+            <element signature="e#2483#2578#1" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="85" column="26" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
+        <state relative-caret-position="323">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding>
-            <element signature="n#!!block;n#setTicketDeck#0;n#GameState#0" />
-            <element signature="method#clearPotentialRoutes#0;class#GameState#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="283" column="13" lean-forward="true" selection-start-line="283" selection-start-column="13" selection-end-line="283" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="242">
+            <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

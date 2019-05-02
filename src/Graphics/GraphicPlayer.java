@@ -53,7 +53,6 @@ public class GraphicPlayer{
         graphics2D.drawRect(5, 780 ,380, 230);
         Font myFont = new Font("Courier", Font.BOLD, 35);
         graphics2D.setFont(myFont);
-
         graphics2D.drawString("PLAYER "+player.getTrainColor().toUpperCase(), 80, 860);
 
         myFont = new Font("Courier", Font.BOLD, 25);

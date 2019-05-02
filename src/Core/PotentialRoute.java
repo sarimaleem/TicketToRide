@@ -80,6 +80,7 @@ public class PotentialRoute {
                 break;
         }
 
+        player.subtractNumTrains(length);
         player.clearPotentialRoutes();
     }
 

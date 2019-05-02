@@ -93,5 +93,11 @@ public class TrainCardDeck {
             return true;
         return false;
     }
+
+    public TrainCard drawFromDeck() {
+        Collections.shuffle(deck);
+        return deck.remove(0);
+    }
+
 }
 

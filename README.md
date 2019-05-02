@@ -9,6 +9,7 @@
 - [x]  Draw and Highlight Train cards
 - [x]  Fill in Routes
 - [x]  Drawing train cards from the deck
+- [x]  Deal with the number of trains each player has
 
 **Integration**
 - [x] Player can only select one thing (route selection, drawing contract, drawing traincard

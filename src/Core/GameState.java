@@ -22,19 +22,10 @@ public class GameState {
         trainCardDeck = new TrainCardDeck();
 
         for (Player p : getPlayers()) {
-            for (int i = 0; i < 10; i++) {
-                p.addTrainCard(new TrainCard("purple"));
+            for (int i = 0; i < 4; i++) {
+                p.addTrainCard(trainCardDeck.drawFromDeck());
             }
         }
-
-
-        for (Player p : getPlayers()) {
-            for (int i = 0; i < 5; i++) {
-                p.addTrainCard(new TrainCard("red"));
-                p.addTrainCard(new TrainCard("wild"));
-            }
-        }
-
     }
 
     public Player getCurrentPlayer() {

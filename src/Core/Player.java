@@ -83,6 +83,10 @@ public class Player {
 
     public void makePotentialRoutes(Route r) {
         potentialRoutes.clear();
+        if (r.getLength() > numTrains) {
+            return;
+        }
+
         String[] colors = new String[]{"blue", "green", "black", "orange", "purple", "red", "white", "yellow"};
         for (String color : colors) {
             if (isValidCardCombination(color, r.getLength(), r.getColor())) {
@@ -120,6 +124,10 @@ public class Player {
     public int getNumTrains()
     {
         return numTrains;
+    }
+
+    public void subtractNumTrains(int routeLength) {
+        numTrains -= routeLength;
     }
 
 }
