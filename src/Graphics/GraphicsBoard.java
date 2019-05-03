@@ -248,7 +248,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.setColor(Color.black);
         graphics2D.drawRect(100, 100, 1000, 600);
     }
-
+    public void highlight(Graphics2D graphics2D)
+    {
+        gameState.getNetwork().highlight(graphics2D, xCord, yCord);
+    }
     public void mousePressed(MouseEvent e) {
 
     }
