@@ -64,7 +64,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         drawPotentialRoutes(graphics2D);
         drawLeaderboard(gameState, graphics2D);
         drawCurrentPlayerContracts(graphics2D);
-
+        highlight(graphics2D);
         if(start){
             BeginningTicketSelection.paint(graphics2D);
             if(BeginningTicketSelection.getContracts()!=null){
@@ -263,7 +263,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         int x =e.getX();
         int y =e.getY();
-
+        xCord = x;
+        yCord = y;
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
