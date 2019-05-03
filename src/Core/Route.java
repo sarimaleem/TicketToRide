@@ -41,6 +41,15 @@ public class Route {
         return owner;
     }
 
+    public String getColor() {
+        return color;
+    }
+
+    public void setOwner(Player o) {
+        owner = o;
+        full = true;
+    }
+
 
 
 
