@@ -16,7 +16,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GameState gameState;
     private BufferedImage map;
     HashMap<String, Color> colorHashMap;
-    private static int ticketDeckXAdj = 160;
+    private static int ticketDeckXAdj = -40;
+    private int ticketDeckYAdj = 120;
     private GraphicDrawTicket contracts;
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
@@ -112,17 +113,18 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawCheatStatistics(Graphics2D graphics2D) {
 
+        int adjX = 350;
         String[] colors = {"blue", "green", "black", "orange", "purple", "red", "white", "yellow", "wild"};
 
         double hoverX = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
         double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
 
-        graphics2D.drawRect(1442, 914, 62, 63);
+        graphics2D.drawRect(1442 + adjX, 914, 62, 63);
         graphics2D.setFont(new Font("serif",Font.BOLD , 20));
-        graphics2D.drawString("Cheat", 1445, 950);
+        graphics2D.drawString("Cheat", 1445 + adjX, 950);
 
 
-        if (hoverX > 1442 && hoverX < 1506 && hoverY > 914 && hoverY < 977) {
+        if (hoverX > 1442+ adjX && hoverX < 1506+ adjX && hoverY > 914 && hoverY < 977) {
             int y = 775;
             for (Player player : gameState.getPlayers()) {
                 graphics2D.setColor(colorHashMap.get(player.getTrainColor()));
@@ -167,13 +169,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawDeck(Graphics2D graphics2D) {
 
+
         graphics2D.setColor(new Color(240,234,214));
-        graphics2D.fillRect(1700-ticketDeckXAdj,900,150,100);
+        graphics2D.fillRect(1700-ticketDeckXAdj,900 - ticketDeckYAdj,150,100);
         graphics2D.setColor(Color.BLACK);
-        graphics2D.drawRect(1700-ticketDeckXAdj,900,150,100);
+        graphics2D.drawRect(1700-ticketDeckXAdj,900 - ticketDeckYAdj,150,100);
         graphics2D.setFont(new Font("serif",Font.BOLD , 20));
-        graphics2D.drawString("Draw",1710-ticketDeckXAdj,940);
-        graphics2D.drawString("Contracts",1710-ticketDeckXAdj,980);
+        graphics2D.drawString("Draw",1710-ticketDeckXAdj,940 - ticketDeckYAdj);
+        graphics2D.drawString("Contracts",1710-ticketDeckXAdj,980 - ticketDeckYAdj);
     }
 
     public void drawBoard(Graphics2D graphics2D) {
@@ -202,21 +205,21 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     public void drawLeaderboard(GameState game, Graphics2D graphics2D) {
         int adjY = 100;
         ArrayList<Player> players = game.getPlayers();
-        graphics2D.drawRect(1414, adjY, 500, 320);
+        graphics2D.drawRect(1424, adjY, 250, 600);
         graphics2D.setColor(Color.cyan);
-        graphics2D.fillRect(1414, adjY, 500, 320);
+        graphics2D.fillRect(1424, adjY, 250, 600);
         graphics2D.setColor(new Color(0, 0, 0));
         graphics2D.setFont(new Font("serif", Font.BOLD, 30));
-        graphics2D.drawString("Leaderboard", 1570, 30+adjY);
+        graphics2D.drawString("Leaderboard", 1450, 30+adjY);
         graphics2D.setFont(new Font("serif", Font.BOLD, 20));
         graphics2D.drawString(players.get(0).getTrainColor(),1465, 75+adjY);
-        graphics2D.drawString(players.get(1).getTrainColor(),1735, 75+adjY);
-        graphics2D.drawString(players.get(2).getTrainColor(),1465, 200+adjY);
-        graphics2D.drawString(players.get(3).getTrainColor(),1735, 200+adjY);
+        graphics2D.drawString(players.get(1).getTrainColor(),1465, 200+adjY);
+        graphics2D.drawString(players.get(2).getTrainColor(),1465, 325+adjY);
+        graphics2D.drawString(players.get(3).getTrainColor(),1465, 450+adjY);
         drawInfo(players.get(0), new Point(1465, 75+adjY), graphics2D);
-        drawInfo(players.get(1), new Point(1735, 75+adjY), graphics2D);
-        drawInfo(players.get(2), new Point(1465, 200+adjY), graphics2D);
-        drawInfo(players.get(3), new Point(1735, 200+adjY), graphics2D);
+        drawInfo(players.get(1), new Point(1465, 200+adjY), graphics2D);
+        drawInfo(players.get(2), new Point(1465, 325+adjY), graphics2D);
+        drawInfo(players.get(3), new Point(1465, 450+adjY), graphics2D);
     }
 
     private void drawInfo(Player player, Point point, Graphics2D graphics2D) {
@@ -260,7 +263,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
-            if (x >= 1700- ticketDeckXAdj && x <= 1900- ticketDeckXAdj && y >= 900 && y <= 1000 && !GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
+            if (x >= 1700- ticketDeckXAdj && x <= 1900- ticketDeckXAdj && y >= 900 - ticketDeckYAdj && y <= 1000 - ticketDeckYAdj && !GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.clearPotentialRoutes();
                 GraphicsDrawTicketIsRunning = true;
             }
