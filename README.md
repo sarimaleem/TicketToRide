@@ -41,6 +41,7 @@
 - [x] work on displaying the contracts for each player
 - [x] work on letting the player trade in cards to fill in the route
 - [x] fix errors in drawing the cards from the deck
+- [ ] We're in the endgame now
 
 
 **David Jobs**
