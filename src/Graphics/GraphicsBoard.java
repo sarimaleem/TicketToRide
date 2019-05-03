@@ -191,6 +191,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.setColor(Color.BLACK);
 
         gameState.getNetwork().drawAndFillRoutes(graphics2D);
+        graphics2D.setColor(Color.BLACK);
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
         graphics2D.drawString("Ticket To Ride", 1470, 70);
 
