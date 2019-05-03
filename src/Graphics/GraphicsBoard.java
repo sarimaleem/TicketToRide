@@ -106,7 +106,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             }
         }
 
-//        drawEndGame(graphics2D);
+        drawEndGame(graphics2D);
 
         repaint();
     }
