@@ -22,6 +22,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
     private int numTurnsPassed;
+    private int xCord = 0, yCord = 0;
 
 
     public GraphicsBoard() throws IOException {
