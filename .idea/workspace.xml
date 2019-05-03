@@ -4,11 +4,6 @@
     <list default="true" id="12d3e9f5-8dcd-4ee4-8ad0-256a8fab6f12" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Routes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tickets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tickets.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Route.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,13 +15,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
+            <state relative-caret-position="259">
+              <caret line="244" column="28" lean-forward="true" selection-start-line="244" selection-start-column="28" selection-end-line="244" selection-end-column="28" />
               <folding>
+                <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
+                <element signature="e#1534#1588#0" />
+                <element signature="e#1611#1655#0" />
+                <element signature="e#1812#2274#1" />
+                <element signature="e#1931#2264#1" />
+                <element signature="e#2105#2178#1" />
+                <element signature="e#2307#2514#1" />
+                <element signature="e#2558#2611#0" />
+                <element signature="e#2634#2678#0" />
+                <element signature="e#2828#3186#1" />
+                <element signature="e#2917#3176#1" />
+                <element signature="method#drawCheatStatistics#0;class#GraphicsBoard#0" />
+                <element signature="e#3842#4255#1" />
+                <element signature="e#3926#4245#1" />
+                <element signature="e#4070#4206#1" />
+                <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
+                <element signature="e#4589#4620#1" />
+                <element signature="e#4749#5036#1" />
+                <element signature="e#4948#5026#1" />
+                <element signature="method#drawPotentialRoutes#0;class#GraphicsBoard#0" />
+                <element signature="e#5201#5257#1" />
+                <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
+                <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
+                <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
+                <element signature="method#drawLeaderboard#0;class#GraphicsBoard#0" />
+                <element signature="method#drawInfo#0;class#GraphicsBoard#0" />
+                <element signature="method#drawGraphicCards#0;class#GraphicsBoard#0" />
+                <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
+                <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
+                <element signature="e#9249#9315#1" />
+                <element signature="e#9321#10953#1" />
+                <element signature="e#9506#9623#1" />
+                <element signature="e#9723#9832#1" />
+                <element signature="e#9893#10547#1" />
+                <element signature="e#10074#10166#1" />
+                <element signature="e#10267#10533#1" />
+                <element signature="e#10408#10515#1" />
+                <element signature="e#10890#10943#1" />
+                <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
                 <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+              <folding>
+                <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
+                <element signature="e#372#525#1" />
+                <element signature="e#415#515#1" />
+                <element signature="e#563#648#1" />
+                <element signature="e#747#803#1" />
+                <element signature="n#!!block;n#shuffle#0;n#TrainCardDeck#0" />
+                <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
+                <element signature="e#965#996#1" />
+                <element signature="e#1022#1237#1" />
+                <element signature="e#1373#1404#1" />
+                <element signature="e#1472#1707#1" />
+                <element signature="e#1713#2000#1" />
+                <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
+                <element signature="e#2080#2306#1" />
+                <element signature="e#2232#2296#1" />
+                <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
+                <element signature="e#2483#2578#1" />
               </folding>
             </state>
           </provider>
@@ -35,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+            <state relative-caret-position="275">
+              <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -45,55 +108,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Ticket.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="323">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Core/Route.java">
+        <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="1377">
+              <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/greenCard.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Routes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="693" column="8" lean-forward="true" selection-start-line="693" selection-start-column="8" selection-end-line="693" selection-end-column="8" />
+            <state relative-caret-position="7565">
+              <caret line="445" column="8" selection-start-line="445" selection-start-column="8" selection-end-line="445" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tickets.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="391">
+                <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/networkTest.java">
+        <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="1207">
+              <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -101,21 +163,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="867">
               <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
               <folding>
                 <element signature="e#667#668#0" expanded="true" />
                 <element signature="e#705#706#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tests/GraphicTrainCardRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-332">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -154,11 +207,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Tests/networkTest.java" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
-        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
         <option value="$PROJECT_DIR$/src/Core/Route.java" />
         <option value="$PROJECT_DIR$/src/Core/Network.java" />
         <option value="$PROJECT_DIR$/Tickets.txt" />
         <option value="$PROJECT_DIR$/Routes.txt" />
+        <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
       </list>
     </option>
   </component>
@@ -173,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,7 +262,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,10 +398,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="23" width="1433" height="992" extended-state="0" />
+    <frame x="-7" y="0" width="1804" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35154566" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21731651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -358,7 +411,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36666667" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3665208" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,7 +541,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
+        <state relative-caret-position="1377">
           <caret line="82" column="41" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
         </state>
       </provider>
@@ -506,36 +559,10 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <first_editor relative-caret-position="391">
+            <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
-          <folding>
-            <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
-            <element signature="e#372#525#1" />
-            <element signature="e#415#515#1" />
-            <element signature="e#563#648#1" />
-            <element signature="e#747#803#1" />
-            <element signature="n#!!block;n#shuffle#0;n#TrainCardDeck#0" />
-            <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
-            <element signature="e#965#996#1" />
-            <element signature="e#1022#1237#1" />
-            <element signature="e#1373#1404#1" />
-            <element signature="e#1472#1707#1" />
-            <element signature="e#1713#2000#1" />
-            <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
-            <element signature="e#2080#2306#1" />
-            <element signature="e#2232#2296#1" />
-            <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
-            <element signature="e#2483#2578#1" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -548,14 +575,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
+        <state relative-caret-position="1207">
           <caret line="87" column="9" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="867">
           <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
           <folding>
             <element signature="e#667#668#0" expanded="true" />
@@ -585,26 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
-          <folding>
-            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Route.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -614,8 +621,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="323">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -628,8 +635,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Routes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="693" column="8" lean-forward="true" selection-start-line="693" selection-start-column="8" selection-end-line="693" selection-end-column="8" />
+        <state relative-caret-position="7565">
+          <caret line="445" column="8" selection-start-line="445" selection-start-column="8" selection-end-line="445" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/TrainCardDeck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="method#TrainCardDeck#0;class#TrainCardDeck#0" />
+            <element signature="e#372#525#1" />
+            <element signature="e#415#515#1" />
+            <element signature="e#563#648#1" />
+            <element signature="e#747#803#1" />
+            <element signature="n#!!block;n#shuffle#0;n#TrainCardDeck#0" />
+            <element signature="method#drawFaceUpCard#0;class#TrainCardDeck#0" />
+            <element signature="e#965#996#1" />
+            <element signature="e#1022#1237#1" />
+            <element signature="e#1373#1404#1" />
+            <element signature="e#1472#1707#1" />
+            <element signature="e#1713#2000#1" />
+            <element signature="method#solveWildCardProblem#0;class#TrainCardDeck#0" />
+            <element signature="e#2080#2306#1" />
+            <element signature="e#2232#2296#1" />
+            <element signature="method#hasThreeWild#0;class#TrainCardDeck#0" />
+            <element signature="e#2483#2578#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="244" column="28" lean-forward="true" selection-start-line="244" selection-start-column="28" selection-end-line="244" selection-end-column="28" />
+          <folding>
+            <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
+            <element signature="e#1534#1588#0" />
+            <element signature="e#1611#1655#0" />
+            <element signature="e#1812#2274#1" />
+            <element signature="e#1931#2264#1" />
+            <element signature="e#2105#2178#1" />
+            <element signature="e#2307#2514#1" />
+            <element signature="e#2558#2611#0" />
+            <element signature="e#2634#2678#0" />
+            <element signature="e#2828#3186#1" />
+            <element signature="e#2917#3176#1" />
+            <element signature="method#drawCheatStatistics#0;class#GraphicsBoard#0" />
+            <element signature="e#3842#4255#1" />
+            <element signature="e#3926#4245#1" />
+            <element signature="e#4070#4206#1" />
+            <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
+            <element signature="e#4589#4620#1" />
+            <element signature="e#4749#5036#1" />
+            <element signature="e#4948#5026#1" />
+            <element signature="method#drawPotentialRoutes#0;class#GraphicsBoard#0" />
+            <element signature="e#5201#5257#1" />
+            <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
+            <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
+            <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
+            <element signature="method#drawLeaderboard#0;class#GraphicsBoard#0" />
+            <element signature="method#drawInfo#0;class#GraphicsBoard#0" />
+            <element signature="method#drawGraphicCards#0;class#GraphicsBoard#0" />
+            <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
+            <element signature="e#9249#9315#1" />
+            <element signature="e#9321#10953#1" />
+            <element signature="e#9506#9623#1" />
+            <element signature="e#9723#9832#1" />
+            <element signature="e#9893#10547#1" />
+            <element signature="e#10074#10166#1" />
+            <element signature="e#10267#10533#1" />
+            <element signature="e#10408#10515#1" />
+            <element signature="e#10890#10943#1" />
+            <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
+            <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,7 +766,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8.0_51</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

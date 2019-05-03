@@ -104,6 +104,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 gameState.nextTurn();
             }
         }
+
+        //drawEndGame(graphics2D);
+
         repaint();
     }
 
@@ -232,6 +235,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         GraphicFaceUpCards graphicCards=new GraphicFaceUpCards(gameState.getTrainCardDeck());
         graphicCards.drawGraphicCards(graphics2D);
 
+    }
+
+    public void drawEndGame(Graphics2D graphics2D) {
+        graphics2D.setColor(new Color(114, 0, 255));
+        graphics2D.setStroke(new BasicStroke(3));
+        graphics2D.fillRect(100, 100, 1000, 600);
+        graphics2D.setColor(Color.black);
+        graphics2D.drawRect(100, 100, 1000, 600);
     }
 
     public void mousePressed(MouseEvent e) {
