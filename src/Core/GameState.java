@@ -22,8 +22,8 @@ public class GameState {
         trainCardDeck = new TrainCardDeck();
 
         for (Player p : getPlayers()) {
-            for (int i = 0; i < 40; i++) {
-                p.addTrainCard(new TrainCard("wild"));
+            for (int i = 0; i < 4; i++) {
+                p.addTrainCard(trainCardDeck.drawFromDeck());
             }
         }
     }

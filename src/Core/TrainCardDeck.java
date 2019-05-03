@@ -11,12 +11,13 @@ public class TrainCardDeck {
         deck = new ArrayList<>();
         String [] colors={"blue","green","black","orange","purple","red","white","yellow"};
         for(int i=0;i<colors.length;i++) {
-            for (int j = 0; j < 12; j++) {
+            for (int j = 0; j < 120; j++) {
                 TrainCard t = new TrainCard(colors[i]);
                 deck.add(t);
             }
         }
-        for (int i = 0; i < 14; i++) {
+
+        for (int i = 0; i < 140; i++) {
             TrainCard t = new TrainCard("wild");
             deck.add(t);
         }
