@@ -90,6 +90,15 @@ public class Network {
         return null;
     }
 
+    public void highlight(Graphics2D graphics2D, int x, int y)
+    {
+        for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                graphics2D.setColor(Color.YELLOW);
+                graphics2D.draw(p);
+            }
+        }
+    }
 
     public void drawAndFillRoutes(Graphics2D graphics2D) {
         for (Path2D.Double p : paths.keySet()) {

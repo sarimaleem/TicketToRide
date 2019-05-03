@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.geom.Path2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -15,6 +16,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     
     private GameState gameState;
     private BufferedImage map;
+
     HashMap<String, Color> colorHashMap;
     private static int ticketDeckXAdj = -40;
     private int ticketDeckYAdj = 120;
@@ -22,6 +24,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
     private int numTurnsPassed;
+
+    private int xCord = 0;
+    private int yCord = 0;
 
 
     public GraphicsBoard() throws IOException {
@@ -85,6 +90,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         drawDeck(graphics2D);
+
         try {
             drawGraphicCards(graphics2D);
         } catch (IOException e) {
@@ -107,6 +113,9 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         //drawEndGame(graphics2D);
+
+
+        highlight(graphics2D);
 
         repaint();
     }
@@ -248,6 +257,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawRect(100, 100, 1000, 600);
     }
 
+    public void highlight(Graphics2D graphics2D)
+    {
+        gameState.getNetwork().highlight(graphics2D, xCord, yCord);
+    }
     public void mousePressed(MouseEvent e) {
 
     }
@@ -260,17 +273,18 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int x =e.getX();
         int y =e.getY();
 
+
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
-            if (x >= 1700- ticketDeckXAdj && x <= 1900- ticketDeckXAdj && y >= 900 - ticketDeckYAdj && y <= 1000 - ticketDeckYAdj && !GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
+            if (x >= 1700 - ticketDeckXAdj && x <= 1900 - ticketDeckXAdj && y >= 900 - ticketDeckYAdj && y <= 1000 - ticketDeckYAdj && !GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.clearPotentialRoutes();
                 GraphicsDrawTicketIsRunning = true;
             }
             if (GraphicsDrawTicketIsRunning && gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.clearPotentialRoutes();
                 contracts.mouseReleased(e);
-            } else if (gameState.getCurrentPlayer().getTrainPoints() == 2){
+            } else if (gameState.getCurrentPlayer().getTrainPoints() == 2) {
                 gameState.getNetwork().printRoute(x, y);
 
                 Route r = gameState.getNetwork().getRoute(x, y);
@@ -297,6 +311,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 gameState.nextTurn();
             }
         }
+        xCord = e.getX();
+        yCord = e.getY();
+        System.out.println(x + " " + y);
+        gameState.getNetwork().printRoute(x, y);
+
     }
 
     public void mouseEntered(MouseEvent e) {
