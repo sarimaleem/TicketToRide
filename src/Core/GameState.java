@@ -1,12 +1,17 @@
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+
 public class GameState {
+
     private ArrayList<Player> players;
     private Network network;
     int currentPlayer;
     TicketDeck ticketDeck;
-
     TrainCardDeck trainCardDeck;
+    boolean lastTurn;
+    int turnsLeft;
+    boolean finished;
+    Player longestPathPlayer = null;
 
 
     public GameState() throws FileNotFoundException {
@@ -26,6 +31,15 @@ public class GameState {
                 p.addTrainCard(trainCardDeck.drawFromDeck());
             }
         }
+
+
+        for (Player p : getPlayers()) {
+            for (int i = 0; i < 45; i++) {
+                p.addTrainCard(new TrainCard("wild"));
+            }
+        }
+
+
     }
 
     public Player getCurrentPlayer() {
@@ -53,13 +67,6 @@ public class GameState {
     }
 
     public void clearPotentialRoutes() {
-        ;
-
-
-
-
-
-
         getCurrentPlayer().clearPotentialRoutes();
     }
 
@@ -78,11 +85,39 @@ public class GameState {
             }
 
             getNetwork().resetMarked();
-
         }
         System.out.println();
 
-        currentPlayer = (currentPlayer + 1)%players.size();
 
+        if (lastTurn) {
+            turnsLeft--;
+            if (turnsLeft == 0) {
+                finished = true;
+                for (Player player : players) {
+                    player.calcTotalPoints();
+                    Player p = network.longestPath(players);
+                    p.setPoints(p.getPoints() + 20);
+                    longestPathPlayer = p;
+                }
+            }
+        } else {
+            checkLastTurn();
+        }
+
+        currentPlayer = (currentPlayer + 1)%players.size();
     }
+
+    public boolean gameFinished() {
+        return finished;
+    }
+
+    public void checkLastTurn() {
+        for (Player player : players) {
+            if (player.getNumTrains() <= 2) {
+                lastTurn = true;
+                turnsLeft = 4;
+            }
+        }
+    }
+
 }

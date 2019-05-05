@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Player {
+public class Player implements Comparable{
 
     private int numTrains;
     private int points;
@@ -130,4 +130,20 @@ public class Player {
         numTrains -= routeLength;
     }
 
+    public void calcTotalPoints() {
+        for (Ticket ticket : tickets) {
+            if (ticket.isFinished()) {
+                points += ticket.getValue();
+            } else {
+                points -= ticket.getValue();
+            }
+    }
+    }
+
+
+    @Override
+    public int compareTo(Object o) {
+        Player other = (Player)o;
+        return -(this.points - other.points);
+    }
 }

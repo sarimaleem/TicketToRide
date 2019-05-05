@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.ArrayList;
-
+import java.util.TreeSet;
 
 
 public class GraphicsBoard extends JPanel implements MouseListener {
@@ -95,6 +95,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         drawCheatStatistics(graphics2D);
 
+        if (gameState.gameFinished()) {
+            drawEndGame(graphics2D);
+            return;
+        }
+
         if(GraphicsDrawTicketIsRunning){
             contracts.paint(graphics2D);
             if(contracts.getContracts()!=null){
@@ -105,8 +110,6 @@ public class GraphicsBoard extends JPanel implements MouseListener {
                 gameState.nextTurn();
             }
         }
-
-        drawEndGame(graphics2D);
 
         repaint();
     }
@@ -253,12 +256,28 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
         graphics2D.drawString("The End!", 600, 150);
 
-        
+        TreeSet playerRanks = new TreeSet();
+        playerRanks.addAll(gameState.getPlayers());
+        ArrayList<Player> players = new ArrayList<>();
+        players.addAll(playerRanks);
 
 
+        for (int i = 0; i < players.size()/2; i++) {
+            graphics2D.setFont(new Font("serif", Font.BOLD, 25));
+            graphics2D.drawString(i + 1 + ") Player " + players.get(i).getTrainColor(), x + 100, y + i * 200 + 100);
+            drawInfo(players.get(i), new Point(x +100, y+ i * 200 + 100), graphics2D);
+        }
 
+        for (int i = players.size()/2; i < players.size(); i++) {
+            graphics2D.setFont(new Font("serif", Font.BOLD, 25));
+            graphics2D.drawString(i + 1 + ") Player " + players.get(i).getTrainColor(), x + 500, y + (i-2) * 200 + 100);
+            drawInfo(players.get(i), new Point(x +500, y+ (i-2) * 200 + 100), graphics2D);
+        }
 
-
+        Player longestPathPlayer = gameState.longestPathPlayer;
+        graphics2D.drawString("Longest Path Player: " + longestPathPlayer.getTrainColor(), 600, 600);
+        graphics2D.drawString("Winner: " + players.get(0).getTrainColor(), 600, 650);
+        System.out.println(players);
     }
 
     public void mousePressed(MouseEvent e) {
@@ -272,6 +291,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         int x =e.getX();
         int y =e.getY();
+
+        if (gameState.gameFinished()) {
+            return;
+        }
 
         if(start){
             BeginningTicketSelection.mouseReleased(e);

@@ -3,6 +3,7 @@ import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.nio.file.Path;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
@@ -128,6 +129,69 @@ public class Network {
 
         return complete;
     }
+
+
+    public Player longestPath(ArrayList<Player> players) {
+        int max = 0;
+        Player longestPathPlayer = null;
+
+        for (Player p : players) {
+            int longestPath = 0;
+            for (City c : cities.values()) {
+                HashSet<City> markedCities = new HashSet<>();
+                longestPath = Math.max(longestPath, longestPath(p, c, markedCities));
+            }
+
+            if (longestPath > max) {
+                longestPathPlayer = p;
+                max = longestPath;
+            }
+        }
+
+        return longestPathPlayer;
+
+    }
+
+
+    public int longestPath(Player p, City c, HashSet<City> markedCities) {
+
+        if (markedCities.contains(c)) {
+            return markedCities.size();
+        }
+
+        int longest = markedCities.size();
+
+        for (Route r : c.getRoutes()) {
+            if (r.getOwner() == p) {
+                HashSet<City> m = (HashSet<City>) markedCities.clone();
+                m.add(c);
+                longest = Math.max(longest, longestPath(p, r.getOtherCity(c), m));
+            }
+        }
+
+        return longest;
+
+    }
+
+    //    public int longestPath(Player p, City c, int n, HashMap<City, boolean> marked)
+//
+//
+//	if(marked.get(c) == true)
+//            return n
+//
+//    int longest = n
+//
+//	for(Route r : c.getRoutes())
+//            if(r.getOwner() == p)
+//    m = marked.clone()
+//            m.put(c, true)
+//    longest = Math.max(longest, longestPath(p, r.getOtherCity(c), n+1, marked)
+//
+//            return longest
+
+
+
+
 
 
     public void resetMarked() {
