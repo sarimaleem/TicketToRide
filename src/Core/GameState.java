@@ -33,11 +33,11 @@ public class GameState {
         }
 
 
-        for (Player p : getPlayers()) {
-            for (int i = 0; i < 45; i++) {
-                p.addTrainCard(new TrainCard("wild"));
-            }
-        }
+//        for (Player p : getPlayers()) {
+//            for (int i = 0; i < 45; i++) {
+//                p.addTrainCard(new TrainCard("wild"));
+//            }
+//        }
 
 
     }
