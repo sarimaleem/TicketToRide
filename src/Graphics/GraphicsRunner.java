@@ -18,12 +18,4 @@ public class GraphicsRunner extends JFrame{
         add(new GraphicsBoard());
         setVisible(true);
     }
-
-
-
-
-
-
-
-
 }
