@@ -182,30 +182,8 @@ public class Network {
 
     }
 
-    //    public int longestPath(Player p, City c, int n, HashMap<City, boolean> marked)
-//
-//
-//	if(marked.get(c) == true)
-//            return n
-//
-//    int longest = n
-//
-//	for(Route r : c.getRoutes())
-//            if(r.getOwner() == p)
-//    m = marked.clone()
-//            m.put(c, true)
-//    longest = Math.max(longest, longestPath(p, r.getOtherCity(c), n+1, marked)
-//
-//            return longest
-
-
-
-
-
-
     public void resetMarked() {
         marked = new HashSet<>();
     }
-
 
 }

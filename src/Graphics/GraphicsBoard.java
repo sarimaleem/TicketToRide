@@ -247,7 +247,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
     public void drawEndGame(Graphics2D graphics2D) {
         int width = 1250, height = 600, x = 100, y = 100;
-        graphics2D.setColor(new Color(114, 0, 255));
+        graphics2D.setColor(new Color(114, 0, 255, 100));
         graphics2D.setStroke(new BasicStroke(3));
         graphics2D.fillRect(x, y, width, height);
         graphics2D.setColor(Color.black);
