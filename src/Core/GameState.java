@@ -12,6 +12,7 @@ public class GameState {
     int turnsLeft;
     boolean finished;
     Player longestPathPlayer = null;
+    Player globeTrotter = null;
 
 
     public GameState() throws FileNotFoundException {
@@ -118,6 +119,10 @@ public class GameState {
                 turnsLeft = 4;
             }
         }
+    }
+
+    public void globeTrotter() {
+        
     }
 
 }
