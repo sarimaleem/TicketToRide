@@ -263,8 +263,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         int x =e.getX();
         int y =e.getY();
+
+        if (gameState.getCurrentPlayer().getTrainPoints() == 2) {
         xCord = x;
         yCord = y;
+        }
+
         if(start){
             BeginningTicketSelection.mouseReleased(e);
         } else {
@@ -297,6 +301,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             int pickedCardIndex = graphicCards.getCardIndex(x, y);
 
             gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
+
+            if (gameState.getCurrentPlayer().getTrainPoints() < 2) {
+                gameState.clearPotentialRoutes();
+            }
+
 
             if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
                 gameState.nextTurn();
