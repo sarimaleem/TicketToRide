@@ -22,6 +22,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     private GraphicOpeningDrawTicket BeginningTicketSelection;
     private boolean GraphicsDrawTicketIsRunning,start;
     private int numTurnsPassed;
+    private int xCord = 0, yCord = 0;
 
 
     public GraphicsBoard() throws IOException {
@@ -63,7 +64,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         drawPotentialRoutes(graphics2D);
         drawLeaderboard(gameState, graphics2D);
         drawCurrentPlayerContracts(graphics2D);
-
+        highlight(graphics2D);
         if(start){
             BeginningTicketSelection.paint(graphics2D);
             if(BeginningTicketSelection.getContracts()!=null){
@@ -279,7 +280,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString("Winner: " + players.get(0).getTrainColor(), 600, 650);
         System.out.println(players);
     }
-
+    public void highlight(Graphics2D graphics2D)
+    {
+        gameState.getNetwork().highlight(graphics2D, xCord, yCord);
+    }
     public void mousePressed(MouseEvent e) {
 
     }
@@ -292,8 +296,14 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         int x =e.getX();
         int y =e.getY();
 
+
         if (gameState.gameFinished()) {
             return;
+        }
+
+        if (gameState.getCurrentPlayer().getTrainPoints() == 2) {
+        xCord = x;
+        yCord = y;
         }
 
         if(start){
@@ -328,6 +338,11 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             int pickedCardIndex = graphicCards.getCardIndex(x, y);
 
             gameState.getTrainCardDeck().drawFaceUpCard(pickedCardIndex, gameState.getCurrentPlayer());
+
+            if (gameState.getCurrentPlayer().getTrainPoints() < 2) {
+                gameState.clearPotentialRoutes();
+            }
+
 
             if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
                 gameState.nextTurn();

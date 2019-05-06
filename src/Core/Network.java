@@ -130,6 +130,15 @@ public class Network {
         return complete;
     }
 
+    public void highlight(Graphics2D graphics2D, int x, int y)
+    {
+        for (Path2D.Double p : paths.keySet()) {
+            if (p.contains(x, y)) {
+                graphics2D.setColor(Color.YELLOW);
+                graphics2D.draw(p);
+            }
+        }
+    }
 
     public Player longestPath(ArrayList<Player> players) {
         int max = 0;
