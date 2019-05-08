@@ -96,10 +96,12 @@ public class GameState {
                 finished = true;
                 for (Player player : players) {
                     player.calcTotalPoints();
-                    Player p = network.longestPath(players);
-                    p.setPoints(p.getPoints() + 20);
-                    longestPathPlayer = p;
                 }
+
+                Player p = network.longestPath(players);
+                longestPathPlayer = p;
+                longestPathPlayer.setPoints(longestPathPlayer.getPoints() + 10);
+
                 globeTrotter();
             }
         } else {
