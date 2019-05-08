@@ -137,7 +137,7 @@ public class Player implements Comparable{
             } else {
                 points -= ticket.getValue();
             }
-    }
+        }
     }
 
 

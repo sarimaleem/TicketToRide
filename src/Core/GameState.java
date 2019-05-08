@@ -100,6 +100,7 @@ public class GameState {
                     p.setPoints(p.getPoints() + 20);
                     longestPathPlayer = p;
                 }
+                globeTrotter();
             }
         } else {
             checkLastTurn();
@@ -122,7 +123,19 @@ public class GameState {
     }
 
     public void globeTrotter() {
-        
+
+        int maxContractsCompleted = 0;
+        int index = 0;
+
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).numTicketsCompleted() > maxContractsCompleted) {
+                index = i;
+            }
+        }
+
+        players.get(index).setPoints(players.get(index).getPoints() + 15);
+        globeTrotter = players.get(index);
+
     }
 
 }
