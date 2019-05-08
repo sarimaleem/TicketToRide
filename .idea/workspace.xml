@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a789644e-1d4b-4df3-a7ef-8e4d22f991df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
-    </list>
+    <list default="true" id="a789644e-1d4b-4df3-a7ef-8e4d22f991df" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="279" column="106" lean-forward="true" selection-start-line="279" selection-start-column="106" selection-end-line="279" selection-end-column="106" />
+            <state relative-caret-position="166">
+              <caret line="280" column="85" lean-forward="true" selection-start-line="280" selection-start-column="85" selection-end-line="280" selection-end-column="85" />
               <folding>
                 <element signature="e#11134#11135#0" expanded="true" />
                 <element signature="e#11208#11209#0" expanded="true" />
@@ -190,7 +187,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557166465294" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557342207581" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -304,7 +301,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41785714" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41785714" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -561,8 +558,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="279" column="106" lean-forward="true" selection-start-line="279" selection-start-column="106" selection-end-line="279" selection-end-column="106" />
+        <state relative-caret-position="166">
+          <caret line="280" column="85" lean-forward="true" selection-start-line="280" selection-start-column="85" selection-end-line="280" selection-end-column="85" />
           <folding>
             <element signature="e#11134#11135#0" expanded="true" />
             <element signature="e#11208#11209#0" expanded="true" />
