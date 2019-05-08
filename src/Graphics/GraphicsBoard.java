@@ -303,8 +303,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         if (gameState.getCurrentPlayer().getTrainPoints() == 2) {
-        xCord = x;
-        yCord = y;
+            if(gameState.getNetwork().pathContains(x, y) || x > 1715) {
+                xCord = x;
+                yCord = y;
+            }
         }
 
         if(start){
@@ -347,6 +349,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
             if (gameState.getCurrentPlayer().getTrainPoints() == 0) {
                 gameState.nextTurn();
             }
+            System.out.println(x);
         }
     }
 
