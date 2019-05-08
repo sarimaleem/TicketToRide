@@ -276,8 +276,8 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         }
 
         Player longestPathPlayer = gameState.longestPathPlayer;
-        graphics2D.drawString("Longest Path Player: " + longestPathPlayer.getTrainColor(), 600, 600);
-        graphics2D.drawString("Globe Trotter: " + gameState.globeTrotter.getTrainColor(), 600, 625);
+        graphics2D.drawString("Longest Path Player (+20): " + longestPathPlayer.getTrainColor(), 600, 600);
+        graphics2D.drawString("Globe Trotter (+15): " + gameState.globeTrotter.getTrainColor(), 600, 625);
         graphics2D.drawString("Winner: " + players.get(0).getTrainColor(), 600, 650);
         System.out.println(players);
     }
