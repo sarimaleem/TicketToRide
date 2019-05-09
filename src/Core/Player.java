@@ -146,4 +146,8 @@ public class Player implements Comparable{
         Player other = (Player)o;
         return -(this.points - other.points);
     }
+
+    public String toString() {
+        return trainColor;
+    }
 }

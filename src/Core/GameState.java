@@ -12,7 +12,7 @@ public class GameState {
     int turnsLeft;
     boolean finished;
     Player longestPathPlayer = null;
-    Player globeTrotter = null;
+    ArrayList<Player> globeTrotters = null;
 
 
     public GameState() throws FileNotFoundException {
@@ -34,11 +34,11 @@ public class GameState {
         }
 
 
-//        for (Player p : getPlayers()) {
-//            for (int i = 0; i < 45; i++) {
-//                p.addTrainCard(new TrainCard("wild"));
-//            }
-//        }
+        for (Player p : getPlayers()) {
+            for (int i = 0; i < 45; i++) {
+                p.addTrainCard(new TrainCard("wild"));
+            }
+        }
 
 
     }
@@ -127,17 +127,18 @@ public class GameState {
     public void globeTrotter() {
 
         int maxContractsCompleted = 0;
-        int index = 0;
+        globeTrotters = new ArrayList<>();
 
         for (int i = 0; i < players.size(); i++) {
-            if (players.get(i).numTicketsCompleted() > maxContractsCompleted) {
-                index = i;
-            }
+            maxContractsCompleted = Math.max(players.get(i).numTicketsCompleted(), maxContractsCompleted);
         }
 
-        players.get(index).setPoints(players.get(index).getPoints() + 15);
-        globeTrotter = players.get(index);
-
+        for (int i = 0; i < players.size(); i++) {
+            if (players.get(i).numTicketsCompleted() == maxContractsCompleted) {
+                globeTrotters.add(players.get(i));
+                players.get(i).setPoints(players.get(i).getPoints() + 15);
+            }
+        }
     }
 
 }

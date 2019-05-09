@@ -6,6 +6,7 @@ import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.TreeSet;
@@ -257,10 +258,10 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.setFont(new Font("serif", Font.BOLD, 60));
         graphics2D.drawString("The End!", 600, 150);
 
-        TreeSet playerRanks = new TreeSet();
-        playerRanks.addAll(gameState.getPlayers());
+
         ArrayList<Player> players = new ArrayList<>();
-        players.addAll(playerRanks);
+        players.addAll(gameState.getPlayers());
+        Collections.sort(players);
 
 
         for (int i = 0; i < players.size()/2; i++) {
@@ -277,7 +278,7 @@ public class GraphicsBoard extends JPanel implements MouseListener {
 
         Player longestPathPlayer = gameState.longestPathPlayer;
         graphics2D.drawString("Longest Path Player (+10): " + longestPathPlayer.getTrainColor(), 600, 600);
-        graphics2D.drawString("Globe Trotter (+15): " + gameState.globeTrotter.getTrainColor(), 600, 625);
+        graphics2D.drawString("Globe Trotter(s) (+15): " + gameState.globeTrotters.toString().substring(1, gameState.globeTrotters.toString().length()-1), 600, 625);
         graphics2D.drawString("Winner: " + players.get(0).getTrainColor(), 600, 650);
         System.out.println(players);
     }
