@@ -31,7 +31,7 @@
 
 
 
-**Individual Tasks**
+**INDIVIDUAL TASKS**
 
 **Sarim Jobs**
 - [x] Work on Contract Filled Algorithm
