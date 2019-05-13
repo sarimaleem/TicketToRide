@@ -196,7 +196,7 @@ Phoenix-Denver-5-white
 404 617
 378 656
 361 693
-Phoenix-SantaFe-3-gray
+Phoenix-Santa Fe-3-gray
 366 687
 508 635
 515 647
@@ -226,7 +226,7 @@ Helena-Denver-4-green
 469 339
 548 499
 532 505
-Denver-SantaFe-2-gray
+Denver-Santa Fe-2-gray
 541 539
 537 624
 521 624
