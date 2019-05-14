@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a789644e-1d4b-4df3-a7ef-8e4d22f991df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Routes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Network.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="189" selection-start-line="189" selection-end-line="189" />
+            <state relative-caret-position="223">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -40,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+            <state relative-caret-position="1470">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,58 +57,57 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
+            <state relative-caret-position="155">
+              <caret line="249" column="65" selection-start-line="249" selection-start-column="65" selection-end-line="249" selection-end-column="65" />
               <folding>
                 <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
                 <element signature="method#paintComponent#0;class#GraphicsBoard#0" />
-                <element signature="e#1635#1689#0" />
-                <element signature="e#1712#1756#0" />
-                <element signature="e#1943#2405#1" />
-                <element signature="e#2062#2395#1" />
-                <element signature="e#2236#2309#1" />
-                <element signature="e#2438#2645#1" />
-                <element signature="e#2689#2742#0" />
-                <element signature="e#2765#2809#0" />
-                <element signature="e#2958#3026#1" />
-                <element signature="e#3067#3425#1" />
-                <element signature="e#3156#3415#1" />
-                <element signature="method#drawCheatStatistics#0;class#GraphicsBoard#0" />
-                <element signature="e#4132#4545#1" />
-                <element signature="e#4216#4535#1" />
-                <element signature="e#4360#4496#1" />
+                <element signature="e#1665#1719#0" />
+                <element signature="e#1742#1786#0" />
+                <element signature="e#1973#2435#1" />
+                <element signature="e#2092#2425#1" />
+                <element signature="e#2266#2339#1" />
+                <element signature="e#2468#2675#1" />
+                <element signature="e#2719#2772#0" />
+                <element signature="e#2795#2839#0" />
+                <element signature="e#2988#3056#1" />
+                <element signature="e#3097#3455#1" />
+                <element signature="e#3186#3445#1" />
+                <element signature="e#4162#4575#1" />
+                <element signature="e#4246#4565#1" />
+                <element signature="e#4390#4526#1" />
                 <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
-                <element signature="e#4879#4910#1" />
-                <element signature="e#5039#5326#1" />
-                <element signature="e#5238#5316#1" />
+                <element signature="e#4909#4940#1" />
+                <element signature="e#5069#5356#1" />
+                <element signature="e#5268#5346#1" />
                 <element signature="method#drawPotentialRoutes#0;class#GraphicsBoard#0" />
-                <element signature="e#5491#5547#1" />
+                <element signature="e#5521#5577#1" />
                 <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
                 <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
                 <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
                 <element signature="method#drawLeaderboard#0;class#GraphicsBoard#0" />
-                <element signature="method#drawInfo#0;class#GraphicsBoard#0" />
-                <element signature="method#drawGraphicCards#0;class#GraphicsBoard#0" />
-                <element signature="e#10148#10429#1" />
-                <element signature="e#10495#10784#1" />
+                <element signature="method#drawEndGame#0;class#GraphicsBoard#0" />
+                <element signature="e#10128#10409#1" />
+                <element signature="e#10475#10764#1" />
+                <element signature="e#11990#11991#0" expanded="true" />
                 <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
                 <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
                 <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
-                <element signature="e#11565#11596#1" />
-                <element signature="e#11662#11711#1" />
-                <element signature="e#11730#11796#1" />
-                <element signature="e#11802#13546#1" />
-                <element signature="e#12021#12138#1" />
-                <element signature="e#12238#12347#1" />
-                <element signature="e#12408#13005#1" />
-                <element signature="e#12532#12624#1" />
-                <element signature="e#12725#12991#1" />
-                <element signature="e#12866#12973#1" />
-                <element signature="e#13347#13412#1" />
-                <element signature="e#13483#13536#1" />
+                <element signature="e#11604#11635#1" />
+                <element signature="e#11701#11750#1" />
+                <element signature="e#11769#11835#1" />
+                <element signature="e#11841#13585#1" />
+                <element signature="e#12060#12177#1" />
+                <element signature="e#12277#12386#1" />
+                <element signature="e#12447#13044#1" />
+                <element signature="e#12571#12663#1" />
+                <element signature="e#12764#13030#1" />
+                <element signature="e#12905#13012#1" />
+                <element signature="e#13386#13451#1" />
+                <element signature="e#13522#13575#1" />
                 <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
                 <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
               </folding>
@@ -117,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Routes.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5955">
-              <caret line="397" column="7" selection-start-line="397" selection-start-column="7" selection-end-line="397" selection-end-column="7" />
+            <state relative-caret-position="558">
+              <caret line="683" column="8" lean-forward="true" selection-start-line="683" selection-start-column="8" selection-end-line="683" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -138,11 +136,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="1815">
               <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
               <folding>
                 <element signature="e#3708#3709#0" expanded="true" />
-                <element signature="e#3740#3741#0" expanded="true" />
+                <element signature="e#3741#3742#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,6 +165,7 @@
     <findStrings>
       <find>kansas city</find>
       <find>oklahoma</find>
+      <find>santa fe</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,11 +176,11 @@
       <list>
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicsRunner.java" />
-        <option value="$PROJECT_DIR$/src/Core/Network.java" />
-        <option value="$PROJECT_DIR$/Routes.txt" />
         <option value="$PROJECT_DIR$/src/Core/GameState.java" />
         <option value="$PROJECT_DIR$/src/Core/Player.java" />
         <option value="$PROJECT_DIR$/src/Graphics/GraphicsBoard.java" />
+        <option value="$PROJECT_DIR$/src/Core/Network.java" />
+        <option value="$PROJECT_DIR$/Routes.txt" />
       </list>
     </option>
   </component>
@@ -196,6 +195,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -235,8 +236,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,7 +343,7 @@
     <frame x="67" y="23" width="1804" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24177071" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2446084" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -546,17 +545,20 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1905">
-          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        <state relative-caret-position="690">
+          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Routes.txt">
+    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5955">
-          <caret line="397" column="7" selection-start-line="397" selection-start-column="7" selection-end-line="397" selection-end-column="7" />
+        <state relative-caret-position="1470">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -564,6 +566,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1815">
+          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
+          <folding>
+            <element signature="e#3708#3709#0" expanded="true" />
+            <element signature="e#3741#3742#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -578,23 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/PotentialRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -602,71 +598,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="150" column="26" selection-start-line="150" selection-start-column="26" selection-end-line="150" selection-end-column="26" />
-          <folding>
-            <element signature="e#3708#3709#0" expanded="true" />
-            <element signature="e#3740#3741#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graphics/GraphicsBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="294" lean-forward="true" selection-start-line="294" selection-end-line="294" />
+        <state relative-caret-position="155">
+          <caret line="249" column="65" selection-start-line="249" selection-start-column="65" selection-end-line="249" selection-end-column="65" />
           <folding>
             <element signature="method#GraphicsBoard#0;class#GraphicsBoard#0" />
             <element signature="method#paintComponent#0;class#GraphicsBoard#0" />
-            <element signature="e#1635#1689#0" />
-            <element signature="e#1712#1756#0" />
-            <element signature="e#1943#2405#1" />
-            <element signature="e#2062#2395#1" />
-            <element signature="e#2236#2309#1" />
-            <element signature="e#2438#2645#1" />
-            <element signature="e#2689#2742#0" />
-            <element signature="e#2765#2809#0" />
-            <element signature="e#2958#3026#1" />
-            <element signature="e#3067#3425#1" />
-            <element signature="e#3156#3415#1" />
-            <element signature="method#drawCheatStatistics#0;class#GraphicsBoard#0" />
-            <element signature="e#4132#4545#1" />
-            <element signature="e#4216#4535#1" />
-            <element signature="e#4360#4496#1" />
+            <element signature="e#1665#1719#0" />
+            <element signature="e#1742#1786#0" />
+            <element signature="e#1973#2435#1" />
+            <element signature="e#2092#2425#1" />
+            <element signature="e#2266#2339#1" />
+            <element signature="e#2468#2675#1" />
+            <element signature="e#2719#2772#0" />
+            <element signature="e#2795#2839#0" />
+            <element signature="e#2988#3056#1" />
+            <element signature="e#3097#3455#1" />
+            <element signature="e#3186#3445#1" />
+            <element signature="e#4162#4575#1" />
+            <element signature="e#4246#4565#1" />
+            <element signature="e#4390#4526#1" />
             <element signature="method#drawCurrentPlayerContracts#0;class#GraphicsBoard#0" />
-            <element signature="e#4879#4910#1" />
-            <element signature="e#5039#5326#1" />
-            <element signature="e#5238#5316#1" />
+            <element signature="e#4909#4940#1" />
+            <element signature="e#5069#5356#1" />
+            <element signature="e#5268#5346#1" />
             <element signature="method#drawPotentialRoutes#0;class#GraphicsBoard#0" />
-            <element signature="e#5491#5547#1" />
+            <element signature="e#5521#5577#1" />
             <element signature="method#drawDeck#0;class#GraphicsBoard#0" />
             <element signature="method#drawBoard#0;class#GraphicsBoard#0" />
             <element signature="method#drawGraphicPlayer#0;class#GraphicsBoard#0" />
             <element signature="method#drawLeaderboard#0;class#GraphicsBoard#0" />
-            <element signature="method#drawInfo#0;class#GraphicsBoard#0" />
-            <element signature="method#drawGraphicCards#0;class#GraphicsBoard#0" />
-            <element signature="e#10148#10429#1" />
-            <element signature="e#10495#10784#1" />
+            <element signature="method#drawEndGame#0;class#GraphicsBoard#0" />
+            <element signature="e#10128#10409#1" />
+            <element signature="e#10475#10764#1" />
+            <element signature="e#11990#11991#0" expanded="true" />
             <element signature="method#mousePressed#0;class#GraphicsBoard#0" />
             <element signature="method#mouseClicked#0;class#GraphicsBoard#0" />
             <element signature="method#mouseReleased#0;class#GraphicsBoard#0" />
-            <element signature="e#11565#11596#1" />
-            <element signature="e#11662#11711#1" />
-            <element signature="e#11730#11796#1" />
-            <element signature="e#11802#13546#1" />
-            <element signature="e#12021#12138#1" />
-            <element signature="e#12238#12347#1" />
-            <element signature="e#12408#13005#1" />
-            <element signature="e#12532#12624#1" />
-            <element signature="e#12725#12991#1" />
-            <element signature="e#12866#12973#1" />
-            <element signature="e#13347#13412#1" />
-            <element signature="e#13483#13536#1" />
+            <element signature="e#11604#11635#1" />
+            <element signature="e#11701#11750#1" />
+            <element signature="e#11769#11835#1" />
+            <element signature="e#11841#13585#1" />
+            <element signature="e#12060#12177#1" />
+            <element signature="e#12277#12386#1" />
+            <element signature="e#12447#13044#1" />
+            <element signature="e#12571#12663#1" />
+            <element signature="e#12764#13030#1" />
+            <element signature="e#12905#13012#1" />
+            <element signature="e#13386#13451#1" />
+            <element signature="e#13522#13575#1" />
             <element signature="method#mouseEntered#0;class#GraphicsBoard#0" />
             <element signature="method#mouseExited#0;class#GraphicsBoard#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Network.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Routes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="683" column="8" lean-forward="true" selection-start-line="683" selection-start-column="8" selection-end-line="683" selection-end-column="8" />
         </state>
       </provider>
     </entry>

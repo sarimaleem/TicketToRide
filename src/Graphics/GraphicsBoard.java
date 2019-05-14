@@ -229,15 +229,26 @@ public class GraphicsBoard extends JPanel implements MouseListener {
     }
 
     private void drawInfo(Player player, Point point, Graphics2D graphics2D) {
+
         graphics2D.setFont(new Font("serif", Font.BOLD, 15));
         graphics2D.drawString("Points: ", (int) point.getX(), (int) point.getY() + 30);
         graphics2D.drawString("" + player.getPoints(), (int) point.getX() + 50, (int) point.getY() + 30);
         graphics2D.drawString("Trains: ", (int) point.getX(), (int) point.getY() + 50);
         graphics2D.drawString("" + player.getNumTrains(), (int) point.getX() + 50, (int) point.getY() + 50);
-        graphics2D.drawString("Contracts Completed: ", (int) point.getX(), (int) point.getY() + 70);
-        graphics2D.drawString("" + player.numTicketsCompleted(), (int) point.getX() + 150, (int) point.getY() + 70);
-        graphics2D.drawString("Contracts Remaining: ", (int) point.getX(), (int) point.getY() + 90);
-        graphics2D.drawString("" + player.numTicketsNotCompleted(), (int) point.getX() + 150, (int) point.getY() + 90);
+
+        int adjX = 350;
+        double hoverX = MouseInfo.getPointerInfo().getLocation().getX() - this.getLocationOnScreen().getX();
+        double hoverY = MouseInfo.getPointerInfo().getLocation().getY() - this.getLocationOnScreen().getY();
+
+        if(gameState.gameFinished() || hoverX > 1442+ adjX && hoverX < 1506+ adjX && hoverY > 914 && hoverY < 977) {
+            graphics2D.drawString("Contracts Completed: ", (int) point.getX(), (int) point.getY() + 70);
+            graphics2D.drawString("" + player.numTicketsCompleted(), (int) point.getX() + 150, (int) point.getY() + 70);
+            graphics2D.drawString("Contracts Remaining: ", (int) point.getX(), (int) point.getY() + 90);
+            graphics2D.drawString("" + player.numTicketsNotCompleted(), (int) point.getX() + 150, (int) point.getY() + 90);
+        } else {
+            graphics2D.drawString("Number of Contracts: ", (int) point.getX(), (int) point.getY() + 70);
+            graphics2D.drawString("" + player.getTickets().size(), (int) point.getX() + 150, (int) point.getY() + 70);
+        }
     }
 
     public void drawGraphicCards(Graphics2D graphics2D) throws IOException {
@@ -282,10 +293,12 @@ public class GraphicsBoard extends JPanel implements MouseListener {
         graphics2D.drawString("Winner: " + players.get(0).getTrainColor(), 600, 650);
         System.out.println(players);
     }
+
     public void highlight(Graphics2D graphics2D)
     {
         gameState.getNetwork().highlight(graphics2D, xCord, yCord);
     }
+
     public void mousePressed(MouseEvent e) {
 
     }

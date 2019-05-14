@@ -2,6 +2,7 @@ import java.awt.*;
 import java.awt.geom.Path2D;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.lang.reflect.Array;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +33,7 @@ public class Network {
         while (in.hasNextLine()) {
 
             String[] temp = in.nextLine().split("-");
+            System.out.println(i);
 
             String name1 = temp[0];
             String name2 = temp[1];
